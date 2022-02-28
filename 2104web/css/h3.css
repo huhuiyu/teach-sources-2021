@@ -1,0 +1,45 @@
+.sp01 {
+  /* 粗体 */
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* 
+  动画入门，第一类动画叫做过渡transition
+  意思是当元素的css样式发生变化时，不是瞬间完成
+  而是慢慢的过渡过去
+  参数一是要过渡效果的css样式属性，比如颜色，大小
+  参数二是过渡的时间(s是秒)
+  参数三是速动函数，表示过渡的时间不是均匀分配
+  */
+  transition: font-size 1s ease-in-out;
+}
+/* 
+选择器:hover表示当鼠标悬停（进入）
+选择器对应的元素时要套用的效果
+.sp01:hover 表示当鼠标悬停在class="sp01"的元素上的时候
+:在css中表示伪类
+*/
+.sp01:hover {
+  /* 将鼠标的图标变成指示器样式（可以点击的小手） */
+  cursor: pointer;
+  color: #ff0000;
+  font-size: 2rem;
+}
+
+/* 动画二 */
+.box01 {
+  color: #ff0000;
+  font-size: 1.5rem;
+  border: 1px solid #00ffff;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  cursor: pointer;
+  /* 第一个参数写成all，表示任何css属性变化都是过渡 */
+  transition: all 2s linear;
+}
+
+.box01:hover {
+  color: #0000ff;
+  font-size: 3rem;
+  border-width: 5px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-盒模型</title>
+
+  <link rel="stylesheet" href="css/h2.css">
+</head>
+
+<body>
+  <!-- 基本的盒模型 -->
+  <div class="box01">盒模型一</div>
+
+  <!-- 进阶的盒模型(带宽高)
+    ，class可以有多个，中间用空格分开，多个class效果叠加 -->
+  <div class="bbox box02">
+    盒模型二
+  </div>
+
+  <div class="bbox">盒模型二的参照物</div>
+
+  <!-- 行内元素默认不能正确理解盒模型 -->
+  <span class="bbox">行内元素一</span>
+  <span class="bbox">另一个行内元素</span>
+
+</body>
+
+</html>

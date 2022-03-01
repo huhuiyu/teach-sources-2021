@@ -1,0 +1,43 @@
+/* 动画元素一 */
+.ani01 {
+  color: #00ffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* cursor鼠标指针样式 */
+  cursor: pointer;
+  /* 
+    第一类动画 transition 过渡，表示元素的样式发生变化的时候
+    不是一瞬间就完成，而是慢慢的过渡变化
+    参数1是要做过渡动画的css属性，参数2是过渡的时间长度(秒)，可以是小数
+    参数3是时间的缓动函数
+  */
+  transition: font-size 2s ease-in-out;
+}
+
+/*
+选择器:hover表示，当鼠标进入（悬停）在选择器对应的元素上的时候套用的样式
+:叫做伪类
+.abc:hover 表示鼠标进入class="abc"的元素的时候套用样式
+*/
+.ani01:hover {
+  color: #ff0000;
+  font-size: 3rem;
+}
+
+/* 动画效果二 */
+.ani02 {
+  border: 1px solid #ff0000;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: #00ffff;
+  transition: all 3s linear;
+}
+
+.ani02:hover {
+  font-size: 2.5rem;
+  /* 修改边框的宽度 */
+  border-width: 5px;
+  color: #f0f;
+}

@@ -1,0 +1,49 @@
+/* 动画一 */
+.ani1 {
+  color: #ff0000;
+  font-size: 1.5rem;
+  /* cursor鼠标样式 */
+  cursor: pointer;
+
+  /* 
+  transition是过渡动画效果，表示当元素的css样式发生变化的时候
+  不是瞬间完成，而是慢慢的过渡过去
+  参数1是要过渡效果的css样式，参数2是过渡的时长，参数3是时间缓动曲线
+  表示过渡的时间分配方式
+  */
+  transition: font-size 2s ease-in-out;
+}
+
+/*
+  选择器:hover表示当鼠标进入（悬停）在选择器对应的元素的时候
+  例如.abc:hover表示当鼠标进入class="abc"的元素的时候套用对应的样式
+  :伪类 hover伪类不能用于手机，在手机上是点击套用样式
+*/
+.ani1:hover {
+  color: #0000ff;
+  font-size: 3rem;
+}
+
+/* 多样式的动画效果 */
+.ani2 {
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid #ff00ff;
+  color: #ff0000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  /* 
+    all参数表示任意的css样式变化都会触发过渡效果
+    慎用，效率比较低下，因为要监听所有css样式
+  */
+  transition: all 1.5s linear;
+}
+
+.ani2:hover {
+  color: #0000ff;
+  font-size: 3rem;
+  /* 边框宽度调整 */
+  border-width: 5px;
+}

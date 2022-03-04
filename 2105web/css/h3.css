@@ -1,0 +1,63 @@
+/* 动画一 */
+.ani1 {
+  color: #ff0000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* 鼠标的形状 */
+  cursor: pointer;
+
+  /* 
+    transition是过渡动画，简单的说就是css样式变化时
+    不是瞬间完成，而是慢慢的过渡过去
+    参数1是要过渡效果的css样式，参数2是过渡的总时长（秒）
+    参数3是过渡的缓动曲线函数
+  */
+  transition: font-size 2s ease-in-out;
+}
+
+/*
+  选择器:hover 表示当鼠标进入（悬停）选择器对应的元素时套用样式
+  例如 .abc:hover 表示当鼠标进入class="abc"的元素时套用样式
+  :伪类
+*/
+.ani1:hover {
+  color: #0000ff;
+  font-size: 3rem;
+}
+
+/* 完整的动画 */
+.ani2 {
+  margin: 1rem;
+  padding: 2.5rem;
+  font-size: 1.5rem;
+  color: #ff00ff;
+  text-align: center;
+  border: 1px solid #ff0000;
+  cursor: pointer;
+  /*
+    过渡的第一个参数如果是all表示任意css样式发生变化都是使用过渡的效果
+    慎用，因为效率比较低下，过渡的秒数可以是小数
+  */
+  transition: all 2.5s linear;
+}
+
+.ani2:hover {
+  color: #0000ff;
+  font-size: 3rem;
+  /* 边框宽度 */
+  border-width: 5px;
+}
+
+.yj {
+  border: 1px solid #ff0000;
+  /* background-color: #ff00ff; */
+  padding: 1rem;
+
+  /* 
+    border-radius:圆角
+    参数是圆角的大小
+    注意事项，圆角要搭配边框或者背景颜色才能凸显
+    圆角避免切到里面的文字内容，一般会搭配内边距
+  */
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,30 @@
+/* 盒模型一 */
+.box1 {
+  /* border是边框,参数1是宽度，参数2线形，参数3是颜色 */
+  border: 1px solid #ff0000;
+  /*
+    padding是内边距，表示元素里面的内容要有间距，不要挨着
+    4个参数值分别是上右下左四个方向的间距
+    2个参数值表示上下和左右
+    1个参数值表示全都一个值
+    rem是css3的新增单位(强烈建议使用)，它是绝对单位值
+    是页面基准字体大小（一般是16px）的倍数，可以是小数
+  */
+  padding: 1rem 2rem 3rem 4rem;
+  /* margin是外边距，和相邻的元素的间距，参数语义和padding一样 */
+  margin: 1rem 2rem;
+}
+
+/* 完整的盒模型 */
+.box2 {
+  border: 1px solid #ff00ff;
+  margin: 1.5rem;
+  /* 宽高 */
+  width: 15rem;
+  height: 3rem;
+}
+
+/* 
+  块元素（div,p,li...）支持盒模型，display样式默认为block
+  行内元素（span,i,b...）display默认为inline，不能正确理解盒模型样式
+*/

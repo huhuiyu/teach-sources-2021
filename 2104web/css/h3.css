@@ -36,6 +36,9 @@
   cursor: pointer;
   /* 第一个参数写成all，表示任何css属性变化都是过渡 */
   transition: all 2s linear;
+  /* 圆角，必须和边框或者背景色搭配才会有效 */
+  border-radius: 1rem;
+  /* background-color:#00ffff ; */
 }
 
 .box01:hover {

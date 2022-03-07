@@ -1,0 +1,135 @@
+/* 元素基本样式 */
+.mybox {
+  margin: 2rem;
+  background-color: #ff0000;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* 变形一（移动位置） */
+.tf01 {
+  /* 
+  transform表示变形，
+  translateX表示沿着x轴移动，可以是具体的值，也可以是百分比
+  要注意的是，百分比是元素的宽度的百分比，而不是屏幕的
+  值可以是负数，表示反方向移动
+  */
+  transform: translateX(30%);
+}
+/* 移动位置（y轴） */
+.tf02 {
+  transform: translateY(1rem);
+}
+
+/* 旋转一 */
+.tf3 {
+  transform: rotate(45deg);
+}
+
+/* 带方向的旋转 */
+.tf4 {
+  /* x轴 */
+  transform: rotateX(45deg);
+}
+
+/* 缩放 */
+.tf5 {
+  transform: scaleX(0.5);
+}
+
+.tf6 {
+  /* y轴缩放 */
+  transform: scaleY(3);
+}
+
+/* 动画和变形 */
+.tf7 {
+  /* translate也是移动，可以定制双参数，分别对应x,y轴 */
+  transform: translate(-50%, 0);
+
+  transition: transform 1s ease-in-out;
+}
+
+.tf7:hover {
+  /* 注意事项！！计算机的y轴是从上到小 */
+  transform: translate(0, 0);
+}
+
+/* 关键帧动画元素 */
+.keybox {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ff0000;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+}
+
+/* 
+定义关键帧动画
+@keyframes 关键帧动画名称 {
+  动画进度的百分比 {
+    css样式...
+  }
+  例如 10%{
+    color:#ff0000;
+  }
+  表示当动画进度到10%时候颜色过渡到红色
+  一般来说，0%的进度样式是元素的默认状态
+  100%的进度样式是元素的最终目标状态  
+}
+
+*/
+@keyframes key01 {
+  /* 开始是默认状态 */
+  0% {
+    width: 15rem;
+    height: 15rem;
+    color: #000;
+  }
+  /* 
+    50%-100%的时候，宽度都锁定在10rem，所以宽度的动画在前半程
+    而0%-50%的时候，高度没有发生变化，只有100%的时候才变化
+    所以高度的动画在后半程
+  */
+  50% {
+    width: 10rem;
+    height: 15rem;
+    color: #f00;
+  }
+  /* 100%就是最终目标状态 */
+  100% {
+    width: 10rem;
+    height: 10rem;
+    color: #00f;
+  }
+}
+
+.keybox:hover {
+  /* 套用动画效果 */
+  /* 
+    animation表示套用关键帧动画，参数1表示关键帧的动画名称
+    参数2是动画的时长（秒）
+  */
+  animation: key01 2s;
+  width: 10rem;
+  height: 10rem;
+}
+
+@keyframes key02 {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+.keybox02 {
+  border: 1px solid #ff0000;
+  width: 5rem;
+  height: 5rem;
+  margin: 3rem;
+  /* infinite，无限循环动画，alternate,动画反向 */
+  animation: key02 2s infinite alternate;
+}

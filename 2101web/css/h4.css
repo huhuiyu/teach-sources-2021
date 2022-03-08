@@ -1,0 +1,128 @@
+/* 公用的样式 */
+.mybox {
+  background-color: #ff0000;
+  color: #ffffff;
+  margin: 1rem;
+  padding: 1rem;
+  /* 
+  圆角，参数是圆角的大小
+  注意，圆角要搭配边框或者背景色才有效果
+  */
+  border-radius: 1rem;
+}
+
+/* 移动位置 */
+.tf1 {
+  /* 
+    transform是元素变形,translateX表示沿着x轴移动
+    括号里面的是移动的距离，如果是百分比，表示移动的距离是元素大小的百分比
+  */
+  transform: translateX(30%);
+}
+
+.tf2 {
+  /* 
+  移动的参数可以负数，表示反方向移动
+  */
+  transform: translateY(-0.9rem);
+}
+
+/* 转动 */
+.tf3 {
+  /* rotate是旋转角度，参数是转动的角度  */
+  transform: rotate(15deg);
+}
+
+.tf4 {
+  transform: rotateX(45deg);
+}
+
+/* 缩放 */
+.tf5 {
+  /* x轴方向的缩放,参数是比例的数 */
+  transform: scaleX(0.6);
+}
+
+.tf6 {
+  transform: scaleY(1.5);
+}
+
+/* 变形的过渡效果 */
+.tf7 {
+  transform: translateX(40%);
+
+  transition: transform 2s ease-in-out;
+}
+
+.tf7:hover {
+  transform: translateX(0%);
+}
+
+/* 关键帧动画一 */
+.key01 {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid #ff0000;
+  margin: 1rem;
+}
+
+/* 
+  @keyframes定义关键帧动画
+  格式：
+  @keyframes 关键帧动画名称 {
+    动画时间进度的百分比  {
+      到达时间进度时候元素的css样式（可以是任意数量）
+    }
+    css样式的变化过程都是过渡的效果
+  }
+*/
+@keyframes mykey1 {
+  /*
+    0%-50%的时候宽度从10到15，颜色从黑到红，高度不变
+  */
+  0% {
+    width: 10rem;
+    height: 10rem;
+    color: #000000;
+  }
+  /* 50%-100%的时候宽度不变，高度从10到15，颜色从红到蓝 */
+  50% {
+    width: 15rem;
+    height: 10rem;
+    color: #ff0000;
+  }
+  100% {
+    width: 15rem;
+    height: 15rem;
+    color: #0000ff;
+  }
+}
+
+.key01:hover {
+  /* 
+    animation 是启用关键帧动画
+    参数一是关键帧动画的名称 参数二是动画持续时间（秒）
+  */
+  animation: mykey1 2s;
+  width: 15rem;
+  height: 15rem;
+}
+
+.key02 {
+  text-align: center;
+  margin: 2rem 30rem;
+  padding: 0.5rem;
+  border: 1px solid #ff0000;
+  border-radius: 1rem;
+  /* infinite表示动画无限循环的执行 alternate表示动画正反两次执行 */
+  animation: mykey2 2s infinite alternate;
+}
+
+@keyframes mykey2 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}

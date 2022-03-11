@@ -1,0 +1,140 @@
+/* 基本样式 */
+.mybox {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #ff0000;
+  border-radius: 1rem;
+  color: #ffffff;
+}
+
+/* 移动位置一 */
+.tf1 {
+  /* 
+    transform就是变形
+    translate表示移动位置
+    参数是移动的位置大小
+    如果是百分比，表示是元素大小的百分比
+  */
+  transform: translate(30%);
+}
+
+.tf2 {
+  /* y轴移动,负数是反方向移动 */
+  transform: translateY(-0.6rem);
+}
+
+/* 旋转效果 */
+.tf3 {
+  /* 
+    rotate是旋转
+    参数是旋转的角度 
+  */
+  transform: rotate(15deg);
+}
+
+.tf4 {
+  transform: rotateY(50deg);
+}
+
+/* 缩放 */
+.tf5 {
+  /* 
+  scale是缩放，参数是缩放的比例
+  */
+  transform: scale(0.6);
+}
+
+.tf6 {
+  transform: scaleY(1.3);
+}
+
+/* 动画的部分 */
+.tf7 {
+  transform: translateX(20%);
+  transition: transform 2s linear;
+}
+
+.tf7:hover {
+  transform: translateX(0%);
+}
+
+/* 关键帧动画效果部分 */
+.tf8 {
+  margin: 2rem;
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid #ff0000;
+}
+
+/* 
+  @keyframes表示定义关键帧的动画
+  格式:
+  @keyframes 关键帧动画的名称 {
+
+    关键帧动画时间进度的百分比 {
+      当时间进度到达百分比时候的元素的css样式...
+      而且所有的css样式变化都是过渡消息！！！
+    }
+
+  }
+*/
+@keyframes key01 {
+  0% {
+    width: 10rem;
+    height: 10rem;
+    color: #000;
+  }
+  30% {
+    color: #ff00ff;
+  }
+  /* 
+    动画进度从0%-50%的时候，高度不变，宽度从10-15，颜色转红
+    动画进度从50%-100%的时候，宽度不变,高度从10-15，颜色转蓝
+  */
+  50% {
+    width: 15rem;
+    height: 10rem;
+    color: #ff0000;
+  }
+  70% {
+    color: #00ffff;
+  }
+  100% {
+    width: 15rem;
+    height: 15rem;
+    color: #0000ff;
+  }
+}
+
+.tf8:hover {
+  /* animation就是启用关键帧动画,参数1是动画名称，参数2是时长 */
+  animation: key01 2s;
+  width: 15rem;
+  height: 15rem;
+}
+
+.tf9 {
+  background-color: #ff0000;
+  color: #ffffff;
+  margin: 2rem 20rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  /* infinite表示动画无限循环，alternate是反弹播放动画 */
+  animation: key02 2s infinite alternate;
+}
+
+@keyframes key02 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.tf10 {
+  /* skew是元素倾斜,参数是角度 */
+  transform: skew(15deg);
+}

@@ -1,0 +1,40 @@
+/* 阴影 */
+.box1 {
+  margin: 2rem;
+  border: 1px solid #999;
+  /* 
+    盒模型的阴影效果
+    参数1：阴影的颜色，参数2：x轴投影，参数3：y轴投影，参数4：z轴投影
+    xy轴是阴影效果，z轴是发光效果，所以必然有一组为0
+    投影的距离可以是负数，表示反方向
+  */
+  box-shadow: #999 0.4rem 0.2rem 0px;
+}
+
+/* 发光 */
+.box2 {
+  margin: 2rem;
+  border: 1px solid #ff0000;
+  /* 只有z轴值就是外发光 */
+  box-shadow: #ff0000 0px 0px 0rem;
+  transition: box-shadow 1s;
+}
+
+.box2:hover {
+  box-shadow: #ff0000 0px 0px 1rem;
+}
+
+/* 文字阴影 */
+.box3 {
+  padding: 1rem;
+  /* 
+    text-shadow是字符的阴影效果
+    参数的数量和语义都和盒模型的阴影一致
+  */
+  text-shadow: #ff00ff 0.2rem 0.2rem 0px;
+}
+
+.box4 {
+  padding: 1rem;
+  text-shadow: #00ffff 0px 0px 0.1rem;
+}

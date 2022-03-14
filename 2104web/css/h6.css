@@ -1,0 +1,42 @@
+/* 基本样式 */
+.mybox {
+  margin: 0.5rem;
+  border: 1px solid #ff0000;
+}
+
+/* 布局一 */
+.flex1 {
+  /* 
+  display:flex;
+  表示当前元素启用压力盒子效果（一般是用于布局效果）
+  效果是强制将本元素里面的一级子元素压迫再一行上！！！！
+  */
+  display: flex;
+}
+
+/* 布局2 */
+.flex2 {
+  display: flex;
+  /*
+    justify-content是压力布局的水平对齐方式 
+    space-between表示分散对齐
+    多余的空间会平均分配
+  */
+  justify-content: space-between;
+}
+
+.flex3 {
+  display: flex;
+  /* space-around表示多余的空间会平均分配到每一个子元素两侧  */
+  /* space-evenly表示空白完全的平均分配 */
+  justify-content: space-around;
+}
+
+.flex4 {
+  display: flex;
+  /* 
+    元素整体靠齐方式，center就是全部在中间
+    flex-start是靠左（默认值）,flex-end是靠右
+  */
+  justify-content: flex-end;
+}

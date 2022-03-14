@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阴影和发光</title>
+
+  <link rel="stylesheet" href="css/h5.css">
+</head>
+
+<body>
+
+  <div class="box1">阴影效果</div>
+
+  <div class="box2">发光效果</div>
+
+  <div class="box3">文字阴影效果</div>
+
+  <div class="box4">文字发光效果</div>
+
+  <hr>
+  <h1>表单元素（可输入或者可选择的元素）</h1>
+  <!-- 
+    input就是表单元素 type是类型，text就是文本框（默认值）
+    placeholder是没有输入信息时候的提示文本
+  -->
+  <input type="text" placeholder="这是一个文本框">
+  <input type="password" placeholder="密码框">
+  <input type="number" placeholder="数字输入框">
+  <input type="date" placeholder="请选择日期">
+
+  <!-- 
+    label可以将里面的内容和表单元素关联
+    点击内容和点击元素通道效果
+  -->
+  <label>
+    <!-- checkbox是复选框 -->
+    <input type="checkbox">记住我
+  </label>
+
+  <input type="checkbox">没有label效果
+
+  <div>
+    <!-- 
+      radio是互斥按钮，但是需要name相同才会构成一组互斥效果
+      checked属性存在就会默认成选中状态
+    -->
+    性别：
+    <label>
+      <input type="radio" name="sex">男
+    </label>
+    <label>
+      <input type="radio" name="sex">女
+    </label>
+    <label>
+      <input type="radio" name="sex" checked>保密
+    </label>
+  </div>
+
+  <!-- 
+    select是下拉列表，option是下拉列表的选项，需要两者搭配使用
+    option的selected表示默认选中状态
+  -->
+  <select>
+    <option value="1">湖南</option>
+    <option value="2" selected>湖北</option>
+    <option value="3">广东</option>
+  </select>
+  <!-- 
+    cols是单行最大字符属性（看起来像控制宽度）
+    rows是默认显示多少行（看起来像控制高度）
+  -->
+  <textarea cols="80" rows="10" placeholder="多行文本"></textarea>
+
+</body>
+
+</html>

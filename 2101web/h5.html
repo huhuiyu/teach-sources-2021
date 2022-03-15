@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阴影和外发光</title>
+
+  <link rel="stylesheet" href="css/h5.css">
+
+</head>
+
+<body>
+
+  <div class="box1">阴影效果</div>
+
+  <div class="box2">发光效果</div>
+
+  <div class="box3">文字阴影效果</div>
+
+  <div class="box4">文字发光效果</div>
+
+  <hr>
+
+  <!-- 表单元素，就是可以输入和选择项的页面元素,type是元素的类型-->
+  <input type="text" placeholder="表单元素提示文本">
+  <input type="password" placeholder="密码框">
+  <input type="number" placeholder="数字">
+  <input type="date">
+
+  <!-- 复选框 -->
+  <input type="checkbox">电影
+  <!-- 
+    label标记可以将表单元素和其它内容合在一起
+    点击任意内容等同于点击表单元素
+  -->
+  <label>
+    <input type="checkbox">音乐
+  </label>
+
+  <div>
+    <!-- radio是互斥按钮，相同name属性的为一组 -->
+    性别：
+    <label>
+      <input type="radio" name="sex">男生
+    </label>
+
+    <label>
+      <input type="radio" name="sex">女生
+    </label>
+
+    <label>
+      <input type="radio" name="sex" checked>保密
+    </label>
+
+  </div>
+
+  <textarea cols="80" rows="5"></textarea>
+
+  <!-- 
+    select下拉选单，option是下拉选择项
+  -->
+  <select>
+
+    <option value="1">湖南</option>
+    <option value="2" selected>湖北</option>
+    <option value="3">广东</option>
+
+  </select>
+
+
+
+</body>
+
+</html>

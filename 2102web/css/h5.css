@@ -1,0 +1,35 @@
+/* 阴影效果 */
+.box1 {
+  margin: 2rem;
+  border: 1px solid #999;
+  /* 
+    box-shadow是盒模型阴影效果
+    参数1是阴影的颜色，参数2是x轴距离，参数3是y轴距离，
+    参数4是z轴距离(其实就是发光)，一般来说发光和阴影不会同时套用
+  */
+  box-shadow: #999 0.6rem 0.4rem 0px;
+}
+
+.box2 {
+  margin: 2rem;
+  box-shadow: #ff0000 0px 0px 0rem;
+  transition: box-shadow 0.5s;
+}
+
+.box2:hover {
+  box-shadow: #ff0000 0px 0px 1rem;
+}
+
+/* 文字效果 */
+.box3 {
+  margin: 1rem;
+  /* 
+    文字阴影的参数和盒模型阴影的数量语义一样 
+  */
+  text-shadow: #999 0.6rem 0.6rem 0px;
+}
+
+.box4 {
+  margin: 1rem;
+  text-shadow: #ff0000 0px 0px 1rem;
+}

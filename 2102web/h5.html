@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阴影和发光</title>
+
+  <link rel="stylesheet" href="css/h5.css">
+</head>
+
+<body>
+
+  <div class="box1">阴影效果</div>
+
+  <div class="box2">发光效果</div>
+
+  <div class="box3">文字阴影效果</div>
+
+  <div class="box4">文字发光效果</div>
+
+  <hr>
+  <!-- 表单元素，可以收集和输入信息类型的html元素 -->
+  <input type="text" placeholder="这个是输入的提示信息">
+  <!-- type是元素类型，placeholder是输入提示 -->
+  <input type="password" placeholder="密码框">
+  <input type="number">
+  <input type="date">
+
+  <!-- 复选框 -->
+  <input type="checkbox">点了文字没用
+
+  <!-- label标记可以将里面的表单元素和其它内容变成一个整体
+    不论点击什么内容都可以触发表单元素的动作
+  -->
+  <label>
+    <input type="checkbox">电影
+  </label>
+
+  <!-- 单选按钮 -->
+  <div>
+    性别：
+    <label>
+      <input type="radio" name="sex">男神
+    </label>
+
+    <label>
+      <input type="radio" name="sex">女神
+    </label>
+
+    <label>
+      <input type="radio" name="sex" checked>保密
+    </label>
+    <!-- radio只有name相同为一组，才有互斥效果 -->
+
+  </div>
+
+  <!-- 
+    select下拉列表,option是下拉选择项
+    selected表示默认选中项
+  -->
+  <select>
+
+    <option value="1">湖南</option>
+    <option value="2" selected>湖北</option>
+    <option value="3">广西</option>
+
+  </select>
+
+  <textarea cols="80" rows="5"></textarea>
+
+
+
+</body>
+
+</html>

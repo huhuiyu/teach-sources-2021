@@ -1,0 +1,24 @@
+/* 基本样式 */
+.mybox {
+  border: 1px solid #ff0000;
+  margin: 1rem;
+}
+
+/* 压力盒子一 */
+.flex1 {
+  /* 
+  display: flex;将显示默认切换为压力盒子
+  效果是它里面第一级的子元素
+  强制压迫到一行上显示
+  */
+  display: flex;
+}
+
+.flex2 {
+  display: flex;
+  /* 
+  justify-content是一级子元素水平排列方式
+  space-between是分散对齐
+  */
+  justify-content: space-between;
+}

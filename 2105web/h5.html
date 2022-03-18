@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阴影和外发光,表单元素</title>
+
+  <link rel="stylesheet" href="css/h5.css">
+</head>
+
+<body>
+
+  <div class="box1">阴影效果</div>
+
+  <div class="box2">外发光效果</div>
+
+  <div class="box3">文字阴影效果</div>
+
+  <div class="box4">文字发光</div>
+
+  <hr>
+
+  <!-- 
+    表单元素，简单的理解可以输入收集信息的元素
+    type属性是元素类型,placeholder是没有输入信息时候的提示
+  -->
+  <input type="text" placeholder="输入框提示信息">
+  <input type="password" placeholder="密码框">
+  <input type="number">
+  <input type="date">
+
+  <!-- 复选框 -->
+  <input type="checkbox">点字没有用
+
+  <!-- label的作用是将里面表单元素和其它内容变成一个整体
+    点击任意内容都和点击表单元素一样的效果
+  -->
+  <label>
+    <input type="checkbox">电影
+  </label>
+
+  <div>
+    性别：
+
+    <label>
+      <input type="radio" name="xb">男生
+    </label>
+
+    <label>
+      <input type="radio" name="xb" checked>女生
+    </label>
+
+    <label>
+      <input type="radio" name="xb">保密
+    </label>
+    <!-- 
+      radio要有互斥效果，是name相同为一组，checked属性表示默认选中
+    -->
+  </div>
+
+  <!-- 
+    select：下拉列表，option：下拉的选项
+    selected属性是默认选中
+  -->
+  <select>
+
+    <option value="1">汉族</option>
+    <option value="2">苗族</option>
+    <option value="3" selected>土家族</option>
+
+  </select>
+
+  <textarea cols="80" rows="5"></textarea>
+
+</body>
+
+</html>

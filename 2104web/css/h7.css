@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+}
+/* 
+  容器满屏
+*/
+.container {
+  /* 
+    box-sizing: border-box;表示盒模型边框大小会被计算到宽高里面
+    比如宽度是100px, 边框是1px，那么盒子的总宽会维持在100px
+    而盒模型的默认是100px加边框宽度
+  */
+  box-sizing: border-box;
+  border: 10px solid #ff0000;
+  /* vh表示浏览器内容可是区域的高度百分比 */
+  /* vw表示浏览器内容可是区域的宽度百分比 */
+  height: 100vh;
+  width: 100vw;
+  /* 固定子元素到中间 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div {
+  border: 1px #ff0000 solid;
+  padding: 1rem;
+  border-radius: 1rem;
+}

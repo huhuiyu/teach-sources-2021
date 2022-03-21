@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+}
+
+/* 上方的左右布局 */
+.top-box {
+  /* 布局，左右分散，垂直居中*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* 背景颜色 */
+  background-color: #eff4fa;
+  /* 边距 */
+  padding: 0.7rem 1.2rem;
+  /* 用下边框模拟线条 border-方向可以单独设置单一方向的边框*/
+  border-bottom: 1px solid #d6dfea;
+}
+
+/* 上右的基本样式 */
+.top-right-box {
+  color: #b6b6b6;
+  font-size: 0.7rem;
+}
+
+/* 标记的样式 */
+a {
+  text-decoration: none;
+  color: #1d5494;
+  font-size: 0.7rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}

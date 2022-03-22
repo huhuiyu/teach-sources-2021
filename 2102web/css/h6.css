@@ -21,3 +21,60 @@
   */
   justify-content: space-between;
 }
+
+.flex3 {
+  display: flex;
+  /* 
+  space-around，多余的空白区域平均分配给每一个元素的两侧
+  */
+  justify-content: space-around;
+}
+
+.flex4 {
+  display: flex;
+  /* center：居中,flex-start:靠左（默认）,flex-end：靠右 */
+  justify-content: center;
+}
+
+.flex5 {
+  display: flex;
+  /* 
+  align-items是交叉轴（垂直）对齐方式
+  center:居中,flex-start:靠上,flex-end:靠下
+  */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* 压力值 */
+.flex6 {
+  display: flex;
+}
+
+.flex6 > div:first-child {
+  flex: 3;
+}
+
+/* 
+  选择器a > 选择器b 表示匹配选择器a里面第一级选择器b
+  例如：
+  .a > p 表示class为a的元素里面第一级p元素
+  :first-child 选择器对应的元素中的第一个
+  :last-child 选择器对应的元素中的最后一个
+  :nth-child(n) 选择器对应的元素中的第n个
+
+  .flex6 > div:nth-child(2)表示
+  class为flex6的元素里面的第一级div的第二个
+*/
+.flex6 > div:last-child {
+  flex: 2;
+}
+
+.flex6 > div:nth-child(2) {
+  /* 
+    flex是压力盒子布局的子元素的样式
+    值越大分配的空间就越大
+    有压力值就没有水平对齐（空间都会分配满）
+  */
+  flex: 1;
+}

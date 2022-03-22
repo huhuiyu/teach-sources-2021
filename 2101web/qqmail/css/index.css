@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+}
+/*
+上方的logo图片和菜单，左右布局，垂直居中
+*/
+.top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eff4fa;
+  padding: 0.6rem 1.8rem;
+  /* border-方向表示单独设置该方向的边框 */
+  border-bottom: 1px solid #d6dfea;
+
+  color: #b6b6b6;
+  font-size: 0.7rem;
+}
+
+/* 超链接样式 */
+a {
+  color: #225592;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}

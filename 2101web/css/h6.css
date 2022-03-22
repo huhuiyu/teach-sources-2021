@@ -19,3 +19,73 @@
   /* justify-content水平对齐方式,space-between是分散对齐 */
   justify-content: space-between;
 }
+
+.flex3 {
+  display: flex;
+  /* 
+    space-around是将空余的区域平均分配给每一个元素两侧
+  */
+  justify-content: space-around;
+}
+
+.flex4 {
+  display: flex;
+  /* center：居中，flex-start:默认靠左，flex-end：靠右 */
+  justify-content: center;
+}
+
+.flex5 {
+  display: flex;
+  justify-content: space-evenly;
+  /*
+  align-items:交叉轴（垂直）对齐
+  center：居中,flex-start:靠上，flex-end:靠下
+  */
+  align-items: center;
+}
+
+/* 压力值 */
+.flex6 {
+  display: flex;
+}
+
+/* 
+  > 选择器
+  格式
+  选择器a > 选择器b
+  表示选择器a里面第一级的选择器b
+  例如： .a > span
+  表示 class为a的元素里面第一级span
+
+  选择器:first-child表示匹配选择器的元素中的第一个
+  :last-child是最后一个
+  :nth-child(n)是第n个
+
+  .flex6 > div:first-child
+  表示class为flex6的元素里面第一级的div的第一个
+*/
+.flex6 > div:first-child {
+  flex: 2;
+}
+
+.flex6 > div:last-child {
+  flex: 4;
+}
+
+.flex6 > div:nth-child(2) {
+  /* 
+  flex必须是压力布局的一级子元素才有的样式
+  压力值决定了元素占用的空间大小，值越大分配空间比例越大
+  有压力值就没有剩余的空白空间，所以也就没有水平对齐
+  */
+  flex: 1;
+}
+
+.flex7 {
+  display: flex;
+}
+
+.flex7 > div:nth-child(2) {
+  /* 如果只有一个元素带有压力值，那么所有的空间都会分配给它，压迫住其它元素 */
+  flex: 1;
+}

@@ -22,3 +22,70 @@
   */
   justify-content: space-between;
 }
+
+.flex3 {
+  display: flex;
+  /* 
+  space-around是将空白区域平均分配到每一个元素的两侧
+  */
+  justify-content: space-around;
+}
+
+.flex4 {
+  display: flex;
+  /* 
+  center居中，flex-start:左,flex-end:右
+  */
+  justify-content: center;
+}
+
+.flex5 {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* 压力值 */
+.flex6 {
+  display: flex;
+}
+
+.flex6 > div:first-child {
+  flex: 3;
+}
+
+.flex6 > div:last-child {
+  flex: 2;
+}
+
+/* 
+  选择器a > 选择器b 表示选择器a里面第一级选择器b
+  例如：  .abc > p
+  意思是 class为abc的元素里面第一级的p（段落）元素 
+  选择器:first-child  表示匹配选择器的元素中的第一个
+  选择器:last-child 表示匹配选择器的元素中的最后一个
+  选择器:nth-child(n) 表示匹配选择器的元素中的第n个
+  .flex6 > div:nth-child(2) 表示
+  class为flex6的元素里面的第一级div中的第二个
+*/
+
+.flex6 > div:nth-child(2) {
+  /* 
+    flex是压力盒子的子元素特有样式
+    值的大小决定元素分配空间的大小
+    只要有元素设置了flex值，那么就不会再有空白间距，也就是没有水平对齐
+  */
+  flex: 1;
+}
+
+.flex7 {
+  display: flex;
+}
+.flex7 > div:nth-child(2) {
+  /* 
+  如果只有一个元素带有flex值，那么值不论是多大
+  该元素都会占满所有剩余空间，将其它元素压迫住
+  */
+  flex: 1;
+}

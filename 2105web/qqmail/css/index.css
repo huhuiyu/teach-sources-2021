@@ -1,0 +1,30 @@
+body {
+  margin: 0px;
+}
+/* 
+最上方是左右布局，垂直居中
+*/
+.top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eff4fa;
+  padding: 0.6rem 2rem;
+  /* border-方向，单一方向的边框,top,right,bottom,left */
+  border-bottom: 1px solid #d6dfea;
+
+  color: #b6b6b6;
+  font-size: 0.7rem;
+}
+
+a {
+  color: #1d5494;
+  font-size: 0.7rem;
+  /* 去掉(文字修饰效果)下划线 */
+  text-decoration: none;
+}
+
+a:hover {
+  /* 下划线 */
+  text-decoration: underline;
+}

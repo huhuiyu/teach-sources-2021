@@ -33,3 +33,71 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* 下方版权和超链接 */
+.bottom-box {
+  /* 固定到左下 */
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+  background-color: #eff4fa;
+  border-top: 1px solid #d6dfea;
+  width: 100vw;
+  text-align: center;
+  padding: 1rem 0px;
+
+  color: #868686;
+  font-size: 0.7rem;
+}
+
+/* 
+  .bottom-box > div:last-child a 表示
+  class为bottom-box的元素里面第一级的div的最后一个里面的a标记
+*/
+.bottom-box > div:last-child a {
+  color: #868686;
+}
+
+.bottom-box > div:last-child {
+  margin-top: 0.5rem;
+}
+
+/* 中间区域布局，左右64分 */
+.center-box {
+  display: flex;
+  padding: 5rem 0px;
+}
+
+/* 中间左边区域 */
+.center-box-left {
+  flex: 6;
+  /* 图片靠右边 */
+  display: flex;
+  justify-content: flex-end;
+
+  padding-right: 5rem;
+}
+
+/* 中间右边区域 */
+.center-box-right {
+  flex: 4;
+  display: flex;
+}
+
+/* 表单容器 */
+.form-box {
+  border: 1px solid #a0b1c4;
+  border-radius: 0.3rem;
+}
+/* 第一行，左右对等均分 */
+.form-line1 {
+  display: flex;
+  border-bottom: 1px solid #a0b1c4;
+  padding: 1rem;
+  background-color: #f9fbfe;
+}
+.form-line1 > div {
+  flex: 1;
+  text-align: center;
+}

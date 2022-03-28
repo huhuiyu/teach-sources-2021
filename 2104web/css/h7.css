@@ -27,3 +27,48 @@ body {
   padding: 1rem;
   border-radius: 1rem;
 }
+
+/* 固定位置 */
+.fixed-box {
+  /* 
+  position: fixed;
+  是固定位置定位模式，不受任何页面大小和滚动的影响，一定会在指定位置出现
+  固定定位会丢失盒模型宽度占满的特性
+  */
+  position: fixed;
+  /* 位置通过top,right,bottom,left四个样式控制 */
+  right: 1rem;
+  top: 40vh;
+  border: 1px solid #ff00ff;
+}
+
+/* 模拟特殊效果的输入框 */
+.myinput {
+  /* */
+  border: 1px solid #96a5b4;
+  padding: 0.5rem;
+  border-radius: 2px;
+  margin: 1rem;
+}
+
+/* 
+去掉文本框的边框
+重点！！！！！！注意事项！！！！！！
+空格也是css选择器
+选择器a 选择器b 表示选择器a里面的选择器b（不限层级）
+例如 .myinput input表示class为myinput的元素里面所有input元素
+*/
+.myinput input {
+  border-width: 0px;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+/* 
+  焦点样式
+  :focus-within表示当元素或者它里面的元素拥有焦点时的样式
+*/
+.myinput:focus-within {
+  /* 单独设置边框颜色 */
+  border-color: #4892e7;
+}

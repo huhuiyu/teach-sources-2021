@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+}
+/* 全屏大小盒子 */
+.mybox {
+  border: 5px solid #ff0000;
+  /* 
+  100vw是浏览视图区域宽度百分比
+  100vh是浏览视图区域高度百分比
+  */
+  width: 100vw;
+  height: 100vh;
+
+  /* 
+  box-sizing: border-box;表示border的宽度要计算到总宽度里面
+  */
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 模拟输入框的特效 */
+.input-box {
+  border: 1px solid #96a5b4;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.input-box > input {
+  /* 去掉输入框的边框 */
+  outline: none;
+  border-width: 0px;
+  font-size: 1.2rem;
+}
+
+/* 
+  选择器:focus-within
+  表示选择器对应的元素或者它里面的任意元素
+  拥有焦点时的样式
+*/
+.input-box:focus-within {
+  border-color: #4892e7;
+}
+
+/* 固定位置 */
+.fixed-box {
+  /* 
+    position: fixed;固定位置，不受屏幕滚动和大小影响
+    具体的位置由top,right,bottom,left来控制
+    固定定位元素会脱离文档流存在，所以宽度会丢失，变成内容的总宽度
+    alt + shift + F
+  */
+  position: fixed;
+  top: 40vh;
+  right: 2rem;
+}

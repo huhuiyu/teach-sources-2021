@@ -27,3 +27,28 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* 下方版权和备案信息 */
+.bottom-box {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+
+  background-color: #eff4fa;
+  border-top: 1px solid #d6dfea;
+
+  padding: 0.5rem;
+  width: 100vw;
+  text-align: center;
+
+  color: #868686;
+  font-size: 0.7rem;
+}
+
+/* 最后一样样式 */
+.last-line {
+  padding-top: 0.5rem;
+}
+.last-line a {
+  color: #868686;
+}

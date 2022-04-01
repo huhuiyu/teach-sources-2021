@@ -28,3 +28,30 @@ a:hover {
   /* 下划线 */
   text-decoration: underline;
 }
+
+/* 下方版权所有和备案号 */
+.bottom-box {
+  /* 固定定位会让盒模型丢失宽度占满特性，宽度变成内容总宽度 */
+  position: fixed;
+  width: 100vw;
+  /* shift + alt + F */
+  left: 0px;
+  bottom: 0px;
+  padding: 0.6rem;
+
+  background-color: #eff4fa;
+  border-top: 1px solid #d6dfea;
+  text-align: center;
+
+  font-size: 0.7rem;
+  color: #868686;
+}
+
+/* 最后一行的样式 */
+.last-line {
+  padding-top: 0.3rem;
+}
+
+.last-line a {
+  color: #868686;
+}

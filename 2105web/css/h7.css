@@ -1,0 +1,54 @@
+body {
+  margin: 0px;
+}
+
+/* 全屏大小和居中 */
+.mybox {
+  border: 10px solid #ff0000;
+  /* 
+    vw是视窗区域宽度的百分比
+    vh是视窗区域高度的百分比
+  */
+  width: 100vw;
+  height: 100vh;
+  /* 将盒模型的边框计算到总宽高里面 */
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 模板特殊的输入框效果 */
+.input-box {
+  border: 1px solid #96a5b4;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+}
+
+.input-box > input {
+  /* 去掉输入框的边框 */
+  border-width: 0px;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+/* 
+  选择器:focus-within 表示
+  选择器对应的元素或者它里面的元素拥有焦点时的样式
+  一般是输入状态，选中或者点击状态的元素会得到焦点
+*/
+.input-box:focus-within {
+  border-color: #4892e7;
+}
+
+/* 固定位置定位 */
+.fixed-box {
+  /* 
+    固定定位不受页面滚动和大小的影响，一定会出现在指定的位置
+    位置是由top,right,bottom,left控制
+  */
+  position: fixed;
+  top: 40vh;
+  right: 2rem;
+}

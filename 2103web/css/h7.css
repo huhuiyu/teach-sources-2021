@@ -1,0 +1,54 @@
+body {
+  margin: 0px;
+}
+
+.mybox {
+  border: 10px solid #ff0000;
+
+  /* 
+    vw是视窗区域大小宽度的百分比
+    vh是视窗区域大小高度的百分比
+    box-sizing: border-box;简单的说就是border被计算到总宽度里面
+  */
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 模拟特殊效果输入框 */
+.myinput {
+  border: 1px solid #96a5b4;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+
+.myinput > input {
+  /* 去掉输入框的边框 */
+  outline: none;
+  border-width: 0px;
+  font-size: 1.2rem;
+}
+/* 
+  选择器:focus-within表示
+  当选择器对应的元素或者它里面的任意元素拥有焦点的时候的样式
+  焦点一般表现为可输入，选中，点击后的元素
+*/
+.myinput:focus-within {
+  border-color: #4892e7;
+}
+
+/* 固定位置 */
+.fixed-box {
+  /* 
+  position: fixed;固定位置定位
+  不论屏幕大小和滚动位置变化都不会影响定位
+  位置由top,right,bottom,left决定
+  */
+  position: fixed;
+  top: 40vh;
+  right: 2rem;
+}

@@ -19,3 +19,37 @@ a {
   color: #1d5494;
   font-size: 0.7rem;
 }
+
+/* 下方是版权所有和备案信息 */
+.bottom-box {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  /* 固定位置会丢失盒模型占满容器宽度的特性，会变成内容的宽度 */
+  width: 100vw;
+
+  padding: 0.5rem;
+  background-color: #eff4fa;
+  border-top: 1px solid #d6dfea;
+
+  text-align: center;
+
+  color: #868686;
+  font-size: 0.7rem;
+}
+
+/* 最后一行的样式 */
+.last-line {
+  padding-top: 0.5rem;
+}
+
+.last-line > a {
+  color: #868686;
+}
+
+/* 中间区域是左右不对等（6比4分） */
+.center-box {
+  display: flex;
+
+  padding: 5rem 0px;
+}

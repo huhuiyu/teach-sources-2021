@@ -96,8 +96,74 @@ a:hover {
   border-bottom: 1px solid #a0b1c4;
   padding: 1rem;
   background-color: #f9fbfe;
+  /* 上方圆角 */
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
 }
 .form-line1 > div {
   flex: 1;
   text-align: center;
+}
+
+/* 输入框模拟 */
+.input-box {
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #96a5b4;
+  border-radius: 2px;
+}
+
+.input-box > input {
+  border-width: 0px;
+  outline: none;
+  font-size: 1.2rem;
+  width: 15rem;
+}
+
+.input-box:focus-within {
+  border-color: #4892e7;
+}
+
+/* 复选框 */
+.check-box {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.mybutton {
+  background-color: #5a98de;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+
+.mybutton:hover {
+  background-color: #6ba9ef;
+  cursor: pointer;
+}
+
+/* 扫码 */
+.saoma {
+  color: #225592;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+/* 表单最后一行链接 */
+.zhanghao {
+  margin: 3rem 1rem 1rem 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.zhanghao > a {
+  color: #225592;
 }

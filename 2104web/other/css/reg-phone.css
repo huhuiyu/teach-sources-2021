@@ -1,0 +1,47 @@
+/* 标题 */
+.title {
+  padding: 0.5rem;
+}
+/* 图片自动适应容器 */
+.myimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 图片的容器 */
+.img-box {
+  margin: 2rem 6rem;
+}
+
+/* 输入框 */
+.input-box {
+  margin: 1rem 1.5rem;
+}
+
+.input-box > input {
+  border: 1px;
+  outline: none;
+}
+
+/* 
+处理文字对齐需要将文字的宽度调成一致
+*/
+.input-box > span {
+  /* 
+    span是行内元素，无法直接设置盒模型相关的样式 
+    display: inline-block;可以保留行内元素的特征的情况下
+    又可以设置盒模型相关的样式
+  */
+  display: inline-block;
+  width: 6rem;
+}
+
+/* 提交按钮 */
+.submit {
+  background-color: #1989fa;
+  color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}

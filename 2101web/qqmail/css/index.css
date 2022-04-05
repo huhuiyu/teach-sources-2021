@@ -52,3 +52,84 @@ a:hover {
 .last-line a {
   color: #868686;
 }
+
+/* 中间区域布局 */
+.center-box {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+/* 中间左边区域 */
+.center-left-box {
+  flex: 6;
+  /* 左边要靠右 */
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+/* 中间右边区域 */
+.center-right-box {
+  flex: 4;
+  display: flex;
+}
+
+/* 左边表单的边框效果 */
+.form-box {
+  border: 1px solid #a0b1c4;
+  border-radius: 5px;
+}
+
+/* 第一行样式 */
+.line1 {
+  display: flex;
+  background-color: #f9fbfe;
+  padding: 1rem;
+  border-bottom: 1px solid #a0b1c4;
+  justify-content: space-around;
+  /* 单独设置角落圆角 */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* 输入框特效 */
+.input-box {
+  border: 1px solid #96a5b4;
+  padding: 0.5rem;
+  margin: 1rem 1.5rem;
+}
+
+.input-box > input {
+  outline: none;
+  border-width: 0px;
+  width: 15rem;
+}
+
+.input-box:focus-within {
+  border-color: #4892e7;
+}
+
+/* 自动登录 */
+.auto-box {
+  padding: 0.5rem;
+  margin: 1rem 1.5rem;
+  font-size: 0.8rem;
+}
+
+/* 模拟按钮 */
+.btn {
+  background-color: #5a98de;
+  border-radius: 2px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+
+  padding: 0.5rem;
+  margin: 1rem 1.5rem;
+}
+
+.btn:hover {
+  background-color: #6ba9ef;
+  cursor: pointer;
+}

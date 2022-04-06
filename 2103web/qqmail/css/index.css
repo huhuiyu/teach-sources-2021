@@ -50,6 +50,88 @@ a {
 /* 中间区域是左右不对等（6比4分） */
 .center-box {
   display: flex;
-
+  align-items: center;
   padding: 5rem 0px;
+}
+
+.left-box {
+  flex: 6;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+.right-box {
+  flex: 4;
+  display: flex;
+}
+
+/* 表单区域 */
+.form-box {
+  border: 1px solid #a0b1c4;
+  border-radius: 5px;
+}
+
+/* 输入框模拟 */
+.input-box {
+  border: 1px solid #96a5b4;
+  border-radius: 2px;
+  margin: 1rem 1.5rem;
+  padding: 0.5rem;
+}
+.input-box > input {
+  outline: none;
+  border-width: 0px;
+  width: 15rem;
+}
+.input-box:focus-within {
+  border-color: #4892e7;
+}
+
+/* 第一行效果 */
+.line1 {
+  background-color: #f9fbfe;
+  border-bottom: 1px solid #96a5b4;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0px;
+  /* 上方圆角 */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.auto-box {
+  margin: 1rem 1.5rem;
+  padding: 0.5rem;
+}
+
+/* 模拟按钮 */
+.btn {
+  background-color: #5a98de;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+
+  margin: 1rem 1.5rem;
+  padding: 0.5rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #6ba9ef;
+}
+
+.qrcode {
+  margin: 1rem 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.links {
+  margin: 2rem 1.5rem 1rem 1.5rem;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: space-between;
 }

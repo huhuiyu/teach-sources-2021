@@ -1,0 +1,15 @@
+/* 全局通用css样式 */
+body {
+  margin: 0px;
+}
+
+/* 文字对齐 */
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}

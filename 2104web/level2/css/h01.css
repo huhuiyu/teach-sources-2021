@@ -1,0 +1,139 @@
+.box01 {
+  margin: 1rem;
+  background-color: #ff0000;
+  color: #fff;
+  width: 10rem;
+  height: 10rem;
+}
+
+/* 绝对定位（慎用） */
+.box02 {
+  /* 
+  绝对定位也是将元素移动到top,right,left,bottom属性指定的位置
+  和fixed的区别是：fixed不受页面滚动影响
+  */
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+}
+
+.box03 {
+  /* 慎用的原因是绝对定位很难控制位置 */
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  background-color: #0000ff;
+}
+
+.box04 {
+  /* 大的容器div，用于控制里面的绝对定位子元素 */
+  border: 1px solid #ff0000;
+  width: 25rem;
+  height: 25rem;
+  /* 相对定位表示本元素里面的绝对定位元素是相对本元素的！！！ */
+  position: relative;
+}
+
+.box05 {
+  /* 第一个子元素 */
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: #ff00ff;
+}
+
+.box06 {
+  /* 第二个子元素 */
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: #00ffff;
+}
+
+.box07 {
+  /* 第三个子元素 */
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: #ffff00;
+}
+
+.box05:hover,
+.box06:hover,
+.box07:hover {
+  /* 通过z-index大小决定遮罩关系 */
+  z-index: 10;
+}
+
+.texiao {
+  /* 容器 */
+  position: relative;
+  border: 1px solid #ff0000;
+  width: 200px;
+  height: 200px;
+
+  /* overflow是内容超出的处理方式，hidden表示不显示超出内容！ */
+  overflow: hidden;
+}
+
+/* 里面的元素都是占满 */
+.texiao > div {
+  width: 100%;
+  height: 100%;
+}
+
+.texiao > div:last-child {
+  /* 遮罩元素 */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* rgba是带透明的颜色，最后一个参数是不透明度 */
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 默认不要显示，用移动位置的方式完成 */
+  transform: translate(100%, -100%);
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.texiao:hover > div:last-child {
+  transform: translate(0%, 0%);
+}
+
+/* 圆点特效 */
+.yuan-box {
+  margin: 1rem 25rem;
+  border: 1px solid #0000ff;
+  position: relative;
+  width: 15rem;
+  height: 5rem;
+}
+/* 圆 */
+.yuan-box > div:last-child {
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.2rem;
+  background-color: #ff0000;
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

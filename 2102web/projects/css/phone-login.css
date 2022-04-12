@@ -1,0 +1,38 @@
+.line1 {
+  padding: 1rem;
+}
+
+/* 图片自适应 */
+.img-box {
+  margin: 1rem 20vw;
+}
+
+.img-box > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 输入框 */
+.input-box {
+  margin: 1rem 10vw;
+}
+.input-box > input {
+  outline: none;
+  border-width: 0px;
+}
+
+.input-box > span {
+  /* inline-block表示保留行内元素特征
+  且可以设置盒模型 */
+  display: inline-block;
+  width: 5rem;
+}
+
+.btn {
+  background-color: #0000ff;
+  margin: 1rem 10vw;
+  color: #fff;
+  padding: 0.6rem;
+  border-radius: 1.5rem;
+}

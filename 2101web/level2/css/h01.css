@@ -1,0 +1,43 @@
+/* 基本样式 */
+.mybox {
+  margin: 1rem;
+  background-color: #ff0000;
+  color: #fff;
+  width: 10rem;
+  height: 3rem;
+}
+
+.box1 {
+  /* 
+    绝对定位，很少单独使用！！！！
+    因为该元素会脱离文档流的存在移动位置
+    和fixed的区别是：fixed不受屏幕滚动影响，固定位置
+    绝对定位99%的情况都是用于遮罩，否则慎用！！！！
+  */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* 遮罩效果 */
+.box2 {
+  width: 12rem;
+  height: 12rem;
+  border: 1px solid #ff0000;
+  margin: 1rem;
+  /* 
+    相对定位，表示本元素的里面的绝对对位元素的坐标是相对于本元素
+    一般来说绝对定位都是搭配相对定位
+  */
+  position: relative;
+}
+
+.box2 > div:nth-child(1) {
+  height: 5rem;
+  width: 5rem;
+  background-color: #ff00ff;
+  
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}

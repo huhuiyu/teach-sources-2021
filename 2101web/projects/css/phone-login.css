@@ -1,0 +1,40 @@
+.line1 {
+  padding: 1rem;
+}
+
+/* 图片自适应 */
+.img-box {
+  margin: 1rem 20%;
+}
+
+.img-box > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 表单输入部分 */
+.input-box {
+  margin: 0.5rem 5vw;
+}
+
+.input-box > input {
+  outline: none;
+  border-width: 0px;
+}
+
+.input-box > span {
+  /* display: inline-block
+    是让行内元素保留原有特征的情况下支持盒模型样式 */
+  display: inline-block;
+  width: 8rem;
+}
+
+.btn {
+  background-color: #0000ff;
+  color: #fff;
+  text-align: center;
+  padding: 0.6rem;
+  border-radius: 1.5rem;
+  margin: 1rem;
+}

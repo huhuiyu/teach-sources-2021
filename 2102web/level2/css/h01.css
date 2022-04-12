@@ -1,0 +1,19 @@
+/* 基础样式 */
+.mybox {
+  margin: 1rem;
+  background-color: #ff00ff;
+  width: 10rem;
+  height: 3rem;
+}
+
+/* 绝对定位（慎用！！！！） */
+.box1 {
+  /* 
+    绝对定位也是脱离文档流移动位置
+    和fixed的区别，固定定位不受屏幕滚动的影响
+    位置也是top,right,bottom,left控制
+  */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}

@@ -1,3 +1,38 @@
 .title {
   padding: 0.5rem;
 }
+
+/* 图片自适应 */
+.img-box {
+  margin: 1rem 30vw;
+}
+
+.img-box > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 输入框 */
+.input-box {
+  margin: 1rem 2rem;
+}
+
+.input-box > input {
+  outline: none;
+  border-width: 0px;
+}
+
+.input-box > span {
+  /* inline-block是让行内元素支持盒模型样式 */
+  display: inline-block;
+  width: 5rem;
+}
+
+.btn {
+  margin: 1rem 3rem;
+  padding: 0.6rem;
+  background-color: #0000ff;
+  color: #fff;
+  border-radius: 1.5rem;
+}

@@ -1,0 +1,44 @@
+/* 基本样式 */
+.mybox {
+  margin: 1rem;
+  background-color: #ff0000;
+  color: #fff;
+  width: 10rem;
+  height: 3rem;
+}
+
+.box1 {
+  /* 
+    绝对定位也是脱离文档流移动元素到指定位置
+    位置也是由top,right,bottom,left属性控制
+    和fixed固定定位的区别是，固定定位不受页面滚动影响
+  */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* 容器 */
+.box2 {
+  border: 1px solid #ff0000;
+  margin: 1rem;
+  width: 16rem;
+  height: 9rem;
+  /* 
+    position: relative;
+    表示相对定义，意思是本元素里面的绝对定位的子元素
+    的定位计算是相对于本元素
+    99.99%的情况下绝对定位都是搭配容器相对定位！！！！！
+  */
+  position: relative;
+}
+
+.box2 > div:nth-child(1) {
+  background-color: #ff00ff;
+  width: 6rem;
+  height: 4rem;
+
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}

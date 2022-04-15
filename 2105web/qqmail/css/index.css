@@ -60,6 +60,7 @@ a:hover {
 .center-box {
   display: flex;
   align-items: center;
+  margin-top: 3rem;
 }
 
 /* 中间左边 */
@@ -127,7 +128,7 @@ a:hover {
   margin: 1rem 1.5rem;
   padding: 0.5rem;
 }
-.btn:hover{
+.btn:hover {
   cursor: pointer;
   background-color: #6ba9ef;
 }

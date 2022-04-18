@@ -1,0 +1,67 @@
+/* 整体容器 */
+.container {
+  /* 全屏大小 */
+  width: 100vw;
+  height: 100vh;
+  /* 垂直压力布局 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 中间区域占满 */
+.container > div:nth-child(2) {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* 上方布局 */
+.top-box {
+  background-color: #dcdcdc;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+
+  display: flex;
+}
+/* 微信的字移动到中间 */
+.top-box > div:first-child {
+  flex: 1;
+  text-align: center;
+}
+
+/* 图标分开距离 */
+.top-box i {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/* 下方布局，四个环绕分散对齐 */
+.bottom-box {
+  background-color: #dcdcdc;
+  padding: 0.5rem 0px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* 图标大小 */
+.bottom-box .iconfont {
+  font-size: 1.8rem;
+}
+/* 激活的颜色 */
+.active {
+  color: #00bb00;
+}
+
+/* 中间区域 */
+.center-box {
+  /* 内容超出是出现竖向滚动 */
+  overflow-y: auto;
+  background-color: #dcdcdc;
+}
+
+/* 聊天信息 */
+.chat-info-box {
+  background-color: #fff;
+  margin-bottom: 0.1rem;
+}

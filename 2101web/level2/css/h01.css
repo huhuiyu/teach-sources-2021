@@ -36,8 +36,89 @@
   height: 5rem;
   width: 5rem;
   background-color: #ff00ff;
-  
+
   position: absolute;
   top: 1rem;
   left: 1rem;
+}
+
+.box2 > div:nth-child(2) {
+  height: 5rem;
+  width: 5rem;
+  background-color: #00ffff;
+
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.box2 > div:nth-child(3) {
+  height: 5rem;
+  width: 5rem;
+  background-color: #ffff00;
+
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.box2 > div:hover {
+  /* z-index决定遮挡的次序，值越大的元素越靠前 */
+  z-index: 10;
+}
+
+/* 全遮罩效果 */
+.box3 {
+  border: 1px solid #ff0000;
+  width: 16rem;
+  height: 9rem;
+
+  position: relative;
+  /* 内容超出时的滚动设置，hidden就是不要显示 */
+  overflow: hidden;
+}
+
+/* 遮罩层 */
+.box3 > div:last-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+
+  transform: translate(-100%, -100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.box3:hover > div:last-child {
+  transform: translate(0%, 0%);
+}
+
+/* 圆点效果 */
+.box4 {
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid #ffff00;
+  margin: 4rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.yuan {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  transform: translate(40%, -40%);
 }

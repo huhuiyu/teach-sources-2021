@@ -17,3 +17,107 @@
   top: 0px;
   right: 0px;
 }
+
+/* 绝对定义的约束 */
+.box2 {
+  margin: 1rem;
+  border: 1px solid #ff0000;
+  width: 16rem;
+  height: 9rem;
+  /* 
+    relative是相对定位，表示本元素里面的带有绝对定位的子元素
+    的定位计算是相对于本元素！！！！99%的时候，绝对定位都是和相对搭配
+  */
+  position: relative;
+}
+
+.box2 > div:nth-child(1) {
+  width: 6rem;
+  height: 5rem;
+  background-color: #ff00ff;
+
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.box2 > div:nth-child(2) {
+  width: 6rem;
+  height: 5rem;
+  background-color: #ffff00;
+
+  position: absolute;
+  top: 2.5rem;
+  left: 2rem;
+}
+
+.box2 > div:nth-child(3) {
+  width: 6rem;
+  height: 5rem;
+  background-color: #00ffff;
+
+  position: absolute;
+  top: 3.5rem;
+  left: 3rem;
+}
+
+.box2 > div:hover {
+  /* z-index决定了遮挡的次序，值越大的元素越靠前 */
+  z-index: 10;
+}
+
+.box3 {
+  margin: 3rem;
+  border: 1px solid #ff0000;
+  width: 10rem;
+  height: 6rem;
+  position: relative;
+  /* overflow是内容超出范围时要不要出滚动条,hidden表示超出的部分隐藏  */
+  overflow: hidden;
+}
+/* 遮罩层 */
+.box3 > div:last-child {
+  /* rgba三原色带透明度 */
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: translate(100%, -100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.box3:hover > div:last-child {
+  transform: translate(0%, 0%);
+}
+
+.box4 {
+  height: 4rem;
+  width: 10rem;
+  border: 1px solid #ffff00;
+  margin: 1rem;
+  position: relative;
+}
+
+.yuan {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  transform: translate(40%, -40%);
+}

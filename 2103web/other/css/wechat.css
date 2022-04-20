@@ -1,0 +1,27 @@
+/* 整体上中下布局 */
+.container {
+  display: flex;
+  /* 垂直布局 */
+  flex-direction: column;
+  /* 全屏大小 */
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 中间区域填满，压迫住上下的区域 */
+.center-box {
+  flex: 1;
+}
+
+/* 上方布局和样式 */
+.top-box {
+  padding: 1rem;
+  background-color: #dcdcdc;
+  font-weight: bold;
+  display: flex;
+}
+
+.top-box > div:first-child {
+  flex: 1;
+  text-align: center;
+}

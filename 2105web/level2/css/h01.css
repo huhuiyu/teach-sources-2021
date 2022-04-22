@@ -42,3 +42,85 @@
   top: 1rem;
   left: 1rem;
 }
+
+.box2 > div:nth-child(2) {
+  background-color: #ffff00;
+  width: 6rem;
+  height: 4rem;
+
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.box2 > div:nth-child(3) {
+  background-color: #00ffff;
+  width: 6rem;
+  height: 4rem;
+
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.box2 > div:hover {
+  z-index: 20;
+}
+
+.box3 {
+  border: 1px solid #00ffff;
+  width: 16rem;
+  height: 9rem;
+  margin: 1rem;
+  /* 绝对定位都要搭配相对定位使用 */
+  position: relative;
+  /* overflow是内容超出处理， hidden是不要显示*/
+  overflow: hidden;
+}
+
+/* 遮罩 */
+.zz {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* rgba 是带透明度的颜色,红绿蓝透明 */
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+
+  width: 100%;
+  height: 100%;
+
+  transform: translate(100%, -100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.box3:hover .zz {
+  transform: translate(0%, 0%);
+}
+
+.box4 {
+  border: 1px solid #0000ff;
+  width: 10rem;
+  height: 4rem;
+  margin: 4rem;
+  position: relative;
+}
+
+.yuan {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 2rem;
+  height: 2rem;
+
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translate(40%, -40%);
+}

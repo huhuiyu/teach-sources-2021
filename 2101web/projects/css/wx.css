@@ -1,0 +1,63 @@
+/* 整体布局 */
+.main {
+  display: flex;
+  /* 竖向的布局 */
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* 中间给压力值就可以填满 */
+.center-box {
+  flex: 1;
+  /* 内容超出自动出现滚动条 */
+  overflow-y: auto;
+}
+
+/* 上方布局 */
+.top-box {
+  display: flex;
+  background-color: #dcdcdc;
+  padding: 0.5rem 0px;
+  font-size: 1.3rem;
+}
+
+.top-box > div:first-child {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.top-box i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.bottom-box {
+  display: flex;
+  padding: 0.5rem 0px;
+  justify-content: space-around;
+  background-color: #dcdcdc;
+  text-align: center;
+}
+
+.bottom-box i {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.active {
+  color: #4fda72;
+}
+
+.chat-box {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+/* 左边图标 */
+.chat-box-left {
+  font-size: 3rem;
+  padding: 0.5rem;
+}

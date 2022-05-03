@@ -6,12 +6,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* 下面的代码每次更新图片都要重新生成并替换 */
+
 @font-face {
-  font-family: 'iconfont'; /* project id 3341991 */
-  src: url('');
-  src: url('?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_3341991_j4n9yjj79pj.woff2') format('woff2'),
-    url('//at.alicdn.com/t/font_3341991_j4n9yjj79pj.woff') format('woff'),
-    url('//at.alicdn.com/t/font_3341991_j4n9yjj79pj.ttf') format('truetype'),
-    url('#iconfont') format('svg');
+  font-family: 'iconfont'; /* Project id 3341991 */
+  src: url('//at.alicdn.com/t/font_3341991_zttdaxbplji.woff2?t=1651567399367')
+      format('woff2'),
+    url('//at.alicdn.com/t/font_3341991_zttdaxbplji.woff?t=1651567399367')
+      format('woff'),
+    url('//at.alicdn.com/t/font_3341991_zttdaxbplji.ttf?t=1651567399367')
+      format('truetype');
 }

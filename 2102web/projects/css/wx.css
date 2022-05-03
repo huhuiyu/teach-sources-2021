@@ -1,0 +1,60 @@
+/* 整体布局 */
+.main-box {
+  display: flex;
+  /* 垂直布局 */
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* 中间占满,压迫住上下 */
+.center-box {
+  flex: 1;
+}
+
+/* 上方布局 */
+.top-box {
+  display: flex;
+  padding: 0.5rem 0px;
+  background-color: #dcdcdc;
+  font-size: 1.2rem;
+}
+
+.top-box > div:first-child {
+  flex: 1;
+  text-align: center;
+}
+
+.top-box i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* 下方的布局 */
+.bottom-box {
+  padding: 0.5rem 0px;
+  background-color: #dcdcdc;
+
+  display: flex;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+.bottom-box i {
+  font-size: 2rem;
+}
+
+.active {
+  color: #00dddd;
+}
+
+/* 聊天信息布局 */
+.chat-box {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.chat-box-left {
+  font-size: 3.5rem;
+}

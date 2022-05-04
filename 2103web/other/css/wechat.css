@@ -11,11 +11,13 @@
 /* 中间区域填满，压迫住上下的区域 */
 .center-box {
   flex: 1;
+  /* overflow表示内容超出的处理方式，auto表示自动判断是否出现滚动条 */
+  overflow-y: auto;
 }
 
 /* 上方布局和样式 */
 .top-box {
-  padding: 1rem;
+  padding: 1rem 0px;
   background-color: #dcdcdc;
   font-weight: bold;
   display: flex;
@@ -24,4 +26,76 @@
 .top-box > div:first-child {
   flex: 1;
   text-align: center;
+}
+
+.top-box i {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+/* 下方容器 */
+.bottom-box {
+  display: flex;
+  justify-content: space-around;
+
+  background-color: #dcdcdc;
+  padding: 0.5rem 0px;
+
+  text-align: center;
+}
+
+.bottom-box i {
+  font-size: 2rem;
+}
+
+.active {
+  color: #00cccc;
+}
+
+/* 聊天信息部分 */
+.chat-box {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+/* 左边图标 */
+.chat-left {
+  font-size: 3.5rem;
+  margin-right: 0.5rem;
+
+  border: 1px solid #dcdcdc;
+  border-radius: 1px;
+  padding: 1px;
+}
+
+.right-box {
+  flex: 1;
+}
+
+/* 右边第一行 */
+.right-01 {
+  display: flex;
+  padding: 0.1rem;
+}
+
+/* 第一个要占满 */
+.right-01 > div:first-child {
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.info {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.right-02 {
+  display: flex;
+}
+
+.right-02 > div:first-child {
+  flex: 1;
 }

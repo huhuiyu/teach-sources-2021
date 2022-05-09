@@ -1,0 +1,68 @@
+/* 图片容器 */
+.img-box {
+  width: 20rem;
+  margin: 1rem;
+}
+
+/* 图片自适应容器！！！！ */
+.img-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 滤镜1 */
+.filter1 {
+  /* 
+  filter是滤镜
+  blur是虚化（模糊）参数值是模糊的程度，越大越模糊
+  */
+  filter: blur(2px);
+}
+
+.filter2 {
+  /* 
+  brightness是亮度,值越小就越暗
+  */
+  filter: brightness(0.7);
+}
+
+.filter3 {
+  /* grayscale是灰度，1就是完全黑白，0就是原图 */
+  filter: grayscale(1);
+}
+
+.filter4 {
+  /* opacity：透明度，越小就越透明 */
+  filter: opacity(0.5);
+}
+
+.filter5 {
+  /* invert，颜色反转 contrast:对比度%*/
+  filter: invert(75%);
+}
+
+.filter6 {
+  /* 
+    png透明图效果会比较明显 
+    drop-shadow是对图片进行阴影效果
+    png图会按照透明区域描边阴影
+    参数1，横向阴影大小
+    参数2，竖向阴影大小
+    参数3，外发光大小
+    参数4，阴影（发光）的颜色
+    正常情况下阴影和外发光总有一个是0，不会同时出现
+  */
+  filter: drop-shadow(0px 0px 1rem #ff0000);
+  /* filter: drop-shadow(0.6rem 1rem 0rem #ff0000); */
+}
+
+/* 切片 */
+.clip-path-box {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  background-color: #ff0000;
+  /* clip-path是切片,circle是圆形，50%是完美大小 */
+  clip-path: circle(50%);
+}

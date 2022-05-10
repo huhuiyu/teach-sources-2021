@@ -9,6 +9,8 @@
 /* 中间占满,压迫住上下 */
 .center-box {
   flex: 1;
+  /* overflow:内容超出时是否出现滚动条,auto是自动判断是否出现 */
+  overflow-y: auto;
 }
 
 /* 上方布局 */
@@ -53,8 +55,32 @@
   padding: 0.5rem;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 .chat-box-left {
   font-size: 3.5rem;
+}
+
+/* 右边整体 */
+.chat-box-right {
+  flex: 1;
+  padding-left: 0.5rem;
+}
+
+.chat01 {
+  display: flex;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.chat01 > div:first-child {
+  flex: 1;
+}
+
+/* 名称样式 */
+.name-info {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: bold;
 }

@@ -8,12 +8,13 @@
 }
 
 /* 这个代码每次更新图标都要重新生成并替换 */
+
 @font-face {
   font-family: 'iconfont'; /* Project id 3340368 */
-  src: url('//at.alicdn.com/t/font_3340368_l26jnegdqj.woff2?t=1650338964021')
+  src: url('//at.alicdn.com/t/font_3340368_1iye1ek1yus.woff2?t=1652149191416')
       format('woff2'),
-    url('//at.alicdn.com/t/font_3340368_l26jnegdqj.woff?t=1650338964021')
+    url('//at.alicdn.com/t/font_3340368_1iye1ek1yus.woff?t=1652149191416')
       format('woff'),
-    url('//at.alicdn.com/t/font_3340368_l26jnegdqj.ttf?t=1650338964021')
+    url('//at.alicdn.com/t/font_3340368_1iye1ek1yus.ttf?t=1652149191416')
       format('truetype');
 }

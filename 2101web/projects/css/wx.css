@@ -54,10 +54,32 @@
   display: flex;
   padding: 0.5rem;
   align-items: center;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 /* 左边图标 */
 .chat-box-left {
   font-size: 3rem;
   padding: 0.5rem;
+}
+
+/* 右边区域 */
+.chat-box-right {
+  flex: 1;
+}
+
+.chat01 {
+  display: flex;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.chat01 > div:first-child {
+  flex: 1;
+}
+
+.info {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
 }

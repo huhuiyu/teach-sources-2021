@@ -1,0 +1,100 @@
+/* 图片容器 */
+.img-box {
+  margin: 1rem;
+  width: 25rem;
+}
+
+.img-box img {
+  /* 图片自适应 */
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 滤镜 */
+.filter1 {
+  /* 
+  filter是滤镜
+  blur是虚化（模糊）
+  参数值越大越模糊
+  */
+  filter: blur(2px);
+}
+
+.filter2 {
+  /* 
+  brightness是亮度，值越大越亮
+  */
+  filter: brightness(0.7);
+}
+
+.filter3 {
+  /* 
+  opacity是不透明度
+  0-1,0是全透,1是完全不透
+  */
+  filter: opacity(0.5);
+}
+
+.filter4 {
+  /* 
+    颜色反片
+  */
+  filter: invert(75%);
+}
+
+.filter5 {
+  /* 
+  灰度0-1
+  1是完全黑白
+  */
+  filter: grayscale(1);
+}
+
+.filter6 {
+  /*
+  描边阴影（发光）,png透明图效果更强烈
+  会沿着透明的区域进行描边发光或者投影
+  参数1：x轴距离，参数2：y轴距离，参数3：z轴距离（外发光）
+  参数4：颜色，一般来说阴影和发光不会同时设定
+  */
+  filter: drop-shadow(10px 10px 0rem #ff0000);
+}
+
+/* 切片 */
+.clip {
+  margin: 1rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+}
+
+.clip-path1 {
+  /* 
+  clip-path是切片，
+  被切的区域外的内容都不可见
+  但是不影响元素占用的区域大小
+  circle是圆形切片
+  */
+  clip-path: circle(50%);
+}
+
+.clip-path2 {
+  /* 等腰三角形切片 */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.clip-path3 {
+  /* 等腰直角三角形 */
+  clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+  transform: rotate(45deg);
+  margin: 5rem 2rem;
+  /* transform-origin: center center; */
+}
+
+.clip-path4 {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  width: 10rem;
+  height: 15rem;
+  background-color: #ff0000;
+}

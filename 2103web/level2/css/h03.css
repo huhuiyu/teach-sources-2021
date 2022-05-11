@@ -1,0 +1,15 @@
+.box1 {
+  display: flex;
+  /* 设定子元素总宽度超过时是否允许换行显示！！！！ wrap就是允许*/
+  flex-wrap: wrap;
+}
+
+.box1 > div {
+  /* 让元素的总宽度是包含border的 */
+  box-sizing: border-box;
+  border: 1px solid #ff0000;
+
+  /* 压力布局会强制将子元素压迫在一行上，所以子元素的总宽度
+  超出就无法满足宽度的设定值 */
+  width: 25%;
+}

@@ -9,6 +9,8 @@
 /* 中间要占满 */
 .center-box {
   flex: 1;
+  /* overflow是内容超出时的处理方式，auto表示自动判断是否出现滚动条 */
+  overflow-y: auto;
 }
 
 /* 上方布局 */
@@ -43,4 +45,36 @@
 
 .active {
   color: #0000aa;
+}
+
+/* 聊天区域样式 */
+.chat-info {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.chat-left {
+  font-size: 3rem;
+}
+
+.chat-right {
+  flex: 1;
+}
+
+/* 聊天信息行 */
+.chat {
+  display: flex;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.chat > div:first-child {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.1rem;
+  color: #000;
 }

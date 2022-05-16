@@ -66,3 +66,17 @@
   /* clip-path是切片,circle是圆形，50%是完美大小 */
   clip-path: circle(50%);
 }
+
+/* 多边形切片 */
+.clip-path-box1 {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  background-color: #ff0000;
+  /* 
+    polygon是多边形切片（类似于ps里面钢笔描边工具）
+    参数是一系列的点（构成多边形），点的值分别为x和y轴距离
+    多个点用,号分开
+  */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}

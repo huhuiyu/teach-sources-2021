@@ -1,0 +1,33 @@
+/* 相册总容器 */
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 5rem;
+  justify-content: space-evenly;
+}
+/* 图片容器 */
+.pics > div {
+  width: 25%;
+}
+
+/* 图片自适应 */
+.pics img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 相框效果 */
+.img-box {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem;
+}

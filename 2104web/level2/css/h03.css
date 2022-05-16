@@ -1,0 +1,80 @@
+.flex-box {
+  display: flex;
+  /* 
+  flex-wrap:是当压力盒子里面的子元素总宽度超出时是否允许换行显示
+  warp表示允许换行（压力盒子默认是不让换行）
+  */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-box > div {
+  box-sizing: border-box;
+  border: 1px solid #ff0000;
+  /* 
+  由于默认压力布局的子元素在一行上
+  所以子元素的总宽度不能超出
+  */
+  width: 25%;
+}
+
+.flex-box1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-box1 > div {
+  box-sizing: border-box;
+  border: 1px solid #ff0000;
+  width: 25%;
+}
+
+/* 
+媒体查询和自适应 @media screen 表示查询屏幕显示区域的大小
+and的后面的括号里面是大小判断的表达式
+max-width表示最大宽度，简单的说就是只有在该宽度以内才会生效
+@media screen and (max-width: 767px)
+表示显示区域宽度没有超过767px的时候，里面的样式会生效
+768px是手机和其它设备的区别值
+*/
+@media screen and (max-width: 767px) {
+  .flex-box1 > div {
+    width: 100%;
+  }
+}
+
+/* 
+1000以内，768以上 min-width表示不低于该值
+*/
+@media screen and (max-width: 999px) and (min-width: 768px) {
+  .flex-box1 > div {
+    width: 50%;
+  }
+}
+/* 1000-1366 */
+@media screen and (max-width: 1366px) and (min-width: 1000px) {
+  .flex-box1 > div {
+    width: 33.3333333%;
+  }
+}
+
+.computer {
+  display: block;
+}
+
+.phone {
+  display: none;
+}
+
+/* 手机样式判断 */
+@media screen and (max-width: 767px) {
+  /* 手机模式下电脑区域不再显示 */
+  .computer {
+    display: none;
+  }
+  /* 手机区域显示 */
+  .phone {
+    display: block;
+  }
+}

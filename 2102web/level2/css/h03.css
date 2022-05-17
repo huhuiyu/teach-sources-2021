@@ -1,0 +1,81 @@
+/* 容器 */
+.box {
+  display: flex;
+  justify-content: center;
+  /* 
+  flex-wrap是子元素的总宽度超出容器时是否允许换行
+  wrap表示允许换行
+  */
+  flex-wrap: wrap;
+}
+
+.box > div {
+  /* 将边框计算到总高宽里面 */
+  box-sizing: border-box;
+  border: 1px solid #ff0000;
+  /* 
+  压力布局默认情况下会强制压迫子元素在一行上
+  如果子元素的总宽度超过容器会强制修改以放下全部子元素
+  */
+  width: 25%;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box1 > div {
+  box-sizing: border-box;
+  border: 1px solid #ff0000;
+  width: 20%;
+}
+
+/* 
+  媒体查询 @media
+  screen 浏览器可视区域大小
+  and (大小的判定表达式)
+  max-width是最大宽度，也就是不超过该宽度
+  min-width是最小宽度，也就是部低于该宽度
+  下面的代码表示当浏览器可视区域不超过767px时里面样式会生效
+*/
+@media screen and (max-width: 767px) {
+  .box1 > div {
+    width: 50%;
+  }
+}
+
+/* 768px到999px之间 */
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .box1 > div {
+    width: 33.3333333%;
+  }
+}
+
+/* 1000px到1366px之间 */
+@media screen and (min-width: 1000px) and (max-width: 1366px) {
+  .box1 > div {
+    width: 25%;
+  }
+}
+
+/* 768px可以判定为手机模式！！！！ */
+
+.desktop {
+  display: block;
+}
+
+.phone {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .phone {
+    display: block;
+  }
+}

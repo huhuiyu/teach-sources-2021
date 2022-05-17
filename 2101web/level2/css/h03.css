@@ -1,0 +1,85 @@
+/* 容器 */
+.flex-box {
+  display: flex;
+  justify-content: space-evenly;
+  /* 
+  flex-wrap表示当子元素的总宽度超过容器时是否允许折行显示
+  wrap表示允许折行
+  */
+  flex-wrap: wrap;
+}
+
+.flex-box > div {
+  /* 
+  是让元素边框计算到宽高里面
+  */
+  box-sizing: border-box;
+  border: 1px solid #ff0000;
+  /* 
+  压力布局默认会将元素压迫到一行，所以子元素的总宽度不能超过容器的宽度
+  */
+  width: 25%;
+}
+
+.flex-box1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.flex-box1 > div {
+  box-sizing: border-box;
+  border: 1px solid #ff0000;
+  width: 20%;
+}
+
+/* 
+@media 媒体查询
+screen 表示浏览器可视区域
+and (区域大小判断的表达式,max-width表示最大宽度)
+下面的代码表示查询可视区域的宽度不超过767px
+表达式成立的时候里面的样式生效！！！！
+*/
+@media screen and (max-width: 767px) {
+  .flex-box1 > div {
+    width: 50%;
+  }
+}
+
+/* 
+  min-width表示最小宽度和最大宽度一起可以构成区间
+  768px-999px
+*/
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .flex-box1 > div {
+    width: 33.33333%;
+  }
+}
+/* 1000px-1366px */
+@media screen and (min-width: 1000px) and (max-width: 1366px) {
+  .flex-box1 > div {
+    width: 25%;
+  }
+}
+
+/* 768px是手机的判定 */
+
+/* 手机电脑版本切换 */
+.desktop {
+  display: block;
+}
+
+.phone {
+  display: none;
+}
+
+/* 手机的版本样式 */
+@media screen and (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+
+  .phone {
+    display: block;
+  }
+}

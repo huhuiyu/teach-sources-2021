@@ -57,4 +57,38 @@
   background-color: #ff0000;
   width: 15rem;
   height: 15rem;
+
+  /*
+  clip-path:切片，会将元素切割成指定的形状
+  circle是圆形切片
+  */
+  clip-path: circle(50%);
+}
+
+.clip-path-box1 {
+  margin: 1rem;
+  background-color: #ff0000;
+  width: 15rem;
+  height: 15rem;
+
+  /* 
+    polygon是多边形，类似ps里面钢笔路径工具
+    参数是多个路径的坐标点，多个点用逗号分开
+    每个点是xy轴坐标组成
+  */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.clip-path-box2 {
+  margin: 1rem;
+  background-color: #ff0000;
+  width: 15rem;
+  height: 15rem;
+
+  /* 
+    polygon是多边形，类似ps里面钢笔路径工具
+    参数是多个路径的坐标点，多个点用逗号分开
+    每个点是xy轴坐标组成
+  */
+  clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
 }

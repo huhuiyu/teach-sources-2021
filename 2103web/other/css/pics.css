@@ -1,0 +1,54 @@
+.title {
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* 相册容器 */
+.pic-box {
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pic-box > div {
+  padding: 5px;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.pic-box img {
+  /* 图片自适应 */
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 相框 */
+.pic {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+/* 自适应 */
+@media screen and (max-width: 768px) {
+  .pic-box > div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 999px) {
+  .pic-box > div {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1366px) {
+  .pic-box > div {
+    width: 33.333333333%;
+  }
+}

@@ -2,6 +2,7 @@
   display: flex;
   /* 设定子元素总宽度超过时是否允许换行显示！！！！ wrap就是允许*/
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .box1 > div {
@@ -12,4 +13,66 @@
   /* 压力布局会强制将子元素压迫在一行上，所以子元素的总宽度
   超出就无法满足宽度的设定值 */
   width: 25%;
+}
+
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box2 > div {
+  box-sizing: border-box;
+  border: 1px solid #ff0000;
+  width: 20%;
+}
+
+/* 
+媒体查询 @media
+screen表示浏览器可视区域
+and (可视区域大小的判定表达式)
+max-width表示最大宽度，也就是不要超过该宽度
+min-width表示最小宽度，也就是不要低于该宽度
+例如
+@media screen and (max-width: 767px) 
+表示当可视区域宽度不超过767px的时候样式生效！！！！
+*/
+@media screen and (max-width: 767px) {
+  .box2 > div {
+    width: 50%;
+  }
+}
+
+/* 768px到999px */
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .box2 > div {
+    width: 33.3333333%;
+  }
+}
+
+/* 1000px到1366px */
+@media screen and (min-width: 1000px) and (max-width: 1366px) {
+  .box2 > div {
+    width: 25%;
+  }
+}
+
+/* 768px是手机分辨率的判定值！ */
+
+.desktop {
+  display: block;
+}
+
+.phone {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .phone {
+    display: block;
+  }
 }

@@ -59,3 +59,29 @@
   */
   filter: drop-shadow(10px 10px 0rem #ff0000);
 }
+
+.clip-box {
+  margin: 1rem;
+  width: 15rem;
+  height: 15rem;
+  background-color: #ff0000;
+}
+
+/* 切片，圆 */
+.clip1 {
+  clip-path: circle(50%);
+}
+
+/* 多边形切片 */
+.clip2 {
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.clip3 {
+  /* 
+    polygon是多边形切片，类似于ps里面钢笔工具
+    参数其实就是多边形的点，每个点是xy轴坐标两个参数构成
+    多个点中间用逗号分隔
+  */
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}

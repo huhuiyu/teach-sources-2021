@@ -1,0 +1,15 @@
+body {
+  /* 最小都是全屏 */
+  min-height: 100vh;
+  /* 背景图片尽量适应页面且不会滚动 */
+  background-image: url('../banner_bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.top-box {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}

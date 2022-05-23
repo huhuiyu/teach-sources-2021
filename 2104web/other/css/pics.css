@@ -15,6 +15,7 @@
   display: block;
   width: 100%;
   height: auto;
+  transition: transform 1s;
 }
 
 /* 相框效果 */
@@ -23,6 +24,7 @@
   padding: 0.2rem;
   border: 1px solid #dcdcdc;
   border-radius: 0.2rem;
+  overflow: hidden;
 }
 
 .title {
@@ -30,4 +32,32 @@
   font-weight: bold;
   text-align: center;
   margin: 1rem;
+}
+
+/* 效果 */
+.img-box:hover {
+  border-color: #ff0000;
+}
+
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+/* 相册自适应的部分 */
+@media screen and (max-width: 768px) {
+  .pics > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 999px) and (min-width: 769px) {
+  .pics > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1000px) {
+  .pics > div {
+    width: 33.33333%;
+  }
 }

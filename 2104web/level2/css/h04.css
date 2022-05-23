@@ -1,0 +1,66 @@
+.info {
+  font-size: 2rem;
+}
+
+/* 
+  伪元素，在页面上其实不存在的元素
+  都是::定义的 before会出现在元素前面
+  简单的说就是在元素前面添加一个元素
+  after是添加到后面
+  content为必填属性，表示伪元素里面的内容
+*/
+.info::before {
+  content: '-->';
+  color: #ff0000;
+}
+
+.info::after {
+  content: '<--';
+  color: #0000ff;
+}
+
+/* 内容动态的伪元素 */
+.info-attr::before {
+  /* 
+  content的内容可以是元素的指定属性值
+  attr(data-info)表示内容为元素的data-info的属性值
+  */
+  content: attr(data-info);
+}
+
+/* 图片带遮罩显示效果 */
+.img-box {
+  margin: 1rem;
+  width: 32rem;
+  height: 18rem;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.img-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-box::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  filter: opacity(0);
+  transition: filter 1s;
+}
+
+.img-box:hover::after {
+  filter: opacity(1);
+}

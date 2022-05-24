@@ -1,0 +1,56 @@
+/* 
+伪元素，页面上不存在的元素
+都是::界定
+before表示在元素前面追加一个元素
+after表示在元素后面追加一个元素
+*/
+.sp01::before {
+  content: '==>';
+  color: #ff0000;
+}
+.sp01::after {
+  content: '<==';
+  color: #0000ff;
+}
+
+/* 图片遮罩说明效果 */
+.pic-box {
+  width: 32rem;
+  height: 18rem;
+  /* 绝对定位一定要搭配相对容器 */
+  position: relative;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pic-box::after {
+  /* 
+  content的信息内容可以来源于元素的属性值
+  attr(data-info)表示内容是元素的data-info这个属性的值
+  */
+  content: attr(data-info);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 透明效果 */
+  filter: opacity(0);
+  transition: all 1s;
+}
+
+.pic-box:hover::after {
+  filter: opacity(1);
+}

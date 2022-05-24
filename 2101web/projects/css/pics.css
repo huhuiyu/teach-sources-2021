@@ -1,0 +1,63 @@
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+/* 相册主体 */
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+/* 图片自适应 */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 1s;
+}
+
+/* 图片容器 */
+.main > div {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 1rem;
+}
+
+/* 相框 */
+.pic-box {
+  border: 1px solid #dcdcdc;
+  padding: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.pic-box:hover {
+  border-color: #777;
+}
+
+.pic-box:hover img {
+  transform: scale(1.2);
+}
+
+/* 自适应部分 */
+@media screen and (max-width: 768px) {
+  .main > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 999px) and (min-width: 769px) {
+  .main > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1000px) {
+  .main > div {
+    width: 33%;
+  }
+}

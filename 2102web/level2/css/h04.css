@@ -1,0 +1,56 @@
+/* 
+伪元素都是::开头的
+after表示在元素后面追加元素
+before表示在元素前面追加元素
+内容由content样式指定
+*/
+.style01::after {
+  content: '==>';
+  color: #ff0000;
+}
+
+.style01::before {
+  content: '<==';
+  color: #0000ff;
+}
+
+.img-box {
+  width: 32rem;
+  margin: 1rem;
+  /* 绝对定位都有相对容器 */
+  position: relative;
+}
+
+.img-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-box::after {
+  /* 
+    attr表示伪元素的内容来自于元素的属性值
+    content: attr(data-info)
+    表示伪元素的内容就是data-info属性的值
+  */
+  content: attr(data-info);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 透明 */
+  filter: opacity(0);
+  transition: all 1s;
+}
+
+.img-box:hover::after {
+  filter: opacity(1);
+}

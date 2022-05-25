@@ -1,0 +1,56 @@
+/* 
+  伪元素都是::
+  before表示在元素的前面追加一个伪元素
+  after表示在元素的后面追加一个伪元素
+  伪元素的内容由content指定
+  伪元素可以设置独立的css样式
+*/
+.info::before {
+  content: '==>';
+  color: #ff0000;
+}
+.info::after {
+  content: '<==';
+  color: #0000ff;
+}
+
+/* 伪元素应用 */
+.pic-box {
+  width: 32rem;
+  margin: 1rem;
+
+  position: relative;
+}
+
+.pic-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 通过伪元素形成遮罩 */
+.pic-box::after {
+  /* content: attr(data-info);表示元素的内容来自于data-info的属性值 */
+  content: attr(data-info);
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  filter: opacity(0);
+  transition: all 1s;
+}
+
+.pic-box:hover::after {
+  filter: opacity(1);
+  /* 前目的地 */
+}

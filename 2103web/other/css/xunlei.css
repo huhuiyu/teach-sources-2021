@@ -1,0 +1,22 @@
+/* 背景样式 */
+body {
+  /* 背景图片 */
+  background-image: url('../banner_bg.jpg');
+  /* 背景图片固定，不会跟着屏幕滚动移动 */
+  background-attachment: fixed;
+  /* 背景图片在不变形的情况下尽可能完整显示 */
+  background-size: cover;
+  /* 如果不能完整显示，需要保留的区域 */
+  background-position: center center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0px 5rem;
+}
+
+header img {
+  width: 50%;
+}

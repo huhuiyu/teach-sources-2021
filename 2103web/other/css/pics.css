@@ -35,6 +35,14 @@
   overflow: hidden;
 }
 
+.pic:hover {
+  border-color: #777;
+}
+
+.pic:hover img {
+  transform: scale(1.2);
+}
+
 /* 自适应 */
 @media screen and (max-width: 768px) {
   .pic-box > div {

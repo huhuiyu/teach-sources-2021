@@ -1,0 +1,62 @@
+/* 容器 */
+.main-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 1rem 5rem;
+}
+
+.main-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 1s;
+}
+
+.main-box > div {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 25%;
+}
+
+/* 相框 */
+.pic-box {
+  border: 1px solid #dcdcdc;
+  padding: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.pic-box:hover {
+  border-color: #666;
+}
+
+.pic-box:hover img {
+  transform: scale(1.2);
+}
+
+header {
+  margin: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* 自适应部分 home shift+end */
+
+@media screen and (max-width: 768px) {
+  .main-box > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 999px) and (min-width: 769px) {
+  .main-box > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1000px) {
+  .main-box > div {
+    width: 33%;
+  }
+}

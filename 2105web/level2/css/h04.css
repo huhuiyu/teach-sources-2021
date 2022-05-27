@@ -1,0 +1,15 @@
+/* 
+伪元素都是两个::
+before表示在元素前面追加一个元素
+after表示在元素后面追加一个元素
+虽然是伪元素，但是可以使用任何的css样式
+内容是content样式指定！！！
+*/
+.info::before {
+  content: '==>';
+  color: #ff0000;
+}
+.info::after {
+  content: '<==';
+  color: #0000ff;
+}

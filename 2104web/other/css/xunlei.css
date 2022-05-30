@@ -12,4 +12,80 @@ body {
   display: flex;
   justify-content: space-between;
   color: #fff;
+  padding: 1px 5rem;
 }
+
+.top-box img {
+  height: 2.5rem;
+}
+
+.top-box:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* 菜单部分 */
+.menu {
+  /* 垂直布局 */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0px 1rem;
+  /* 有弹出菜单，就需要相对定位容器 */
+  position: relative;
+}
+
+/* 模拟线条 */
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  /* transform-origin: left; */
+}
+
+/* 菜单字效果 */
+.menu > div:first-child {
+  flex: 1;
+  padding: 0px 0.5rem;
+  /* 垂直居中 */
+  display: flex;
+  align-items: center;
+}
+
+.menu:hover .line {
+  transform: scaleX(1);
+}
+/* 激活的菜单线条始终为满宽 */
+.active {
+  transform: scaleX(1);
+}
+
+/* 弹出菜单 */
+.pop-menu {
+  position: absolute;
+  top: 2.6rem;
+  /* 默认消失 */
+  transform: translateY(-200%);
+  /* display: none; */
+  transition: transform 0.5s;
+
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.pop-menu > div {
+  width: 4rem;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #777;
+}
+
+.pop-menu > div:last-child {
+  border-width: 0px;
+}
+
+.menu:hover .pop-menu {
+  transform: translateY(0%);
+}
+/* 自行完成后面的菜单项 */

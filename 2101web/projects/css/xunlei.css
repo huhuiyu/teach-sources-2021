@@ -1,0 +1,85 @@
+body {
+  /* 背景图片设置 */
+  background-image: url('../banner_bg.jpg');
+  /* 背景图片不会移动 */
+  background-attachment: fixed;
+  /* 在图片不变形的情况下尽可能完整显示 */
+  background-size: cover;
+  /* 如果背景图片不能完整显示，要被显示的区域轴心 */
+  background-position: center center;
+}
+
+/* 上方总体布局样式 */
+.top-box {
+  display: flex;
+  justify-content: space-between;
+
+  color: #fff;
+  padding: 0px 7rem;
+}
+
+.top-box img {
+  height: 2.5rem;
+}
+
+.top-box:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* 菜单效果 */
+.menu {
+  margin: 0px 0.5rem;
+  /* 绝对定位必然有相对定位容器 */
+  position: relative;
+}
+
+.menu > div:first-child {
+  height: 3rem;
+  padding: 0px 0.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+
+.menu:hover .line {
+  transform: scaleX(1);
+}
+
+.active {
+  transform: scaleX(1);
+}
+
+/* 弹出菜单 */
+.pop-box {
+  position: absolute;
+  top: 3.5rem;
+  left: 0px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  transform: translateY(-200%);
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.menu:hover .pop-box {
+  transform: translateY(0%);
+}
+
+.pop-box > div {
+  width: 3rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.pop-box > div:last-child {
+  border-width: 0px;
+}

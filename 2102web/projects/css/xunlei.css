@@ -1,0 +1,80 @@
+body {
+  background-image: url('../banner_bg.jpg');
+  /* 背景不会移动位置 */
+  background-attachment: fixed;
+  /* 背景在不失真的情况下尽可能完整呈现 */
+  background-size: cover;
+  /* 如果不能完整呈现，以什么区域为轴心显示 */
+  background-position: center center;
+}
+
+/* 上方区域 */
+.top-box {
+  display: flex;
+  justify-content: space-between;
+
+  color: #fff;
+  padding: 0px 6rem;
+}
+
+.top-box img {
+  height: 2.5rem;
+}
+
+.top-box:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 菜单样式 */
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+
+.atext {
+  padding: 0.7rem 0.7rem;
+}
+
+.menu {
+  margin: 0px 0.5rem;
+  position: relative;
+}
+
+.menu:hover .line {
+  transform: scaleX(1);
+}
+
+.active {
+  transform: scaleX(1);
+}
+
+/* 弹出菜单 */
+.pop-box {
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: absolute;
+  top: 3.5rem;
+  left: 0px;
+
+  transform: translateY(-200%);
+  transition: all 0.5s;
+  border-radius: 0.5rem;
+}
+
+.menu:hover .pop-box {
+  transform: translateY(0%);
+}
+
+.pop-box > div {
+  padding: 0.5rem 1.5rem;
+  width: 3rem;
+
+  border-bottom: 1px solid #666;
+}
+
+.pop-box > div:last-child {
+  border-width: 0px;
+}

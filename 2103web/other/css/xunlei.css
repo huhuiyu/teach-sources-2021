@@ -14,9 +14,65 @@ header {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  padding: 0px 5rem;
+  padding: 0px 7rem;
 }
 
 header img {
   width: 50%;
+}
+
+header:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 菜单部分 */
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.atext {
+  padding: 1rem 0.7rem;
+}
+
+.menu {
+  margin: 0px 0.5rem;
+  position: relative;
+}
+
+.menu:hover > .line {
+  transform: scaleX(1);
+}
+
+.active {
+  transform: scaleX(1);
+}
+
+/* 弹出菜单 */
+.pop-box {
+  position: absolute;
+
+  transform: translateY(-190%);
+  transition: transform 0.5s;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+}
+
+.menu:hover > .pop-box {
+  transform: translateY(5%);
+}
+
+.pop-box > div {
+  width: 5rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid #666;
+}
+
+.pop-box > div:last-child {
+  border-width: 0px;
 }

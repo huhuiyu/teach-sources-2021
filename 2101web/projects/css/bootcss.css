@@ -1,0 +1,56 @@
+/* 容器 */
+.box {
+  margin: 5rem 10rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 图文混排区 */
+.info-box {
+  width: 23%;
+  box-sizing: border-box;
+  border: 1px solid #dcdcdc;
+  padding: 3px;
+  text-align: center;
+  margin: 0.5rem 0px;
+}
+
+.info-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.info-box > div:last-child {
+  padding: 1rem 5px;
+}
+
+.text01 {
+  color: #6784ef;
+  font-size: 1.3rem;
+}
+
+.text02 {
+  padding: 0.3rem 0px;
+  color: #666;
+}
+
+.text03 {
+  font-size: 0.9rem;
+}
+
+/* 回到顶部 */
+.to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 8rem;
+  background-color: #999;
+  padding: 0.5rem;
+}
+
+.to-top a {
+  font-size: 2rem;
+  text-decoration: none;
+}

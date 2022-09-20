@@ -1,0 +1,77 @@
+.style01 {
+  color: #ff0000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #00ffff;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.box01 {
+  border: 2px solid #ff0000;
+  margin: 1rem 5rem;
+  padding: 0.5rem 2rem;
+}
+
+.box02 {
+  border: 1px solid #0000ff;
+  margin: 0.2rem;
+}
+
+/* 压力布局 */
+.flex-box {
+  /* 强制让本元素里面的一级子元素排列在一行上 */
+  display: flex;
+  /* 一级子元素的水平对齐方式为分散 */
+  justify-content: space-between;
+}
+
+.flex-box-v {
+  display: flex;
+  /* 垂直方向对齐 */
+  align-items: center;
+}
+
+.flex-box-01 {
+  display: flex;
+}
+
+.flex-sub {
+  /* 压力盒子的子元素样式 */
+  /* 
+  如果盒子的子元素里面只有一个设置了flex值
+  那么这个子元素会占满所有剩余的空间
+  如果有多个子元素都有这个属性，那么会按照flex值的大小分配空间
+  */
+  flex: 10;
+}
+
+.fixed-box {
+  /* 固定位置 */
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 4rem;
+  height: 4rem;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+}
+
+.fixed-box:hover {
+  background-color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}

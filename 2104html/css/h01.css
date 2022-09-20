@@ -1,0 +1,82 @@
+.style01 {
+  background-color: #000000;
+  color: #00ffff;
+
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.box01 {
+  border: 2px solid #ff0000;
+  margin: 1rem 3rem;
+  padding: 0.5rem 2rem;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.box02 {
+  border: 1px solid #0000ff;
+  margin: 0.2rem;
+}
+
+/* 压力盒子 */
+.flex-box {
+  /* 
+    压力布局会强制压迫它里面的第一级的子元素在一行上
+  */
+  display: flex;
+  /* 子元素在水平方向的排列方式，分散对齐 */
+  justify-content: space-between;
+}
+
+.flex-box01 {
+  display: flex;
+  /* 交叉轴对齐方式（垂直方向） */
+  align-items: center;
+}
+
+.flex-box02 {
+  display: flex;
+}
+
+.flex01 {
+  flex: 1;
+}
+
+.fixed-box {
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 4rem;
+  height: 4rem;
+
+  border-radius: 1rem;
+  /* 
+    transition表示当css样式变化时不要直接转换
+    而是通过过渡的方法逐渐的变化
+    all表示不论什么css样式变化都会使用过渡效果
+    1.5s表示过渡的总时长为1.5秒
+    ease-in-out表示缓动曲线，可以省略
+  */
+  transition: all 1.5s ease-in-out;
+}
+
+.fixed-box:hover {
+  background-color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+  font-size: 2.5rem;
+}

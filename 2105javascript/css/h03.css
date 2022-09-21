@@ -1,0 +1,65 @@
+.day {
+  background-color: #fff;
+  color: #f00;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #f00;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #dcdcdc;
+}
+
+/* 夜晚模式的样式 */
+.night {
+  background-color: #000;
+  color: #fff;
+}
+
+.night .btn:hover {
+  background-color: #666;
+}
+
+/* 屏幕切换效果 */
+#divAni {
+  width: 100vw;
+  height: 25vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#divAni > div {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 25vh;
+  border: 1px solid #f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+}
+
+#divAni > div:nth-child(1) {
+  transform: translateX(0%);
+}
+
+#divAni > div:nth-child(2) {
+  transform: translateX(100%);
+}
+
+/* 一类状态 */
+.move01 > div:nth-child(1) {
+  transform: translateX(-100%) !important;
+}
+
+.move01 > div:nth-child(2) {
+  transform: translateX(0%) !important;
+}

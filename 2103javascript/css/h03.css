@@ -1,0 +1,65 @@
+.day {
+  background-color: #fff;
+  color: #f00;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #ff0000;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #dcdcdc;
+}
+
+/* 夜晚模式 */
+.night {
+  background-color: #000;
+  color: #fff;
+}
+
+.night .btn:hover {
+  background-color: #666;
+}
+
+/* 移动特效 */
+#divMove {
+  width: 100vw;
+  height: 20vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#divMove > div {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 20vh;
+  border: 1px solid #ff0000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: transform 1s linear;
+}
+/* 位置一状态 */
+.move01 > div:nth-child(1) {
+  /* !important表示样式强制生效，可以无视优先级规则 */
+  transform: translateX(0%) !important;
+}
+
+.move01 > div:nth-child(2) {
+  transform: translateX(100%) !important;
+}
+
+/* 位置二状态 */
+.move02 > div:nth-child(1) {
+  /* !important表示样式强制生效，可以无视优先级规则 */
+  transform: translateX(-100%) !important;
+}
+
+.move02 > div:nth-child(2) {
+  transform: translateX(0%) !important;
+}

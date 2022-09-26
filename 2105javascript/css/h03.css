@@ -45,6 +45,7 @@
   align-items: center;
   top: 0px;
   left: 0px;
+  transition: transform 0.5s linear;
 }
 
 #divAni > div:nth-child(1) {
@@ -57,9 +58,18 @@
 
 /* 一类状态 */
 .move01 > div:nth-child(1) {
-  transform: translateX(-100%) !important;
+  transform: translateX(0%) !important;
 }
 
 .move01 > div:nth-child(2) {
+  transform: translateX(100%) !important;
+}
+
+/* 二类状态 */
+.move02 > div:nth-child(1) {
+  transform: translateX(-100%) !important;
+}
+
+.move02 > div:nth-child(2) {
   transform: translateX(0%) !important;
 }

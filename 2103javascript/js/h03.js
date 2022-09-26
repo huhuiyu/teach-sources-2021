@@ -39,3 +39,20 @@ spNight.addEventListener('click', () => {
   divCss.classList.remove('day');
   divCss.classList.add('night');
 });
+
+// 控制样式完成移动的特效
+let divMove = document.getElementById('divMove');
+let spm1 = document.getElementById('spm1');
+let spm2 = document.getElementById('spm2');
+
+console.log(divMove, spm1, spm2);
+
+spm1.addEventListener('click', () => {
+  divMove.classList.remove('move02');
+  divMove.classList.add('move01');
+});
+
+spm2.addEventListener('click', () => {
+  divMove.classList.remove('move01');
+  divMove.classList.add('move02');
+});

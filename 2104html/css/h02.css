@@ -1,0 +1,159 @@
+/* 过渡动画 */
+.ani1 {
+  font-size: 1rem;
+  border: 0px solid #ff0000;
+  margin: 1rem;
+
+  transition: all 1s;
+}
+
+.ani1:hover {
+  font-size: 1.2rem;
+  border-width: 2px;
+}
+
+/* 关键帧动画 */
+@keyframes key1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(5deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  35% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  45% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  65% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ani2 {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  color: #ffffff;
+  margin: 1rem;
+}
+
+.ani2:hover {
+  animation: key1 1s linear;
+}
+
+/* 无限循环的关键帧动画 */
+@keyframes key2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ani3 {
+  width: 2rem;
+  height: 2rem;
+  border: 5px solid #0000ff;
+  border-radius: 50%;
+  font-size: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* alternate，动画会正反交替 infinite是无限循环 */
+  animation: key2 2s linear infinite;
+}
+
+/* 视频和遮罩效果 */
+.box {
+  width: 35rem;
+  /* 只要有绝对定位，容器就一定会有相对定位的约束 */
+  position: relative;
+}
+
+.box video {
+  width: 100%;
+}
+
+.mask {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70%;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+
+  opacity: 0;
+  transition: all 1s linear;
+}
+
+.box:hover .mask {
+  opacity: 1;
+}
+
+.mask > div:nth-child(1) {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.mask > div:nth-child(2) {
+  padding: 0.5rem;
+  /* 段落首行缩进两个字符 */
+  text-indent: 2em;
+}

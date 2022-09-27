@@ -1,0 +1,11 @@
+body {
+  margin: 0px;
+}
+
+/* *表示影响页面上所有的元素 */
+* {
+  /* 计算高宽的时候包括border */
+  box-sizing: border-box;
+  /* 强制断行任意单词 */
+  word-break: break-all;
+}

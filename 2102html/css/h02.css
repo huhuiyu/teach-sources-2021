@@ -1,0 +1,153 @@
+/* 过渡动画 */
+.ani1 {
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: all 1s linear;
+}
+
+.ani1:hover {
+  font-size: 1.1rem;
+  border-color: #ff0000;
+}
+
+/* 关键帧动画 */
+.ani2 {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  margin: 1rem;
+  color: #fff;
+}
+
+.ani2:hover {
+  animation: key01 0.5s infinite;
+}
+
+/* 定义关键帧动画 */
+@keyframes key01 {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(5deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  35% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  45% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  65% {
+    transform: rotate(-5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(-5deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes yuan {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.yuan {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #ff0000;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: yuan 1s infinite alternate;
+}
+
+/* 视频区域效果 */
+.box {
+  width: 25rem;
+  /* 如果里面的元素有绝对定位，容器需要做相对定位限制 */
+  position: relative;
+}
+
+.box video {
+  width: 25rem;
+}
+
+/* 简介遮罩效果 */
+.mask {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.mask > div:nth-child(1) {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.mask > div:nth-child(2) {
+  text-indent: 2em;
+}
+
+.box:hover .mask {
+  opacity: 1;
+}

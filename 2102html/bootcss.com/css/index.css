@@ -1,0 +1,10 @@
+body {
+  margin: 0px;
+}
+/* *表示所有元素 */
+* {
+  /* 高宽要包括border */
+  box-sizing: border-box;
+  /* 强制字符断行 */
+  word-break: break-all;
+}

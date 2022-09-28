@@ -42,3 +42,16 @@ spCompute.addEventListener('click', () => {
 let now = new Date();
 let divNow = document.getElementById('divNow');
 divNow.innerHTML = now;
+
+// 时间分区具体信息
+let year = now.getFullYear();
+let month = now.getMonth();
+let day = now.getDate();
+let hour = now.getHours();
+let minute = now.getMinutes();
+let second = now.getSeconds();
+
+let divShowTime = document.getElementById('divShowTime');
+divShowTime.innerHTML = year + '年' 
+  + (month + 1) + '月' + day +'日 ' 
+  + hour +':' + minute +':' + second ;

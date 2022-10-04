@@ -8,3 +8,151 @@ body {
   /* 强制字符断行 */
   word-break: break-all;
 }
+
+/* 头部区域 */
+.head-box {
+  background-color: #222;
+  color: #9d9d9d;
+
+  /* 左右分散对齐布局 */
+  display: flex;
+  justify-content: space-between;
+
+  /* 留白 */
+  padding: 0.5rem 3rem;
+}
+
+/* 菜单之间的间距 */
+.head-box span {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/* 第一个菜单特例 */
+.menu1 {
+  font-size: 1.5rem;
+}
+
+/* 菜单悬停效果 */
+.head-box span:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* 主要标识区域 */
+.main {
+  text-align: center;
+  background-image: url('../images/bg.png');
+  padding: 4rem 0px;
+  background-color: rgba(63, 1, 58, 0.7);
+  color: #fff;
+}
+
+.main > div:nth-child(1) {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.main > div:nth-child(2) {
+  font-size: 2rem;
+  margin: 1rem 0px;
+}
+
+/* 模拟按钮 */
+.btn {
+  display: inline-block;
+  background-color: #286090;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  /* 元素的阴影 */
+  box-shadow: 0 0.3rem 0 #23527c;
+}
+
+.btn:hover {
+  background-color: #175080;
+  cursor: pointer;
+}
+
+/* 超链接 */
+.link {
+  display: inline-block;
+  margin: 1rem 0px;
+  color: #9d9d9d;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+/* 副标题区域 */
+.second-title {
+  /* 居中布局 */
+  display: flex;
+  justify-content: center;
+
+  margin: 2rem 0px;
+}
+
+.second-box {
+  text-align: center;
+  /* 模拟下方线条 */
+  border-bottom: 1px solid #dcdcdc;
+  padding: 2rem 4rem;
+}
+
+.second-box > div:nth-child(1) {
+  font-size: 2.5rem;
+  /* font-weight: bold; */
+  margin-bottom: 1rem;
+}
+
+.second-box > div:nth-child(2) {
+  color: #777;
+}
+
+/* 图文混排区域样式 */
+.container {
+  margin: 0px 10vw;
+}
+
+.project {
+  /* 图文混排的盒子 */
+  border: 1px solid #dcdcdc;
+  width: 21%;
+  padding: 0.2rem;
+}
+
+/* 图片自适应 */
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 文字区域 */
+.project-text {
+  text-align: center;
+  padding: 1rem;
+}
+
+.project-text > div:nth-child(1) {
+  color: #337ab7;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.project-text > div:nth-child(1):hover {
+  color: #115895;
+}
+
+.project-text > div:nth-child(2) {
+  color: #777;
+  font-size: 1.2rem;
+  padding: 0.5rem 0px;
+}
+
+.project-text > div:nth-child(3) {
+  color: #777;
+}

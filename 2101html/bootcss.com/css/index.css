@@ -9,3 +9,120 @@ body {
   /* 强制断行任意单词 */
   word-break: break-all;
 }
+
+/* 上方左右菜单布局区域 */
+.header {
+  /* 左右分散布局 */
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #222;
+  color: #9d9d9d;
+
+  padding: 1rem 5vw;
+}
+
+.header span {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.span1 {
+  font-size: 1.2rem;
+}
+
+.header span:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 主标识区域 */
+.main {
+  padding: 5rem 0px;
+  text-align: center;
+
+  background-image: url('../images/bg.png');
+  background-color: rgba(72, 4, 54, 0.8);
+  color: #fff;
+}
+
+.main > div:nth-child(1) {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.main > div:nth-child(2) {
+  font-size: 2rem;
+  margin: 1rem 0px;
+}
+
+.btn {
+  background-color: #286090;
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  /* 阴影,x y z 颜色 */
+  box-shadow: 0 0.3rem 0 #23527c;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #23527c;
+  cursor: pointer;
+}
+
+.alink {
+  color: #9d9d9d;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem 0px;
+}
+
+.alink:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* 副标题区域 */
+.second-title {
+  padding: 2rem 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.second-box {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 2rem 5rem;
+}
+
+.second-box > div:nth-child(1) {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.second-box > div:nth-child(2) {
+  color: #333;
+  text-align: center;
+}
+
+/* 项目展示区 */
+.container {
+  padding: 0px 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  width: 21%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #dcdcdc;
+}
+
+/* 图片自适应 */
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

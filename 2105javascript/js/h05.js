@@ -96,3 +96,15 @@ atimer.addEventListener('click', () => {
     location = 'h01.html';
   }, 5000);
 });
+
+btntimer.addEventListener('click', () => {
+  // 清除计时器
+  clearInterval(timer1);
+  clearTimeout(timer2);
+  // 恢复计数器
+  count = 5;
+  // 恢复界面
+  atimer.style.display = 'inline';
+  btntimer.style.display = 'none';
+  sptimer.style.display = 'none';
+});

@@ -1,3 +1,5 @@
+//#region 基本if
+
 console.log('in h06.js=====>');
 // 逻辑表达式只有true,false（真假）两个值
 let logic = false;
@@ -62,4 +64,70 @@ btnage.addEventListener('click', () => {
   let iage = parseInt(age);
   let fage = parseFloat(age);
   console.log(iage, fage);
+
+  if (iage != fage) {
+    spage.style.display = 'inline';
+    return;
+  }
+
+  // 区间判定
+  if (iage < 1 || iage > 1000) {
+    spage.style.display = 'inline';
+    return;
+  }
+
+  alert('输入的年龄是：' + iage);
+});
+
+//#endregion
+
+// 阶梯if
+let txtyear = document.getElementById('txtyear');
+let txtmonth = document.getElementById('txtmonth');
+let btncompute = document.getElementById('btncompute');
+let spdate = document.getElementById('spdate');
+
+btncompute.addEventListener('click', () => {
+  let year = parseInt(txtyear.value);
+  let month = parseInt(txtmonth.value);
+  // 闰年的判定
+  // || 短路或运算 运算符前后的逻辑表达式只要一个为true
+  // 结果就是true，短路表示，前面的逻辑表达式为true
+  // 则不会计算后面的逻辑表达式
+  // && 短路与运算 都要为true结果才是true
+  // 前面的表达式为false，则不会计算后面的逻辑表达式
+  let run = year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
+
+  if (
+    month == 1 ||
+    month == 3 ||
+    month == 5 ||
+    month == 7 ||
+    month == 8 ||
+    month == 10 ||
+    month == 12
+  ) {
+    spdate.innerHTML = '31天';
+  } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+    spdate.innerHTML = '30天';
+  } else if (run && month == 2) {
+    spdate.innerHTML = '29天';
+  } else {
+    spdate.innerHTML = '28天';
+  }
+
+  /*
+    if(逻辑表达式1) {
+      逻辑表达式1为true时要执行的代码块
+    }
+    else if(逻辑表达式2) {
+      逻辑表达式2为true时要执行的代码块
+    }...
+    else {
+      上面所有的表达式都为false时要执行的代码块
+    }
+    // 注意事项：任意阶梯为true，后续的判定都不会执行了
+  */
+
+
 });

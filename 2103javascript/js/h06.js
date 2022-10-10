@@ -1,3 +1,5 @@
+//#region if基础
+
 console.log('in h06.js=======>');
 
 // 逻辑表达式就是只有true/false（真假）两个结果
@@ -80,4 +82,41 @@ btnage.addEventListener('click', () => {
   }
   // alert('要弹出显示的信息')
   alert('输入的年龄是：' + iage);
+});
+
+//#endregion
+
+let txtyear = document.getElementById('txtyear');
+let txtmonth = document.getElementById('txtmonth');
+let btncompute = document.getElementById('btncompute');
+let spday = document.getElementById('spday');
+
+btncompute.addEventListener('click', () => {
+  //  获取输入的年月信息
+  let year = parseInt(txtyear.value);
+  let month = parseInt(txtmonth.value);
+  // 作业，补齐年月的校验
+  // 闰年的判定 1:能够被400整除
+  // 或者2:能够被4整除但是不能被100整除
+  // &&是短路逻辑与判定，&&前后的表达式都为true，结果才是true
+  // 如果第一个逻辑表达式为false，构成短路，不再计算第二个
+  let run = year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
+  // 阶梯版本的if
+  if (
+    month == 1 ||
+    month == 3 ||
+    month == 5 ||
+    month == 7 ||
+    month == 8 ||
+    month == 10 ||
+    month == 12
+  ) {
+    spday.innerHTML = '31天';
+  } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+    spday.innerHTML = '30天';
+  } else if (run && month == 2) {
+    spday.innerHTML = '29天';
+  } else {
+    spday.innerHTML = '28天';
+  }
 });

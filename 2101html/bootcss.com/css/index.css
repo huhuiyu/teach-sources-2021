@@ -111,11 +111,13 @@ body {
   padding: 0px 5vw;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project {
   width: 21%;
   margin: 0.5rem;
+  margin-bottom: 1.5rem;
   padding: 0.5rem;
   border: 1px solid #dcdcdc;
 }
@@ -125,4 +127,132 @@ body {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* 图片文字区域 */
+.project-text {
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+
+.project-text > div:nth-child(1) {
+  color: #337ab7;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.project-text > div:nth-child(1):hover {
+  color: #115895;
+}
+
+.project-text > div:nth-child(2) {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: #777;
+}
+
+.project-text > div:nth-child(3) {
+  color: #777;
+}
+
+/* 下方友情链接区域 */
+.bottom-box {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #dcdcdc;
+  padding: 1rem;
+}
+
+.bottom-box > div {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 1rem;
+  display: flex;
+}
+
+.logo1 {
+  background-color: #563d7c;
+  color: #fff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.2rem;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.logo2 {
+  color: #563d7c;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.text1 {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+/* 右边链接区域 */
+.bottom-right {
+  margin-left: 3rem;
+  display: flex;
+}
+
+.links {
+  margin-right: 3rem;
+}
+
+.links > div {
+  color: #777;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.links > div:hover {
+  text-decoration: underline;
+}
+
+.links > div:first-child {
+  color: #563d7c;
+  font-size: 1rem;
+  padding: 0.5rem 0px;
+}
+
+.links > div:first-child:hover {
+  cursor: default;
+  text-decoration: none;
+}
+
+/* 备案信息 */
+.beian {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.beian a {
+  display: inline-block;
+  color: #777;
+  text-decoration: none;
+  margin: 0px 0.7rem;
+}
+
+.beian a:first-of-type:hover {
+  text-decoration: underline;
+}
+
+/* 返回顶端 */
+.top-box {
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
+  background-color: #666;
+  color: #eee;
+}
+
+.top-box a {
+  text-decoration: none;
+  color: #eee;
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
 }

@@ -115,6 +115,9 @@ body {
 /* 图文混排区域样式 */
 .container {
   margin: 0px 10vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project {
@@ -122,6 +125,7 @@ body {
   border: 1px solid #dcdcdc;
   width: 21%;
   padding: 0.2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* 图片自适应 */
@@ -155,4 +159,98 @@ body {
 
 .project-text > div:nth-child(3) {
   color: #777;
+}
+
+/* 回到顶端的样式 */
+.top-box {
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
+  background-color: #666;
+  cursor: pointer;
+}
+
+.top-box a {
+  color: #eee;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+}
+
+/* 下方广告区域 */
+.bottom-box {
+  margin: 1.5rem 10vw;
+  padding: 1rem 1vw;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  justify-content: center;
+}
+
+.logo01 {
+  /* 第一个字母的样式 */
+  display: inline-block;
+  background-color: #563d7c;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.1rem 0.3rem;
+  border-radius: 2px;
+}
+
+.logo02 {
+  color: #563d7c;
+  font-size: 1.5rem;
+}
+
+/* 右边链接区域 */
+.bottom-right {
+  display: flex;
+  margin-left: 3rem;
+}
+
+/* 列表区域 */
+.bottom-links {
+  margin-right: 3rem;
+}
+
+.bottom-links > div {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.bottom-links > div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* 第一行单独样式 */
+.bottom-links > div:first-child {
+  color: #563d7c;
+  font-size: 1rem;
+  margin: 0.5rem 0px;
+}
+
+.bottom-links > div:first-child:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
+/* 备案信息 */
+.beian {
+  text-align: center;
+  margin: 1rem 0px 3rem 0px;
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.beian a {
+  color: #777;
+  display: inline-block;
+  margin: 0px 1rem;
+  text-decoration: none;
+}
+
+.beian a:hover {
+  text-decoration: underline;
 }

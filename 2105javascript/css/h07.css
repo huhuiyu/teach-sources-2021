@@ -1,0 +1,19 @@
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#divImg {
+  width: 15rem;
+}
+
+#divBgImg {
+  margin: 1rem;
+  width: 16rem;
+  height: 9rem;
+  border: 1px solid #ff0000;
+  background-size: cover;
+  background-position: center center;
+  transition: all 1s linear;
+}

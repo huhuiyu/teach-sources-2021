@@ -34,3 +34,61 @@ console.log(names[0], names[3], names.length);
 let btnname = document.getElementById('btnname');
 let spname = document.getElementById('spname');
 
+let timer1;
+let timer2;
+// 判定是否已经开始随机演示了
+let process = false;
+
+btnname.addEventListener('click', () => {
+  // 如果在进行中就不要执行任何动作
+  if (process) {
+    return;
+  }
+  // 切换到进行中
+  process = true;
+  // 随机的timer
+  timer2 = setInterval(() => {
+    // 0到长度-1
+    let index = parseInt(Math.random() * names.length);
+    spname.innerHTML = names[index];
+  }, 100);
+  // 停止随机的timer
+  timer1 = setTimeout(() => {
+    clearInterval(timer2);
+    process = false;
+  }, 3000);
+});
+
+// 图片随机切换，切记，路径是由html决定，和js文件的位置无关
+// 简单的说，就是html页面中的路径，就是js里面
+let images = [
+  './images/img28.jpg',
+  './images/img29.jpg',
+  './images/img30.jpg',
+  './images/img31.jpg',
+  './images/img32.jpg',
+];
+
+// 随机更换图片
+let imgrnd = document.getElementById('imgrnd');
+
+setInterval(() => {
+  let index = parseInt(Math.random() * images.length);
+  console.log(images[index]);
+  // 替换元素的属性
+  // 页面元素.setAttribute('属性名称',属性值)
+  // 可以修改页面元素指定属性的值
+  imgrnd.setAttribute('src', images[index]);
+}, 1000);
+
+// 次序切换背景图片
+let divBgImg = document.getElementById('divBgImg');
+// 当前背景图片的索引
+let imgindex = 0;
+// 切换背景图片
+divBgImg.style.backgroundImage = 'url("' + images[imgindex] + '")';
+
+setInterval(() => {
+  imgindex = (imgindex + 1) % images.length;
+  divBgImg.style.backgroundImage = 'url("' + images[imgindex] + '")';
+}, 2000);

@@ -35,12 +35,57 @@ console.log(names[0], names[3], names.length);
 let btnname = document.getElementById('btnname');
 let spname = document.getElementById('spname');
 let timer;
+let timer2;
+let progress = false;
 
 spname.innerHTML = names[1];
 
 btnname.addEventListener('click', () => {
-  // 在数组中随机挑选一个的技巧
-  // 数组下标恰好是带范围的数字
-  let index = parseInt(Math.random() * names.length);
-  console.log(names[index]);
+  // 如果在进行中，就不要在再次点击
+  if (progress) {
+    return;
+  }
+  //切换到进行中
+  progress = true;
+
+  // 循环随机
+  timer = setInterval(() => {
+    // 在数组中随机挑选一个的技巧
+    // 数组下标恰好是带范围的数字
+    let index = parseInt(Math.random() * names.length);
+    console.log(names[index]);
+    spname.innerHTML = names[index];
+  }, 50);
+
+  // 停止计时器任务
+  timer2 = setTimeout(() => {
+    clearInterval(timer);
+    // 恢复控制
+    progress = false;
+  }, 5000);
 });
+
+// 图片切换效果
+let divBg = document.getElementById('divBg');
+// 图片路径的数组
+let images = [
+  './images/img28.jpg',
+  './images/img29.jpg',
+  './images/img30.jpg',
+  './images/img31.jpg',
+];
+let count = 0;
+
+let url = 'url("' + images[count] + '")';
+console.log(url);
+divBg.style.backgroundImage = url;
+
+setInterval(() => {
+  count = (count + 1) % images.length;
+  // 0 (1%4 1) (2%4 2) (3%4 3) (4%4 0)
+
+  url = 'url("' + images[count] + '")';
+  console.log(url);
+  divBg.style.backgroundImage = url;
+  
+}, 2000);

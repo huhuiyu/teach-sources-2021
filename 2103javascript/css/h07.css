@@ -1,0 +1,11 @@
+#divBg {
+  background-size: cover;
+  width: 16rem;
+  height: 9rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 1s linear;
+}

@@ -11,11 +11,19 @@
 <body>
 
   <span id="spName"></span>
+  <span id="spSession"></span>
 
   <script>
     let spName = document.getElementById('spName');
     let lname = localStorage.getItem('local_name');
     spName.innerHTML = lname;
+
+    let spSession = document.getElementById('spSession');
+    let info = sessionStorage.getItem('session_info');
+    spSession.innerHTML = info;
+
+
+
   </script>
 
 </body>

@@ -1,0 +1,133 @@
+/* 容器 */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  margin: 1rem;
+  width: 300px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 滤镜样式 */
+.filter01 {
+  /* 
+    filter全都是滤镜特效，不同的滤镜会有不同效果
+    blur的效果是模糊，参数值越大效果越模糊
+  */
+  filter: blur(3px);
+}
+
+.filter02 {
+  /* 灰度效果，值越大越接近黑白色调 */
+  filter: grayscale(100%);
+}
+
+.filter03 {
+  /* 亮度，1是默认，小暗大亮 */
+  filter: brightness(0.5);
+}
+
+.filter04 {
+  filter: contrast(200%);
+}
+
+.filter05 {
+  filter: brightness(0.5) contrast(300%);
+}
+
+.filter06 {
+  /* 
+    drop-shadow是阴影（外发光效果）
+    如果是带有透明区域的图片（png），效果是根据透明区域描绘的
+    一二两个参数分别是xy轴的阴影距离
+    第三个参数是z轴（外发光）的距离
+    一般来说这两种效果不会并存
+  */
+  filter: drop-shadow(0px 0px 10px #0000ff);
+}
+
+/* 切片效果部分 */
+.clip01 {
+  margin: 1rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  color: #fff;
+  clip-path: circle(50%);
+}
+
+.clip02 {
+  margin: 1rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  color: #fff;
+  /* 
+    polygon多边形切片，多边形的形状是由一系列的点构成
+    参数是xy轴的坐标点，多个点用逗号分割
+  */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.clip03 {
+  margin: 1rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  color: #fff;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* 未读消息效果 */
+.message {
+  margin: 2rem;
+  border: 1px solid #dcdcdc;
+  width: 10rem;
+  height: 5rem;
+  position: relative;
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.6rem;
+  background-color: #ff0000;
+  color: #fff;
+  clip-path: circle(50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  transform: translate(50%, -50%);
+}
+
+.huan {
+  width: 20rem;
+  height: 20rem;
+  background-color: #ff0000;
+  clip-path: circle(50%);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.huan > div {
+  background-color: #fff;
+  height: 100%;
+  clip-path: circle(50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,141 @@
+/* 滤镜容器 */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 1rem;
+}
+
+.container > div {
+  margin: 0.5rem;
+  border: 1px solid #dcdcdc;
+  padding: 0.5rem;
+  width: 300px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 滤镜 */
+.filter01 {
+  /* 
+    filter就是滤镜效果，不同的滤镜会有完全不同的特效
+
+  */
+  filter: blur(2px);
+}
+
+.filter02 {
+  /* grayscale是灰度效果，值越大也是黑白色调 */
+  filter: grayscale(100%);
+}
+
+.filter03 {
+  /* 亮度，1是默认，小暗大亮 */
+  filter: brightness(1.5);
+}
+
+.filter04 {
+  /* 对比度 */
+  filter: contrast(200%);
+}
+
+.filter05 {
+  filter: brightness(0.5) contrast(300%);
+}
+
+.filter06 {
+  /* 
+    投影和外发光，和标准的阴影区别是：
+    如果没有透明区域，那么是一样的
+    如果是透明图片这种，阴影和发光是沿着透明区域绘制
+    参数一和二是阴影的xy轴距离
+    参数三是外发光z轴距离
+    参数四是颜色，一般来说阴影和外发光不会同时设置
+  */
+  filter: drop-shadow(10px 10px 10px #0000ff);
+}
+
+/* 切片效果区域 */
+.clip01 {
+  margin: 1rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #f00;
+  color: #fff;
+
+  clip-path: circle(50%);
+}
+
+.clip02 {
+  margin: 1rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #f00;
+  color: #fff;
+  /* 
+    polygon是多边形切片，有点类似ps里面钢笔工具
+    参数就是绘制多边形的坐标点
+    每一个点是xy两个轴距离组成，多点是逗号分隔
+  */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.clip03 {
+  margin: 1rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #f00;
+  color: #fff;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.huan {
+  margin: 1rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: #f00;
+  padding: 1rem;
+  clip-path: circle(50%);
+}
+
+.huan > div {
+  background-color: #fff;
+  height: 100%;
+  clip-path: circle(50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  margin: 1rem;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #dcdcdc;
+  position: relative;
+}
+
+.yuan {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #f00;
+  color: #fff;
+  font-size: 0.6rem;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  clip-path: circle(50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translate(40%, -40%);
+}

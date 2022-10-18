@@ -1,0 +1,119 @@
+/* 容器布局 */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  width: 300px;
+  margin: 1rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.filter01 {
+  /* 
+    filter就是滤镜，可以对元素产生各种不同特效
+    blur是虚化（失焦）参数值是虚化的大小
+  */
+  filter: blur(2px);
+}
+
+.filter02 {
+  /* 灰度（其实就是转成黑白色调，值越大颜色越是黑白） */
+  filter: grayscale(80%);
+}
+
+.filter03 {
+  /* 亮度 */
+  filter: brightness(0.5);
+}
+
+.filter04 {
+  /* 对比度 */
+  filter: contrast(300%);
+}
+
+.filter05 {
+  filter: brightness(2) contrast(200%);
+}
+
+.filter06 {
+  /* 
+    drop-shadow会沿着透明图片的边缘放置阴影
+    前三个值分别是x，y，z轴的阴影距离，第四个参数是颜色
+    一般情况下xy和z总有一组是0px
+  */
+  filter: drop-shadow(0px 0px 10px #0000ff);
+}
+
+/* 切片 */
+.clip-01 {
+  margin: 1rem;
+  height: 10rem;
+  width: 10rem;
+  background-color: #ff0000;
+  clip-path: circle(50%);
+}
+
+.clip-02 {
+  margin: 1rem;
+  height: 10rem;
+  width: 10rem;
+  background-color: #ff0000;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.clip-03 {
+  margin: 1rem;
+  height: 10rem;
+  width: 10rem;
+  background-color: #ff0000;
+  clip-path: polygon(50% 0%, 80% 50%, 50% 100%, 20% 50%);
+}
+
+.watch {
+  margin: 1rem 5rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: #777;
+  padding: 2rem;
+  clip-path: circle(50%);
+}
+
+.watch > div {
+  background-color: #fff;
+  height: 100%;
+  clip-path: circle(50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  border: 1px solid #dcdcdc;
+  width: 10rem;
+  height: 5rem;
+  position: relative;
+}
+
+.yuan {
+  font-size: 0.6rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #aa0000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(50%);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: translate(50%, -50%);
+}

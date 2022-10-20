@@ -38,6 +38,22 @@ let btnSession = document.getElementById('btnSession');
 let btnDel = document.getElementById('btnDel');
 let spSession = document.getElementById('spSession');
 
-btnSession.addEventListener('click', () => {});
+btnSession.addEventListener('click', () => {
+  let session = txtSession.value;
+  sessionStorage.setItem('session-info', session);
+  alert('保存session信息成功');
+  // 刷新当前页面的方法
+  location.reload();
+});
 
-btnDel.addEventListener('click', () => {});
+btnDel.addEventListener('click', () => {
+  sessionStorage.removeItem('session-info');
+  alert('移除session成功');
+  location.reload();
+});
+
+spSession.innerHTML = sessionStorage.getItem('session-info');
+
+// sessionStorage和localStorage
+// 的方法名称和功能完全一样
+// 但是sessionStorage的数据在关闭浏览器之后会自动删除

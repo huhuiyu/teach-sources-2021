@@ -60,3 +60,63 @@ function initMonth() {
 }
 
 initMonth();
+
+// 监听下拉列表选中值变化事件
+selYear.addEventListener('change', () => {
+  initDay();
+});
+
+selMonth.addEventListener('change', () => {
+  initDay();
+});
+
+// 日期数据变化填充方法
+function initDay() {
+  // 下拉列表的值是由选中的option标记提供
+  let year = selYear.value;
+  let month = selMonth.value;
+  console.log('下拉数据发生变化', year, month);
+  // 计算天数
+  // 默认是31天
+  let days = 31;
+  let run = year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
+
+  if (month == 4 || month == 6 || month == 9 || month == 11) {
+    days = 30;
+  } else if (run && month == 2) {
+    days = 29;
+  } else if (month == 2) {
+    days = 28;
+  }
+  // 生成选项，添加前要清除原有的选项
+  selDay.innerHTML = '';
+  for (let i = 1; i <= days; i++) {
+    let opt = document.createElement('option');
+    opt.setAttribute('value', i);
+    opt.append(i + '日');
+    selDay.append(opt);
+  }
+  selDay.selectedIndex = parseInt(days / 2) - 1;
+  showDate();
+}
+
+initDay();
+
+btnDate.addEventListener('click', () => {
+  alert(
+    '选中的日期是：' + selYear.value + '-' + selMonth.value + '-' + selDay.value
+  );
+});
+
+function showDate() {
+  spDate.innerHTML = selYear.value + '-' + selMonth.value + '-' + selDay.value;
+}
+
+// addEventListener的第二个参数要求是一个function
+// 所以可以直接写一个function的名称，而不需要括号
+selDay.addEventListener('change', showDate);
+
+showDate();
+
+// 循环细节就是三段表达式需要仔细检查，否则容易出现死循环
+// function暂时理解成有名字的代码块，调用名称就会执行

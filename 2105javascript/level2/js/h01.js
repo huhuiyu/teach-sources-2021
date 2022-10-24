@@ -95,9 +95,36 @@ selMonth.addEventListener('change', () => {
 function showDate() {
   // select元素的value是选中的option的value属性值
   year = selYear.value;
-  console.log('年份选中值变化', year);
+  console.log('选中值变化', year);
   month = selMonth.value;
   spDate.innerHTML = year + '-' + month;
+  // 计算日期
+  let days = 31;
+  let run = year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
+  if (month == 4 || month == 6 || month == 9 || month == 11) {
+    days = 30;
+  } else if (run && month == 2) {
+    days = 29;
+  } else if (month == 2) {
+    days = 28;
+  }
+  // 填充日期列表，添加前要清除原有的数据
+  selDay.innerHTML = '';
+  // selDay.options.length=0;
+  for (let i = 1; i <= days; i++) {
+    let opt = document.createElement('option');
+    opt.setAttribute('value', i);
+    opt.append(i + '日');
+    selDay.append(opt);
+  }
+  selDay.selectedIndex = parseInt(days / 2) - 1;
 }
 
 showDate();
+
+btnDate.addEventListener('click', () => {
+  alert(
+    '选中的日期：' + selYear.value + '-' 
+    + selMonth.value + '-' + selDay.value
+  );
+});

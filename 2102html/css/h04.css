@@ -1,0 +1,123 @@
+/* 背景图片效果 */
+.bg-box {
+  width: 16rem;
+  height: 10rem;
+  background-size: 100% 100%;
+  transition: background-size 1s linear;
+  /* 
+    background-position表示如果背景图片无法完整呈现的时候
+    要显示图片区域，center表示中间区域
+  */
+  background-position: center center;
+
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/* 文字效果 */
+.bg-box > div {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-box:hover {
+  background-size: 110% 110%;
+}
+
+/* 抽离单独的样式部分 */
+.bg1 {
+  background-image: url('../3.jpg');
+}
+
+.bg2 {
+  background-image: url('../4.jpg');
+}
+
+.bg3 {
+  background-image: url('../5.jpg');
+}
+
+.bg4 {
+  background-image: url('../10.jpg');
+}
+
+.bg1 > div {
+  background-color: rgba(166, 10, 10, 0.6);
+}
+
+.bg2 > div {
+  background-color: rgba(54, 7, 129, 0.6);
+}
+
+.bg3 > div {
+  background-color: rgba(192, 223, 20, 0.6);
+}
+
+.bg4 > div {
+  background-color: rgba(129, 7, 7, 0.6);
+}
+
+/* 整体排版 */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* 图文混排容器 */
+.img-text-box {
+  width: 20rem;
+  background-color: #fff;
+  margin: 1rem 2rem;
+}
+
+.img-text-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s linear;
+}
+
+.img-text-box:hover img {
+  transform: scale(1.2);
+}
+
+/* 图片盒子区域要限制图片放大时不要超出范围 */
+.img-box {
+  overflow: hidden;
+}
+
+body {
+  background-color: #dcdcdc;
+}
+
+/* 文字区 */
+.text-box {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* 第一行 */
+.text-box > div:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* 第二行 */
+.text-box > div:nth-child(2) {
+  margin: 1rem 0px;
+}
+
+/* 按钮效果 */
+.btn {
+  display: inline-block;
+  background-color: #046fe6;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.1rem;
+}

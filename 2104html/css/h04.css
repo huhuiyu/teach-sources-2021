@@ -1,0 +1,150 @@
+/* 主题部分 */
+.zt {
+  width: 16rem;
+  height: 10rem;
+  background-size: 100% 100%;
+  /* 背景图片超出容器大小时要显示的区域 */
+  background-position: center center;
+  transition: all 0.5s linear;
+  margin: 1rem;
+}
+
+.zt > div {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.zt:hover {
+  background-size: 110% 110%;
+}
+
+/* 个性化部分 */
+.bg1 {
+  background-image: url('../images/1.jpg');
+}
+
+.bg2 {
+  background-image: url('../images/2.jpg');
+}
+
+.bg3 {
+  background-image: url('../images/3.jpg');
+}
+
+.bg4 {
+  background-image: url('../images/4.jpg');
+}
+
+.bg1 > div {
+  background-color: rgba(21, 150, 189, 0.6);
+}
+
+.bg2 > div {
+  background-color: rgba(27, 21, 189, 0.6);
+}
+
+.bg3 > div {
+  background-color: rgba(189, 21, 35, 0.6);
+}
+
+.bg4 > div {
+  background-color: rgba(189, 21, 189, 0.6);
+}
+
+/* 主题容器 */
+.zt-box {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #dcdcdc;
+}
+
+/* 图文混排 */
+.img-text-box {
+  width: 22rem;
+  background-color: #fff;
+  margin: 1rem 1.5rem;
+}
+
+.img-text-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-text-box img:hover {
+  transform: scale(1.1);
+}
+
+.img-box {
+  /* 限制图片不能超出容器范围 */
+  overflow: hidden;
+}
+
+/* 文本区 */
+.text-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.text-box > div:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text-box > div:nth-child(2) {
+  padding: 1rem 0px;
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #046fe6;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #035ed5;
+}
+
+/* 探索更多容器 */
+.tsgd-box {
+  display: flex;
+  justify-content: center;
+}
+
+/* 最下方区域 */
+.footer {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: #046fe6;
+}
+/* 
+  :not表示取反 :last-child是最后一个
+  ::after表示在元素的后面
+*/
+.links a:not(:last-child)::after {
+  content: '|';
+  display: inline-block;
+  margin: 0px 0.5rem;
+}

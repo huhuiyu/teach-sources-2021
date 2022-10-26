@@ -56,6 +56,8 @@ let student = {
   sex: '男',
   height: 175,
   weight: 70,
+  // icon: '../images/img28.jpg',
+  icon: 'https://img.zcool.cn/community/019f9e5ca55f3ca801214168cc09f7.jpg@1280w_1l_2o_100sh.jpg',
 };
 // json的格式简单，且可以组合多种不同的数据类型为一个整体
 // {
@@ -63,3 +65,47 @@ let student = {
 // 属性名称2:属性值2,...
 //}
 console.log('学生信息：', student);
+// json对象可以单独访问属性的值
+// 格式为：json对象.属性名称
+console.log('学生属性：', student.name, student.sex);
+
+let divJson = document.getElementById('divJson');
+// JSON.stringify(json对象)可以将json转换为字符串
+// JSON.parse(json格式的字符串)可以将字符串转回为json对象
+divJson.append(JSON.stringify(student));
+
+// 模板呈现方法的原理
+let spName = document.getElementById('spName');
+let spSex = document.getElementById('spSex');
+let imgInfo = document.getElementById('imgInfo');
+
+spName.innerHTML = student.name;
+spSex.innerHTML = student.sex;
+imgInfo.setAttribute('src', student.icon);
+
+let jsonInfo = '{"abc":134,"info":"信息"}';
+let jsonObj = JSON.parse(jsonInfo);
+console.log(jsonObj.info, jsonInfo.info);
+
+// 两种特别版本的json演示
+let json01 = {
+  test: '测试信息',
+  format: function () {
+    return '函数';
+  },
+  info: {
+    name: 'test',
+    password: '1122',
+  },
+  subject: [1, 2, 4],
+};
+
+console.log(json01.info.name);
+console.log(json01.subject);
+
+let json02 = [
+  { name: '班长', sex: '男' },
+  { name: '学习委员', sex: '女' },
+];
+
+console.log(json02[1], json02[1].name);

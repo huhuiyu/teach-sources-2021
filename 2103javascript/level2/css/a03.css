@@ -8,6 +8,11 @@ body {
   width: 100vw;
 }
 
+.divinfo {
+  /* 负责将页面加大到有滚动条 */
+  height: 150vh;
+}
+
 .box {
   position: fixed;
   font-size: 2rem;
@@ -27,4 +32,24 @@ body {
 
 .c4 {
   color: rgb(143, 12, 47);
+}
+
+/* 动画的部分 */
+
+@keyframes fade-out {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-500%);
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fade-out 2s;
 }

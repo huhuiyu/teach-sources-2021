@@ -20,5 +20,22 @@ div1.addEventListener('mouseup', (event) => {
   div.style.top = top + 'px';
   div.style.left = left + 'px';
 
+  // 监听动画结束事件
+  div.addEventListener('animationend', () => {
+    // 动画结束后移除元素
+    div.remove();
+  });
+
+  // 动画效果的css
+  div.classList.add('fade-out');
+
   div1.append(div);
 });
+
+// 监听元素滚动的事件
+div1.addEventListener('scroll', () => {
+  console.log(div1.scrollTop, div1.scrollLeft);
+});
+
+//作业是完成滚动到某个高度之后出现回上端
+// 且最上端某个元素会变成固定位置

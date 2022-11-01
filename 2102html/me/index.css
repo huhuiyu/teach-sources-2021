@@ -1,0 +1,100 @@
+body {
+  margin: 0px;
+}
+
+.s01 {
+  border-bottom: 1px solid #dcdcdc;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 2rem 0px;
+}
+
+/* 个人介绍部分 */
+.s02 {
+  /* 左右布局 */
+  display: flex;
+  padding: 4rem 15vw;
+}
+
+.s02 > div {
+  width: 50%;
+}
+/* 图片的容器 */
+.s02 > div:last-of-type {
+  /* 靠右对齐 */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.s02 img {
+  width: 30vw;
+  filter: drop-shadow(3px 3px 0px #dcdcdc);
+  border-radius: 2px;
+}
+
+/* 介绍的上半区 */
+.s03 {
+  border-bottom: 1px solid #aaa;
+  /* 首行缩进 */
+  /* text-indent: 2em; */
+}
+
+.s03 > div:first-of-type {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+}
+
+.s03 > div:last-of-type {
+  font-size: 0.8rem;
+  color: #999;
+  line-height: 1.2rem;
+  padding: 2rem 0px;
+}
+
+/* 联系信息部分 */
+.s04 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0px;
+}
+
+.s05 {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.s06 {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.5rem;
+}
+
+.s07 {
+  display: flex;
+  justify-content: center;
+}
+
+.s07 > div {
+  width: 40vw;
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  margin: 0.8rem;
+}
+
+.s08 {
+  display: flex;
+  justify-content: center;
+}
+
+.s08 > div {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-image: url('../9.jpg');
+  background-size: cover;
+}

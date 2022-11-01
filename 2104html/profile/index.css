@@ -1,0 +1,123 @@
+body {
+  margin: 0px;
+}
+
+/* 巨幕部分 */
+.a01 {
+  background-image: url('../images/5.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+.a01 > div {
+  background-color: rgba(32, 7, 146, 0.5);
+  padding: 8rem 0px 10rem 0px;
+}
+
+/* 主标题文字 */
+.a02 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.a02 span {
+  color: #d10ea7;
+}
+
+.a03 {
+  color: #dcdcdc;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+/* 作品展示按钮 */
+.a04 {
+  background-color: #d10ea7;
+  color: #dcdcdc;
+
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+}
+
+/* 关于 */
+.a05 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* 图文混排区域 */
+.a06 {
+  display: flex;
+  padding: 5rem 15vw;
+}
+
+.a06 > div {
+  width: 50%;
+}
+
+.a06 img {
+  display: block;
+  width: 25vw;
+}
+
+.a06 > div:last-of-type {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 第一区间 */
+.a07 {
+  border-bottom: 1px solid #cbcbcb;
+  /* 段落首行缩进 */
+  text-indent: 2em;
+}
+
+.a07 > div:first-of-type {
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.a07 > div:last-of-type {
+  color: #777;
+  line-height: 1.5rem;
+  padding: 2rem 0px;
+}
+
+/* 联系方式 */
+.a08 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+/* 联系方式的文本 */
+.a09 {
+  font-weight: bold;
+}
+
+.a10 {
+  display: inline-block;
+  color: #777;
+  padding-top: 0.5rem;
+}
+
+/* div模拟头像效果 */
+.s01 {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.s01 > div {
+  width: 4rem;
+  height: 4rem;
+
+  background-image: url('../images/4.jpg');
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+}

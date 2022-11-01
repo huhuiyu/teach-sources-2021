@@ -1,0 +1,94 @@
+body {
+  margin: 0px;
+}
+
+/* 巨幕背景图片效果 */
+.a01 {
+  text-align: center;
+
+  background-image: url('../images/6.jpg');
+  background-size: cover;
+}
+
+/* 半透明的遮罩背景 */
+.a02 {
+  background-color: rgba(25, 2, 105, 0.5);
+  padding: 8rem 0px 10rem 0px;
+}
+
+/* 第一行的文字效果 */
+.a03 {
+  font-size: 4rem;
+  line-height: 6rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 突出颜色 */
+.a04 {
+  color: #d42009;
+}
+
+/* 第二行文字效果 */
+.a05 {
+  font-size: 2.2rem;
+  color: #dcdcdc;
+  margin: 2rem 0px;
+}
+
+/* 巨幕里面的按钮效果 */
+.a06 {
+  display: inline-block;
+  color: #dcdcdc;
+  background-color: #d42009;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* 关于 */
+.a07 {
+  padding: 3rem 0px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* 图文介绍区域 */
+.a08 {
+  display: flex;
+  padding: 5rem 15vw;
+}
+
+.a08 > div {
+  width: 50%;
+}
+
+.a08 img {
+  width: 25vw;
+  border-radius: 1rem;
+}
+
+.a08 > div:last-of-type {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 左边第一区块 */
+.a09 {
+  border-bottom: 1px solid #cbcbcb;
+  /* 首航缩进 */
+  text-indent: 2em;
+}
+
+/* 两端文字 */
+.a10 {
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.a11 {
+  color: #777;
+  padding: 2rem 0px;
+  line-height: 1.5rem;
+}

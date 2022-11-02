@@ -19,3 +19,16 @@ sp02.addEventListener('click', () => {
   // 移动到当前元素
   divMain.classList.add('move2');
 });
+
+sp01.addEventListener('click', () => {
+  console.log('点击sp02');
+  // 移除其它的active状态
+  sp02.classList.remove('active');
+  // 添加当前元素为active状态
+  sp01.classList.add('active');
+
+  // 移除容器原有的样式
+  divMain.classList.remove('move2');
+  // 移动到当前元素
+  divMain.classList.add('move1');
+});

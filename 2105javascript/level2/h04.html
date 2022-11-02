@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>函数进阶和公用js导入</title>
+
+</head>
+
+<body>
+
+  <span id="sp01"></span>
+  =======================
+  <span id="sp02"></span>
+  <hr>
+  <input type="text" id="txt01">
+  <button id="btn01">确定</button>
+
+
+  <!-- 
+    多个js导入，会在页面叠加起来使用
+    所以js的导入带有严格的次序
+    h04.js里面使用formatDate的function
+    是在common.js中定义的，那么common.js的导入一定
+    要在h04.js的前面
+  -->
+  <script src="./js/common.js"></script>
+  <script src="./js/h04.js"></script>
+
+
+
+
+
+</body>
+
+</html>

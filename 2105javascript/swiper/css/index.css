@@ -1,0 +1,22 @@
+body {
+  margin: 0px;
+  /* overflow: hidden; */
+}
+.swiper {
+  width: 64rem;
+  height: 36rem;
+  /* width: 100vw;
+  height: 100vh; */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#canvas {
+  width: 20rem;
+  height: 15rem;
+  z-index: 1000;
+}

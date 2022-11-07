@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>swiper使用效果</title>
+
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../images/img28.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="../images/img29.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="../images/img30.jpg" alt="">
+      </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- 如果需要滚动条 -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+  </div>
+
+  <div id="about">
+    <a href="#" id="toggle-options"></a>
+    <ul id="options">
+      <li><a href="#" id="quivers" class="">Quiver</a></li>
+      <li><a href="#" id="gradient" class="on">Gradient</a></li>
+      <li><a href="#" id="color" class="on">Colorize</a></li>
+      <li><a href="#" id="valentineify" class="">Valentine-ify</a></li>
+      <li class="group"><span>Mouse down: explode and repel</span></li>
+      <li><span>Mouse down + shift: explode and attract</span></li>
+      <li><span>Arrow Up: increase particle size</span></li>
+      <li class="group"><span>Sorry about your CPU</span></li>
+      <li><span id="fps"></span></li>
+    </ul>
+  </div>
+
+  <canvas id="canvas"></canvas>
+
+  <script src="./js/clock.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

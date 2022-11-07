@@ -1,0 +1,23 @@
+.swiper {
+  width: 64vw;
+  height: 36vw;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}

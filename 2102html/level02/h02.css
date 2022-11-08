@@ -1,0 +1,50 @@
+body {
+  margin: 0px;
+  background-color: #000;
+  color: #fff;
+}
+/* 
+  #id值 表示页面上id属性为对应值的元素套用样式
+  例如#abc 表示页面中 id="abc"的元素
+*/
+#divbg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  /* 确保背景不会遮挡其它元素 */
+  z-index: -1;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-box {
+  padding: 4rem;
+  background-color: rgba(64, 64, 64, 0.5);
+  border-radius: 1rem;
+  display: flex;
+}
+
+.icon-box {
+  /* 恢复元素的背景颜色为默认值（没有，透明） */
+  background-color: transparent;
+  width: 20rem;
+}
+
+.icons {
+  display: flex;
+  background-color: transparent;
+}
+
+.icons svg {
+  width: 6rem;
+  margin: 1rem 2rem;
+}

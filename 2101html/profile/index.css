@@ -92,3 +92,32 @@ body {
   padding: 2rem 0px;
   line-height: 1.5rem;
 }
+
+/* 通过背景模拟圆形头像效果 */
+.img-box {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.img-box > div {
+  border: 1px solid #ff0000;
+  width: 5rem;
+  height: 5rem;
+  background-image: url('../images/4.jpg');
+  background-size: cover;
+  background-position: center center;
+
+  border-radius: 50%;
+}
+
+.a12 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.a12 > div > span:first-child {
+  font-weight: bold;
+  display: inline-block;
+  margin: 0.2rem 0px 0.5rem 0px;
+}

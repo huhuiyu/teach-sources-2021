@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form提交数据的演示</title>
+</head>
+
+<body>
+  <!-- get提交 -->
+  <form action="qs.html">
+    用户名：<input type="text" name="username">
+    密码：<input type="password" name="password">
+    <input type="submit" value="提交数据">
+  </form>
+
+
+  <hr>
+
+  <div>
+    用户名：<input type="text" id="username">
+    密码：<input type="password" id="password">
+    <button id="btnOk">确定</button>
+    <div id="divQs"></div>
+    <div id="divJson"></div>
+  </div>
+
+  <script src="js/qs.min.js"></script>
+
+  <script src="js/form.js"></script>
+
+</body>
+
+</html>

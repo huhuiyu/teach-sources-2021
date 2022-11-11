@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* #id值 表示页面中id="id值"的元素套用样式,id带有唯一性 */
+#divBg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -999;
+}
+
+/* 全屏居中容器 */
+.s01 {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 第二区域 */
+.s02 {
+  padding: 3rem;
+  border-radius: 1rem;
+  background-color: rgba(64, 64, 64, 0.5);
+  display: flex;
+}
+
+/* logo */
+.s03 {
+  /* 恢复背景默认值 */
+  background-color: transparent;
+  width: 16rem;
+}
+
+/* 横排图标区域 */
+.s04 {
+  display: flex;
+}
+
+.s04 svg {
+  width: 4rem;
+  margin: 1rem;
+}
+
+/* 简介的效果 */
+.s05 {
+  font-size: 1.2rem;
+  /* 行高比字大就会出现行间距 */
+  line-height: 2rem;
+  width: 45rem;
+  /* 首行缩进 */
+  text-indent: 2em;
+  /* 
+    设置字体，慎用！！！！！
+    只有访问网站的用户浏览器支持的字体才会生效
+  */
+  font-family: '楷体';
+}
+
+.s06 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.s07 {
+  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* 按钮 */
+.s08 {
+  display: inline-block;
+  background-color: rgba(100, 100, 100, 0.5);
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+/* 激活按钮 */
+.active {
+  background-color: rgba(150, 150, 150, 0.5);
+  color: aqua;
+}

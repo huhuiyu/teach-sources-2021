@@ -1,0 +1,57 @@
+.s01 {
+  width: 40vw;
+  height: 10vh;
+  margin-bottom: 1rem;
+  background: linear-gradient(#ff0000, #ffff00);
+}
+
+.s02 {
+  width: 40vw;
+  height: 10vh;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #ff0000, #ffff00);
+}
+
+.s03 {
+  width: 80vw;
+  height: 30vh;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #ff0000 20%, #ffff00 60%, #0000ff);
+}
+
+.s04 {
+  width: 40vw;
+  height: 10vh;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.5),
+    rgba(0, 0, 255, 0.5)
+  );
+}
+
+.s05 {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  border-radius: 50%;
+  background: radial-gradient(#fff 50%, #f00);
+}
+
+.s06 span {
+  display: inline-block;
+  font-size: 2rem;
+  border: 1px solid #f00;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+/* 
+  ::before是伪元素，表示在元素的前面添加元素
+  伪元素和真实的元素没有区别，可以任意设置样式
+  伪元素还有一个特有的样式content，表示伪元素里面的内容
+*/
+.s06 span::before {
+  content: '==>';
+  color: #00ffff;
+}

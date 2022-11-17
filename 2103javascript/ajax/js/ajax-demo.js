@@ -24,5 +24,13 @@ ajax(
 let btnEmail = document.getElementById('btnEmail');
 
 btnEmail.addEventListener('click', () => {
-  ajax('/tool/sendEmailCode');
+  ajax(
+    '/tool/sendEmailCode',
+    {
+      email: '1069306849@qq.com',
+    },
+    (info) => {
+      console.log('发送邮件的结果：', info);
+    }
+  );
 });

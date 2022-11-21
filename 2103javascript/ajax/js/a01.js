@@ -59,3 +59,71 @@ function loadCity() {
     }
   );
 }
+
+// 部门员工联动效果部分 ===============================
+let selDept = document.getElementById('selDept');
+let tbEmployee = document.getElementById('tbEmployee');
+
+function loadDept() {
+  ajax('/linkinfo/queryAllDept', {}, (info) => {
+    console.log('部门信息查询结果', info);
+    let list = info.list;
+    for (let i = 0; i < list.length; i++) {
+      let dept = list[i];
+      let op = document.createElement('option');
+      op.setAttribute('value', dept.deptId);
+      op.append(dept.deptName);
+      selDept.append(op);
+    }
+    selDept.selectedIndex = 0;
+    loadEmployee();
+  });
+}
+
+loadDept();
+
+selDept.addEventListener('change', () => {
+  loadEmployee();
+});
+
+function loadEmployee() {
+  // 获取选中的部门编号
+  let deptId = selDept.value;
+  console.log('选中的部门编号', deptId);
+  // 查询员工
+  ajax(
+    '/linkinfo/queryEmployeeByDept',
+    {
+      deptId: deptId,
+    },
+    (info) => {
+      console.log('查询员工的信息', info);
+      let list = info.list;
+      tbEmployee.innerHTML = '';
+      for (let i = 0; i < list.length; i++) {
+        let emp = list[i];
+        // 员工信息是呈现为表格方式
+        // <tr>
+        //   <td>100</td>
+        //   <td>张三</td>
+        //   <td>15080604020</td>
+        //   <td>1111111</td>
+        // </tr>
+        // 创建tr
+        let tr = document.createElement('tr');
+        // 添加到tbody里面
+        tbEmployee.append(tr);
+        // 员工编号的td
+        let td = document.createElement('td');
+        td.append(emp.employeeId);
+        // 添加到tr中
+        tr.append(td);
+
+        // 员工名称的td
+        td = document.createElement('td');
+        td.append(emp.employeeName);
+        tr.append(td);
+      }
+    }
+  );
+}

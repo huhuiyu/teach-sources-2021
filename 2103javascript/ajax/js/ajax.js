@@ -31,6 +31,7 @@ function ajax(url, params, callback, method) {
       callback(resp.data);
     })
     .catch((err) => {
+      console.error(err);
       // 应答的结果都是json，错误时只要给一个标准错误json信息
       callback({
         code: 500,

@@ -29,6 +29,7 @@ function ajax(url, params, callback, method) {
       callback(resp.data);
     })
     .catch((err) => {
+      console.error('ajax错误原因：', err);
       // 错误就伪造一个标准错误应答json信息回调
       callback({
         code: 500,

@@ -10,27 +10,39 @@
 
 <body>
 
+  <!-- 省份城市基本联动 -->
   省份：<select id="selProvince"></select>
   城市：<select id="selCity"></select>
   <button id="btnCity">确定</button>
   <span id="spCity"></span>
 
   <hr>
+  <!-- 1：完成班级和学生信息的两个select联动 -->
+  <!-- 2：完成班级和学生信息的select-table联动 -->
 
-  <table>
+  <!-- 部门员工表格联动 -->
+  部门：<select id="selDept"></select>
+
+  <table border="1">
 
     <thead>
       <tr>
-        <th>编号</th>
-        <th>名称</th>
+        <th>员工编号</th>
+        <th>员工名称</th>
+        <th>员工手机</th>
+        <th>信息最后修改时间</th>
       </tr>
     </thead>
 
-    <tbody>
-      <tr>
+    <tbody id="tbEmployee">
+
+      <!-- <tr>
         <td>100</td>
         <td>张三</td>
-      </tr>
+        <td>15080604020</td>
+        <td>1234567890</td>
+      </tr> -->
+
     </tbody>
 
   </table>

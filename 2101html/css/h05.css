@@ -31,4 +31,86 @@ body {
   padding: 5rem;
   background-color: rgba(64, 64, 64, 0.5);
   border-radius: 1rem;
+  display: flex;
+}
+
+.a04 {
+  display: flex;
+  justify-content: center;
+}
+
+.a04 svg {
+  width: 5rem;
+}
+
+.a05 {
+  width: 40vw;
+  font-family: '楷体';
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  /* 首行缩进 */
+  text-indent: 2em;
+}
+
+.a06 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0px;
+}
+
+.a06 > div:first-of-type {
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.a07 span {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(64, 64, 64, 0.5);
+  border-radius: 0.5rem;
+}
+
+.active {
+  background-color: rgba(128, 128, 128, 0.5) !important;
+  color: #0969d0;
+}
+
+.a08 {
+  position: fixed;
+  top: 2rem;
+  right: 1.5rem;
+}
+
+.a08 > div:first-of-type {
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+  text-align: center;
+  transition: all 1s;
+}
+
+.a08:hover > div:first-child {
+  background-color: #0969d0;
+}
+
+.a08 > div:last-child {
+  width: 2.4rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background-color: #0969d0;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.a08:hover > div:last-child {
+  opacity: 1;
 }

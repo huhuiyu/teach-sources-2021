@@ -1,0 +1,59 @@
+/* 绝对定位演示 */
+.s01 {
+  margin: 2rem;
+  width: 25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.s01 video {
+  width: 100%;
+}
+
+.s02 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 10;
+
+  transform: translate(100%, 100%);
+  transition: all 0.5s;
+}
+
+.s01:hover .s02 {
+  transform: translate(0%, 0%);
+}
+
+.s03 {
+  margin: 2rem;
+  width: 25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.s03 video {
+  width: 100%;
+}
+
+.s03::after {
+  /* attr可以读取元素的属性作为伪元素的内容 */
+  content: attr(data-title);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 5rem;
+  z-index: 10;
+  background-color: rgba(64, 64, 64, 0.5);
+  color: #fff;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.s03:hover::after {
+  transform: translateY(0%);
+}

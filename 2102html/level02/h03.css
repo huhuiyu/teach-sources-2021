@@ -55,3 +55,8 @@
   content: '==>';
   color: #00ffff;
 }
+
+.s06 span::after {
+  content: '<==';
+  color: #0000ff;
+}

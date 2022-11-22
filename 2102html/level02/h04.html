@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>绝对定位和伪元素</title>
+  <link rel="stylesheet" href="./h04.css">
+</head>
+
+<body>
+
+  <!-- 绝对定位容器 -->
+  <div class="s01">
+
+    <div id="divPlay" class="s02">点击播放</div>
+
+    <div>
+      <video id="video" src="https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=399"></video>
+    </div>
+
+  </div>
+
+  <!-- 伪元素来完成相同的效果 -->
+  <hr>
+
+  <div class="s03" data-title="属性决定伪元素内容">
+    <video controls src="https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=399"></video>
+  </div>
+
+  <div class="s03" data-title="21guns">
+    <video controls src="https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=399"></video>
+  </div>
+
+
+  <script>
+    let divPlay = document.getElementById('divPlay');
+    let video = document.getElementById('video');
+
+    divPlay.addEventListener('click', () => {
+      video.play()
+    })
+
+
+  </script>
+
+
+</body>
+
+</html>

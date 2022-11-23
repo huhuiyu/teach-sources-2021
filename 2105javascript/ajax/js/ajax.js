@@ -1,5 +1,23 @@
 // ajax请求后端数据的公用js
 // 依赖axios和qs这两个第三方js库
+
+// =====================================
+// 保存服务器端的token信息
+function saveToken(info) {
+  // 如果应答信息存在token就保存到本地存储
+  if (info && info.token) {
+    localStorage.setItem('service_token_info', info.token);
+  }
+}
+
+// 读取本地保存的token信息
+function loadToken() {
+  let token = localStorage.getItem('service_token_info');
+  return token ? token : '';
+}
+
+//======================================
+
 // 定义服务器基本地址信息
 const SERVER_BASE = 'https://huhuiyu.top/teach_project_service';
 // 1：请求地址，2：请求的参数（json）
@@ -23,8 +41,15 @@ function ajax(url, params, callback, method) {
     data: info,
     // 请求的方式
     method: method,
+    // 请求的头信息(token使用头信息发送)
+    headers: {
+      // 发送本地保存的token
+      token: loadToken(),
+    },
   })
     .then((resp) => {
+      // 保存服务器端的token信息
+      saveToken(resp.data);
       // 正确应答的情况，传回服务器端应答数据给callback处理
       callback(resp.data);
     })

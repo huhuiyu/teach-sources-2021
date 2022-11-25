@@ -1,0 +1,87 @@
+body {
+  background-image: url('../images/2.jpg');
+  background-size: cover;
+}
+
+.s01 {
+  width: 60vw;
+  height: 5rem;
+  /* border: 1px solid #ff0000; */
+  background: linear-gradient(#ff0000, #00ff00);
+}
+
+.s02 {
+  width: 60vw;
+  height: 5rem;
+  margin: 1rem;
+  background: linear-gradient(45deg, #ff0000, #00ff00);
+}
+
+.s03 {
+  width: 60vw;
+  height: 5rem;
+  margin: 1rem;
+  background: linear-gradient(45deg, #ff0000, #fff, #00ff00);
+}
+
+.s04 {
+  width: 60vw;
+  height: 5rem;
+  margin: 1rem;
+  /* 
+    background可以设置渐变色效果
+    linear-gradient是线形渐变色效果
+    参数包括渐变的角度（可选，默认是从上至下渐变）
+    渐变的颜色列表和渐变的占比（可选，默认是均匀分配）
+  */
+  background: linear-gradient(30deg, #ff0000 20%, #fff, #00ff00 80%);
+}
+
+.s05 {
+  /* transparent表示透明颜色 */
+  margin: 1rem 0px;
+  height: 15rem;
+  background: linear-gradient(
+    45deg,
+    rgba(182, 15, 191, 0.5),
+    rgba(187, 244, 30, 0.5)
+  );
+}
+
+.s06 {
+  margin: 1rem;
+  width: 10rem;
+  height: 10rem;
+  /* radial-gradient是径向渐变，可以简单理解为中心向外渐变 */
+  background: radial-gradient(#fff 30%, #f00);
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px #f00;
+}
+
+/* 伪元素 */
+.s07 {
+  display: inline-block;
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+/* 
+  选择器::伪元素的类型(before/after)
+  before表示在选择器对应的元素的前面添加元素
+  after表示在选择器对应的元素的后面添加元素
+  content表示伪元素里面的内容
+  伪元素和真正的元素一样可以设置任意的样式
+*/
+.s07::before {
+  content: '===>';
+  color: #ff0000;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.s07::after {
+  content: '<===';
+  color: #00ff00;
+  font-style: italic;
+  font-size: 1.5rem;
+}

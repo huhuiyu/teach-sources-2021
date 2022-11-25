@@ -1,5 +1,29 @@
 // ajax请求数据的封装公用js
 // 该功能依赖axios和qs这两个第三方js库
+
+// 令牌环信息token处理部分
+// 如果接口需要token信息，那么该接口一定会返回一个token给你
+// 如果你递交了正确的token，服务器会原样返回该token
+// 所以如果收到服务器的token需要本地保存下来
+// 另外请求服务器信息的时候需要传回token信息
+// 通过token信息服务器就知道你是哪一个客户端
+
+// 本地保存token的key
+const TOKEN_KEY = 'huhuiyu_servie_token_info';
+
+// 本地保存token信息
+function saveToken(info) {
+  if (info && info.token) {
+    localStorage.setItem(TOKEN_KEY, info.token);
+  }
+}
+
+// 读取本地保存的token信息
+function loadToken() {
+  let token = localStorage.getItem(TOKEN_KEY);
+  return token ? token : '';
+}
+
 // ajax的四个要素
 // 1：请求的url地址，2：请求的参数
 // 3：应答的结果的处理function，4：请求的方式method

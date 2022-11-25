@@ -123,7 +123,25 @@ function loadEmployee() {
         td = document.createElement('td');
         td.append(emp.employeeName);
         tr.append(td);
+
+        // 员工电话的td
+        td = document.createElement('td');
+        td.append(emp.phone);
+        tr.append(td);
+
+        // 信息最后修改时间的td
+        td = document.createElement('td');
+        td.append(emp.lastupdate);
+        // 格式化服务器发回的时间戳
+        td.append(formatTimestamp(emp.lastupdate, ' ==== yyyy-MM-dd hh:mm:ss'));
+        tr.append(td);
       }
     }
   );
 }
+
+// 联动的业务逻辑
+// 比如省份城市的联动
+// 1：查询省份信息并创建页面元素显示
+// 2：处理省份信息变化的检测，不论是代码触发变化还是事件触发变化
+// 3：查询城市信息并创建页面元素显示（依赖动作2获取的省份信息）

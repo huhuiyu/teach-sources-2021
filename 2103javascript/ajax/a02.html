@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图片验证码（token）演示</title>
+</head>
+
+<body>
+  <button id="btnToken">获取token</button>
+  <span id="spToken"></span>
+
+  <hr>
+  图片验证码：<img id="imgCode" src="" alt="">
+  <a id="acode" href="javascript:void(0)">更换验证码</a>
+  
+  <input type="text" placeholder="验证码" id="txtCode">
+  <button id="btnCode">验证</button>
+
+  <script src="./js/axios.min.js"></script>
+  <script src="./js/qs.min.js"></script>
+  <script src="./js/spark-md5.min.js"></script>
+
+  <script src="./js/common.js"></script>
+  <script src="./js/ajax.js"></script>
+
+  <script src="./js/a02.js"></script>
+
+</body>
+
+</html>

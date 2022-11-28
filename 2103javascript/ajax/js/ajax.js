@@ -49,8 +49,14 @@ function ajax(url, params, callback, method) {
     method: method,
     // 请求的参数数据
     data: info,
+    // 发送本地保存的token信息（通过header发送）
+    headers: {
+      token: loadToken(),
+    },
   })
     .then((resp) => {
+      // 保存token信息
+      saveToken(resp.data);
       // 正确应答的处理
       callback(resp.data);
     })

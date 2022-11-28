@@ -137,8 +137,16 @@ function loadEmployee() {
         // 信息修改时间的td
         td = document.createElement('td');
         td.append(emp.lastupdate);
+        td.append('====');
+        // 格式化时间戳显示
+        td.append(formatTimestamp(emp.lastupdate, 'yyyy-MM-dd hh:mm:ss'));
+
         tr.append(td);
       }
     }
   );
 }
+
+
+// 使用SparkMD5进行md5加密
+console.log('md5加密abc的结果：', SparkMD5.hash('abc'));

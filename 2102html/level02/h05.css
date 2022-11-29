@@ -1,0 +1,83 @@
+/* 上方容器 */
+.s01 {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+/* 电脑和手机版的默认样式（手机的区域不显示） */
+/* 电脑区域 */
+.s02 {
+  display: block;
+}
+
+/* 手机区域 */
+.s03 {
+  display: none;
+}
+
+/* 手机模式判定和对应的样式 */
+@media screen and (max-width: 768px) {
+  .s02 {
+    display: none;
+  }
+
+  .s03 {
+    display: block;
+  }
+}
+
+.s04 {
+  display: flex;
+}
+
+.s04 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 分配子元素的宽度为各占一半 */
+.s04 > div {
+  width: 50%;
+  text-align: center;
+  padding: 1rem 5rem;
+}
+
+/* 手机版本布局 */
+@media screen and (max-width: 768px) {
+  /* 第一个设计，容器允许子元素换行 */
+  .s04 {
+    flex-wrap: wrap;
+  }
+  /* 子元素宽度放大，变成多行模式 */
+  .s04 > div {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+.s05 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.s05 > div {
+  width: 30%;
+  height: 10rem;
+  border: 1px solid #ff0000;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .s05 > div {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1366px) {
+  .s05 > div {
+    width: 45%;
+  }
+}

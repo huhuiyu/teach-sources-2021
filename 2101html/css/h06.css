@@ -1,0 +1,89 @@
+body {
+  background-image: url('../images/6.jpg');
+  background-size: cover;
+}
+
+.s01 {
+  padding: 2rem;
+  font-size: 2rem;
+  background: linear-gradient(#ff0000, #00ff00);
+}
+
+.s02 {
+  padding: 8rem 2rem;
+  font-size: 2rem;
+  background: linear-gradient(45deg, #ff0000, #ff00ff);
+}
+
+.s03 {
+  padding: 8rem 2rem;
+  font-size: 2rem;
+  background: linear-gradient(10deg, #ff0000, #ffff00, #0000ff);
+}
+
+.s04 {
+  padding: 8rem 2rem;
+  font-size: 2rem;
+  background: linear-gradient(45deg, #ff00ff 20%, #ffff00, #ff0000 80%);
+}
+
+.s05 {
+  padding: 8rem 2rem;
+  font-size: 2rem;
+  background: linear-gradient(
+    45deg,
+    rgba(242, 13, 177, 0.7),
+    rgba(20, 69, 184, 0.7)
+  );
+}
+
+/* 
+  linear-gradient是线形颜色渐变
+  参数至少有两个不同的颜色，每一个参数用逗号分开
+  如果某一个颜色要持续较长，可以在颜色的后面添加进度的百分比
+  如果希望调整渐变的角度，第一个参数就必须是角度值
+  颜色可以是rgba遮罩半透明的颜色
+*/
+
+.s06 {
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem;
+  /* 径向渐变色 */
+  background: radial-gradient(#fff, #f00);
+
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #ffffff;
+}
+
+/* 伪元素的部分 */
+.s07 {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+}
+
+.s07 span {
+  font-size: 2rem;
+}
+
+.s07 span::before {
+  content: '===>';
+  color: #ff0000;
+  font-size: 0.5em;
+}
+
+.s07 span::after {
+  content: '<===';
+  color: #ff00ff;
+  font-size: 0.5em;
+}
+
+/* 
+  选择器::before表示在选择器对应的元素前面添加元素
+  选择器::after表示在选择器对应的元素后面添加元素
+  content是伪元素的特有属性，表示伪元素里面的内容
+  伪元素也支持任意css样式
+*/

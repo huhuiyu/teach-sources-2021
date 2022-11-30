@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户登录</title>
+</head>
+
+<body>
+
+  <div>
+    登录名：
+    <input type="text" id="txtUsername" placeholder="登录名">
+    密码：
+    <input type="password" id="txtPwd" placeholder="密码">
+    <button id="btnLogin">登录</button>
+    <span id="spInfo"></span>
+  </div>
+
+
+  <!-- ajax第三方依赖js库 -->
+  <script src="../js/axios.min.js"></script>
+  <script src="../js/qs.min.js"></script>
+  <!-- md5加密第三方依赖js库 -->
+  <script src="../js/spark-md5.min.js"></script>
+  <!-- ajax公用js -->
+  <script src="../js/ajax.js"></script>
+  <!-- 全局公用js -->
+  <script src="../js/common.js"></script>
+  <!-- 页面逻辑js -->
+  <script src="./js/login.js"></script>
+
+</body>
+
+</html>

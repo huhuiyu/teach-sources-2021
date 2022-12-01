@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户注册</title>
+</head>
+
+<body>
+
+  <div>
+    登录名：<input type="text" id="txtUsername">
+    登录密码：<input type="password" id="txtPwd">
+    用户名：<input type="text" id="txtNickname">
+    <button id="btnReg">注册</button>
+    <a href="login.html">返回登录</a>
+    <span id="spInfo"></span>
+  </div>
+
+
+  <!-- ajax相关的第三方js库 -->
+  <script src="../js/axios.min.js"></script>
+  <script src="../js/qs.min.js"></script>
+  <!-- md5加密的第三方js库 -->
+  <script src="../js/spark-md5.min.js"></script>
+  <!-- 公用的js -->
+  <script src="../js/common.js"></script>
+  <!-- ajax封装js -->
+  <script src="../js/ajax.js"></script>
+
+  <!-- 页面业务逻辑js -->
+  <script src="js/reg.js"></script>
+
+</body>
+
+</html>

@@ -85,3 +85,8 @@ body {
   font-style: italic;
   font-size: 1.5rem;
 }
+
+.s08::before {
+  /* 伪元素的内容可以通过attr(属性名称)来指定为对应属性的值 */
+  content: attr(data-info);
+}

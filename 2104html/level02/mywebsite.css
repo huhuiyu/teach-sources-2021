@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+}
+
+.s01 {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.s01 > div:first-of-type {
+  font-size: 2rem;
+}
+
+.s01 > div:last-of-type {
+  font-size: 1.5rem;
+}
+
+.s01 > div:last-of-type span {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/* 主体部分的左字右图 */
+.s02 {
+  display: flex;
+}
+
+.s02 > div {
+  flex: 1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.s02 > div:first-of-type {
+  background-color: #4834b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s03 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}

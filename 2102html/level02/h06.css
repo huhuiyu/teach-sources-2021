@@ -1,0 +1,43 @@
+/* 基本样式 */
+.s01 {
+  border: 1px solid #ff0000;
+  /* min-height表示最小占用的高度，内容如果超出，这个高度就会自动扩展 */
+  /* max-height表示最大占用的高度，内容低于高度会自动降低 */
+  /* 宽度也有这一对min-width和max-width */
+  min-height: 3rem;
+}
+
+.s02 {
+  border: 1px solid #ff0000;
+  height: 3rem;
+  overflow: auto;
+}
+
+.s03 {
+  border: 1px solid #0000ff;
+  width: 15rem;
+  /* 超出的部分不显示 */
+  overflow: hidden;
+  /* 文字超出就显示...省略号 */
+  text-overflow: ellipsis;
+  /* 强制文本显示在一行上 */
+  white-space: nowrap;
+}
+
+.s04 {
+  /* 多行文本溢出省略需要webkit内核的浏览器支持 */
+  width: 15rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 特定css样式 */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.s05 {
+  border: 1px solid #ff00ff;
+  width: 10rem;
+  /* 强制英文字符断行 */
+  word-break: break-all;
+}

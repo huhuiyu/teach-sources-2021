@@ -1,0 +1,58 @@
+.s01 {
+  border: 1px solid #ff0000;
+  width: 15rem;
+  /* 内容超出的部分不显示 */
+  overflow: hidden;
+  /* 文字强制显示在一行上 */
+  white-space: nowrap;
+  /* 文字内容超出宽度时显示省略号 */
+  text-overflow: ellipsis;
+}
+
+.s02 {
+  border: 1px solid #f0f;
+  width: 15rem;
+  /* 内容超出的部分不显示 */
+  overflow: hidden;
+  /* 
+  多行文本超出显示省略号不被css默认支持
+  但是webkit内核的浏览器有特定的css支持
+  现今主流的浏览器基本上都是基于webkit内核实现
+  */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  text-overflow: ellipsis;
+}
+
+.s03 {
+  border: 1px solid #ff0000;
+  width: 10rem;
+  /* 当文本需要换行显示时，折断任意长度的连续字符，强制换到下一行 */
+  word-break: break-all;
+}
+
+.s04 {
+  border: 1px solid #ff0000;
+  width: 8rem;
+  /* 
+    min-height和height的区别是：
+    min-height在内容超出设定值的情况下，允许高度扩展来容纳全部的内容
+    当内容没有超出的时候就和height的效果一致，必须要有设定的高度
+
+    max-height表示允许的最大高度，和min-height搭配使用可以控制
+    元素只能在一定的高度直接伸缩
+
+    宽度也有同样的一组，min-width和max-width
+    对应的是最小宽度和最大宽度
+  */
+  min-height: 5rem;
+}
+
+.s05 {
+  border: 1px solid #ff0000;
+  width: 8rem;
+  height: 5rem;
+  overflow: hidden;
+}

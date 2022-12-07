@@ -5,23 +5,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>用户首页</title>
+  <title>部门信息管理</title>
+  <link rel="stylesheet" href="./css/dept.css">
 </head>
 
 <body>
-  用户首页
-  <!-- 用户信息显示区域 -->
-  <div id="div01">
-    <span id="spUser"></span>
 
-    <button id="btnLogout">安全退出</button>
-    <a href="login.html">重新登录</a>
+  <h1>部门信息管理</h1>
 
-  </div>
-  <!-- 没有登录的显示区域 -->
-  <div id="div02">
-    <a href="login.html">我要登录</a>
-  </div>
+  <table>
+
+    <thead>
+      <tr>
+        <th>部门编号</th>
+        <th>部门名称</th>
+        <th>部门信息</th>
+        <th>信息最后修改时间</th>
+      </tr>
+    </thead>
+
+    <tbody id="tbDept">
+      <!-- <tr>
+        <td>1</td>
+        <td>开发部</td>
+        <td>超级牛逼的部门</td>
+        <td>2021-12-12</td>
+      </tr> -->
+    </tbody>
+
+
+  </table>
 
   <!-- ajax第三方依赖js库 -->
   <script src="../js/axios.min.js"></script>
@@ -33,7 +46,7 @@
   <!-- 全局公用js -->
   <script src="../js/common.js"></script>
   <!-- 页面逻辑js -->
-  <script src="./js/main.js"></script>
+  <script src="./js/dept.js"></script>
 
 </body>
 

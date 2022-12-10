@@ -1,0 +1,23 @@
+.error {
+  color: #ff0000;
+}
+
+/* 容器 */
+.container {
+  padding: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.main {
+  margin: 1rem 0px;
+  padding: 0.5rem 0px;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.container textarea {
+  width: 80%;
+  resize: none;
+}

@@ -1,0 +1,8 @@
+lib文件夹里面放公用js/css以及第三方的框架文件
+  axios.min.js ===> ajax框架
+  qs.min.js ====> json和请求表单数据格式转换工具
+  spark-md5.min.js ====> md5加密工具
+
+  ajax.js ====> 自定义的公用ajax方法，依赖axios和qs
+  common.js ====> 自定义的公用js方法（比如日期格式化）
+  common.css ====> 自定义的公用css样式

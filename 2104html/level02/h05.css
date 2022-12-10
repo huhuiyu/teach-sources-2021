@@ -1,0 +1,96 @@
+.s01 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 电脑区域 */
+.s02 {
+  display: block;
+}
+
+/* 手机区域 */
+.s03 {
+  display: none;
+}
+
+/* 手机模式的判定 */
+@media screen and (max-width: 768px) {
+  /* 电脑区域 */
+  .s02 {
+    display: none;
+  }
+
+  /* 手机区域 */
+  .s03 {
+    display: block;
+  }
+}
+
+/* 主体部分的自适应 */
+.s04 {
+  display: flex;
+  /* 允许子元素换行是自适应的基础 */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.s04 > div {
+  width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  .s04 > div {
+    width: 90%;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.s05 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.s05 > div {
+  width: 30%;
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.s05 > div:nth-child(3n) {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.s05 > div:nth-child(3n + 1) {
+  background-color: #ff00ff;
+  color: #fff;
+}
+
+.s05 > div:nth-child(3n + 2) {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .s05 > div {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1366px) {
+  .s05 > div {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .s05 > div {
+    width: 23%;
+  }
+}

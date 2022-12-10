@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>加密和解密工具</title>
+  <link rel="stylesheet" href="./lib/common.css">
+  <link rel="stylesheet" href="./css/cipher.css">
+</head>
+
+<body>
+  <!-- 通用加密/解密功能演示 -->
+  <div class="tc container">
+    <h1>加密和解密工具</h1>
+    <textarea id="taInfo" rows="20" placeholder="请输入信息"></textarea>
+
+    <div class="main">
+      <label>
+        <input type="checkbox" id="chkMode">加密(不勾选)/解密(勾选)
+      </label>
+      <button id="btnOk">确定</button>
+    </div>
+
+    <div id="divResult">处理的结果显示区域</div>
+  </div>
+
+
+  <!-- 公用的js部分 -->
+  <script src="./lib/axios.min.js"></script>
+  <script src="./lib/qs.min.js"></script>
+  <script src="./lib/spark-md5.min.js"></script>
+  <script src="./lib/common.js"></script>
+  <script src="./lib/ajax.js"></script>
+
+  <!-- 页面的js部分 -->
+  <script src="./js/cipher.js"></script>
+
+</body>
+
+</html>

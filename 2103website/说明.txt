@@ -1,0 +1,10 @@
+2013班js第二阶段项目说明
+
+lib目录里面都是第三方的框架js/css和公用的js/css
+  axios.min.js ===> ajax的第三方库
+  qs.min.js ===> 转换json和查询字符串的第三方库
+  spark-md5.min.js ===> md5加密的第三方库
+
+  ajax.js ===> 通用的ajax请求封装js，依赖axios和qs
+  common.js ===> 通用的js方法（比如格式化日期）
+  common.css ===> 通用的样式

@@ -1,0 +1,22 @@
+/* 公用的css */
+body {
+  margin: 0px;
+}
+/* 所有的元素都强制折行英文和数字字符 */
+* {
+  word-break: break-all;
+}
+/* div的高宽要包含边框的大小 */
+div {
+  box-sizing: border-box;
+}
+/* 文本对齐方式 */
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}

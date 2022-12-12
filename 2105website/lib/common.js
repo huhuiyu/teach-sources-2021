@@ -48,3 +48,19 @@ function formatTimestamp(timestamp, format) {
   // 调用格式化方法
   return formatDate(date, format);
 }
+
+// 复制文本的方法
+function copyText(info) {
+  // 复制指令只能针对input元素，所有需要创建input元素来完成操作
+  let input = document.createElement('input');
+  // input的值设置成要复制的文本信息
+  input.setAttribute('value', info);
+  // 添加到页面上
+  document.body.append(input);
+  // 选中input的中的全部内容
+  input.select();
+  // 执行复制的动作
+  document.execCommand('copy');
+  // 完成复制之后删除input元素
+  input.remove();
+}

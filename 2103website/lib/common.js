@@ -63,4 +63,22 @@ function formatTimestamp(timestamp, format) {
   return fomatDate(date, format);
 }
 
+// 复制信息到剪贴板功能
+function copyText(info) {
+
+  // 复制指令只能支持输入框中文本，所以需要创建input元素
+  let input = document.createElement('input');
+  // 设置input的值为要复制的信息
+  input.setAttribute('value', info);
+  // 添加到页面
+  document.body.append(input);
+  // 选中所有的输入值
+  input.select();
+  // 复制内容，execCommand已经标记为弃用，也就是下一代web标准中不会再支持
+  document.execCommand('copy');
+  // 移除input元素
+  input.remove();
+
+}
+
 // 公用的js！！！

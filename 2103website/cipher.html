@@ -13,6 +13,29 @@
 
 <body>
 
+  <div class="container">
+    <!-- 输入信息部分 -->
+    <div>
+      <textarea id="taInfo" rows="10"></textarea>
+    </div>
+
+    <!-- 操作的部分 -->
+    <div>
+      <label>
+        <input type="checkbox" id="chkMode">
+        加密(不勾选)/解密(勾选)
+      </label>
+
+      <button id="btnOk">确定</button>
+      <button id="btnCopy">复制演示</button>
+    </div>
+
+    <!-- 结果显示的部分 -->
+    <div id="divResult"></div>
+
+  </div>
+
+
   <!-- 公用的部分 -->
   <script src="./lib/axios.min.js"></script>
   <script src="./lib/qs.min.js"></script>

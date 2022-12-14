@@ -1,5 +1,6 @@
 let spIp = document.getElementById('spIp');
 let spCity = document.getElementById('spCity');
+let spWeather = document.getElementById('spWeather');
 
 // 获取用户ip所在城市的信息
 function queryIpCity() {
@@ -24,5 +25,16 @@ queryIpCity();
 function queryWeather(adcode) {
   ajax('/api/amap/weatherInfo', { adcode: adcode }, (data) => {
     console.log('城市的天气信息：', data);
+    // 实时天气信息
+    let live = data.data.lives[0];
+    console.log('实时天气信息：', live);
+    spWeather.innerHTML =
+      live.weather +
+      ' ' +
+      live.temperature +
+      '° ' +
+      live.winddirection +
+      '风' +
+      live.windpower;
   });
 }

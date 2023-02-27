@@ -1,0 +1,39 @@
+/* 图片容器 */
+.img-box {
+  margin: 1rem;
+  width: 10vw;
+}
+
+/* 视频容器 */
+.video-box {
+  margin: 1rem;
+  width: 20vw;
+}
+
+/* 大小自适应 */
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* #表示id选择器，只有id属性匹配的元素生效 */
+#a01 {
+  display: none;
+}
+
+/* 播放的动画 */
+@keyframes play {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.play {
+  display: inline-block;
+  animation: play 2s infinite linear;
+}

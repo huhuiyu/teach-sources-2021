@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container > div {
+  width: 50vw;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

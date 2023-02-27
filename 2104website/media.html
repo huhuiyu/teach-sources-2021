@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黑暗骑士的个人网站</title>
+  <link rel="shortcut icon" href="./images/hu-logo.jpg">
+
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body>
+
+  <div class="tr">
+    <a href="index.html">首页</a>
+  </div>
+
+  <div class="media-box">
+    <img src="./images/hu-logo.jpg" alt="">
+  </div>
+
+  <div class="media-box">
+    <video controls src="https://media.huhuiyu.top/mv/Green.Day.-.21.Guns.mkv"></video>
+  </div>
+
+  <audio id="myaudio" controls src="https://media.huhuiyu.top/music/GreenDay-21Guns.mp3"></audio>
+
+  <span id="spaudio" class="">
+    <svg t="1677197259808" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2867" width="200" height="200">
+      <path
+        d="M220.5 959C135.724 959 67 890.276 67 805.5S135.724 652 220.5 652H374v153.5c0 84.776-68.724 153.5-153.5 153.5z m0-247c-51.639 0-93.5 41.861-93.5 93.5s41.861 93.5 93.5 93.5 93.5-41.861 93.5-93.5V712h-93.5zM806.5 899C721.724 899 653 830.276 653 745.5S721.724 592 806.5 592H960v153.5c0 84.776-68.724 153.5-153.5 153.5z m0-247c-51.639 0-93.5 41.861-93.5 93.5s41.861 93.5 93.5 93.5 93.5-41.861 93.5-93.5V652h-93.5z"
+        fill="#2F54EB" p-id="2868"></path>
+      <path d="M327.96 431.402l-11.92-58.804 630-127.701 11.92 58.804z" fill="#85A5FF" p-id="2869"></path>
+      <path d="M374 241.176V746h-60V232.241c0-23.19 16.257-43.205 38.954-47.959l568.78-119.14c17.298-3.623 34.258 7.462 37.88 24.76a32 32 0 0 1 0.68 6.56v633.15h-60V130.935L374 241.175z" fill="#2F54EB" p-id="2870"></path>
+    </svg>
+  </span>
+
+  <script>
+
+    let myaudio = document.getElementById('myaudio')
+    let spaudio = document.getElementById('spaudio')
+
+    let playing = false
+
+    spaudio.addEventListener('click', () => {
+      playing = !playing
+
+      if (!playing) {
+        myaudio.pause()
+        spaudio.classList.remove('play')
+        return
+      }
+
+      myaudio.play()
+      spaudio.classList.add('play')
+
+
+    })
+
+
+  </script>
+
+</body>
+
+</html>

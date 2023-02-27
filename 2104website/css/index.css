@@ -1,0 +1,41 @@
+/* index页面的专属css */
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0px;
+}
+
+body {
+  background-image: url(../images/img28.jpg);
+  background-size: cover;
+}
+
+/* 超链接容器 */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5rem 2rem;
+}
+
+.links > a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 15vw;
+  padding: 5px;
+  border: 1px solid #dcdcdc;
+  margin: 0.5rem;
+  border-radius: 5px;
+  transition: all 1s;
+}
+
+.links svg {
+  width: 100%;
+}
+
+.links a:hover {
+  background-color: #999;
+  color: #fff;
+}

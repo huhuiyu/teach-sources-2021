@@ -1,0 +1,22 @@
+/* 公用的css样式 */
+body {
+  margin: 0px;
+}
+
+/* 文字对齐方式 */
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+
+/* 图片自适应容器 */
+.img-resp {
+  display: block;
+  width: 100%;
+  height: auto;
+}

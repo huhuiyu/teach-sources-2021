@@ -1,0 +1,15 @@
+/* index.html页面专属的css */
+
+/* 标题样式 */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 0px;
+}
+
+/* 网站的背景 */
+.bg {
+  /* 图片不在css目录中，所有需要通过../相对目录定位 */
+  background-image: url(../images/img28.jpg);
+  background-size: cover;
+}

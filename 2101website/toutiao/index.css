@@ -1,0 +1,104 @@
+/* 无障碍设置 */
+.a1 {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.a1 > span {
+  display: inline-flex;
+}
+
+.icon {
+  width: 1rem;
+  height: auto;
+}
+
+/* 搜索区域样式 */
+.a2 {
+  display: flex;
+  padding: 0rem 1rem;
+  align-items: center;
+}
+
+.a2 img {
+  display: block;
+  width: 2rem;
+  height: auto;
+}
+
+/* 搜索框容器 */
+.a3 {
+  background-color: #ededed;
+  color: #222;
+  flex: 1;
+  padding: 0.5rem 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.a3 input {
+  outline: none;
+  border: 0px;
+  background-color: #ededed;
+  margin-left: 0.5rem;
+  width: 100%;
+}
+
+.a3 img {
+  width: 1rem;
+}
+
+/* 纯文字的样式 */
+.a4 {
+  margin: 1rem;
+}
+
+.a4 > div:last-of-type > :nth-child(1) {
+  color: #f00;
+}
+
+.a4 > div:last-of-type {
+  padding: 0.5rem 0px 1rem 0px;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.a4 > div:last-of-type > span {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.a4 > div:first-of-type {
+  /* max-height: 2.5rem; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* 文字加大图模式 */
+.a5 {
+  margin: 1rem;
+}
+
+.a5 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a5 > div:nth-child(2) {
+  padding: 0.5rem 0px;
+}
+
+.a5 > div:last-of-type > span {
+  display: inline-block;
+  color: #999;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,56 @@
+.icon {
+  width: 1rem;
+  height: auto;
+}
+
+.a01 {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.a01 > span {
+  display: inline-flex;
+}
+
+/* 搜索区 */
+.a02 {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.a02 img {
+  display: block;
+  width: 2rem;
+  height: auto;
+}
+
+/* 搜索框 */
+.a03 {
+  background-color: #dcdcdc;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0.5rem 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.a03 img {
+  display: block;
+  width: 1rem;
+  height: auto;
+}
+
+.a03 input {
+  border: 0px;
+  outline: none;
+  background-color: #dcdcdc;
+}
+
+/* 新闻模式1：纯文本 */
+.a04 {
+  margin: 1rem;
+}

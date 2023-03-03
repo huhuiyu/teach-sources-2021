@@ -1,0 +1,22 @@
+/* http://demo.mobanwang.com/mb/lo202201/202201026/html/index.html */
+body {
+  margin: 0px;
+}
+
+* {
+  word-break: break-all;
+}
+
+/* 第一行 */
+.a1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: rgb(251, 0, 255);
+  color: #fff;
+}
+.a1 img {
+  width: 2rem;
+}

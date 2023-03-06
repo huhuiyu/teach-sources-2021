@@ -102,3 +102,78 @@
   margin-right: 0.5rem;
   font-size: 0.8rem;
 }
+
+/* 新闻模式3（单一小图） */
+.a06 {
+  display: flex;
+  margin: 1rem;
+}
+
+.a06 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a06 > div:first-of-type {
+  flex: 7;
+}
+
+.a06 > div:last-of-type {
+  flex: 4;
+}
+
+.a06 > :first-child > :first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.a06 > :first-child > :last-child span {
+  color: #999;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+/* 新闻模式4（三小图） */
+.a07 {
+  margin: 1rem;
+}
+
+.a07 > :first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.a07 > :nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.a07 img {
+  display: block;
+  width: 30%;
+  height: auto;
+  margin: 1vw;
+}
+
+.a07 > :last-child > span {
+  display: inline-block;
+  color: #999;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+/* 顶部元素固定 */
+.a8 {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+}

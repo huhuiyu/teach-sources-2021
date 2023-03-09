@@ -14,9 +14,118 @@ body {
   align-items: center;
   padding: 1rem;
   font-size: 1.5rem;
-  background-color: rgb(251, 0, 255);
+  background-color: rgb(25, 10, 110);
   color: #fff;
+  position: sticky;
+  left: 0px;
+  top: 0px;
 }
 .a1 img {
   width: 2rem;
+}
+
+/* 标题介绍 */
+.a2 {
+  background-image: url(../images/img29.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.a2 > div {
+  background-color: rgba(7, 1, 16, 0.8);
+  padding: 6rem 1rem 4rem 1rem;
+}
+
+.a2 > div > div:nth-child(1) {
+  font-size: 2rem;
+  margin: 1rem 0px;
+  font-weight: bold;
+}
+
+.a2 > div > div:nth-child(2),
+.a2 > div > div:nth-child(3) {
+  margin: 1rem;
+}
+
+.a2 span {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 1rem;
+}
+
+.a3 {
+  background-color: #000;
+  padding: 5rem 1rem;
+}
+
+.a3 .icon {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a3 > div {
+  display: flex;
+  align-items: center;
+}
+
+.a3 > div > div:first-of-type {
+  flex: 1;
+}
+
+.a3 > div > div:last-of-type {
+  flex: 9;
+  padding-left: 1rem;
+}
+
+.a3 .title {
+  font-weight: bold;
+  color: #09c3e7;
+}
+
+.a3 .text {
+  color: #777;
+}
+
+.a4 {
+  background-color: #eee;
+  color: #444;
+  padding: 5rem 1rem;
+}
+
+.a4 > div:first-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+  word-break: keep-all;
+}
+
+.a5 {
+  background-color: #000;
+  color: #888;
+  padding: 5rem 1rem;
+}
+
+.a5 > div:first-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.a6 {
+  margin-bottom: 1rem;
+}
+.a6 > div:first-of-type {
+  margin: 0.3rem 0px;
+}
+.a6 > div:last-of-type {
+  background-color: #fff;
+}
+.a6 > div:last-of-type > div {
+  background-color: #09c3e7;
+  color: #fff;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.w70 {
+  width: 70%;
 }

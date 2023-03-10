@@ -14,8 +14,8 @@ body {
   align-items: center;
   padding: 1rem;
   font-size: 1.5rem;
-  background-color: rgb(25, 10, 110);
-  color: #fff;
+  background-color: #09c3e7;
+  color: #000;
   position: sticky;
   left: 0px;
   top: 0px;
@@ -128,4 +128,143 @@ body {
 
 .w70 {
   width: 70%;
+}
+
+.w85 {
+  width: 85%;
+}
+
+.w90 {
+  width: 90%;
+}
+
+.w65 {
+  width: 65%;
+}
+
+.a7 {
+  padding: 5rem 1rem;
+}
+
+.a7 > div:first-of-type {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.a8 {
+  padding: 5rem 1rem;
+  background-color: #000;
+  color: #666;
+  position: relative;
+}
+
+.a8 > div:first-of-type {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.a8 > span:first-of-type {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5rem;
+  left: calc(50% - 1rem);
+}
+
+.a9 {
+  display: flex;
+}
+
+.a9 > div:first-of-type {
+  width: 10vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.a9 > div:last-of-type {
+  flex: 1;
+  background-color: #1e2431;
+  padding: 2rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.a9 > div:last-of-type > div:first-of-type {
+  color: #09c3e7;
+  font-size: 1.5rem;
+  word-break: keep-all;
+}
+
+.a9 > div:last-of-type p {
+  line-height: 2rem;
+}
+
+.a9 > div:first-of-type > div:first-of-type {
+  width: 0px;
+  height: 100%;
+  border: 2px solid #1e2431;
+}
+
+.a9 > div:first-of-type > span {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: -0.5rem;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.a10 {
+  position: absolute;
+  width: 0.6rem;
+  height: 1.2rem;
+  background-color: #1e2431;
+  top: 1rem;
+  left: -0.6rem;
+  clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+}
+
+.c1 {
+  background-color: #00a651;
+}
+.c2 {
+  background-color: #21a9e1;
+}
+.c3 {
+  background-color: #ee4749;
+}
+.c4 {
+  background-color: #fad839;
+}
+
+.a11 {
+  width: 10vw;
+  height: 10vw;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: -5px;
+  border: 5px solid #fff;
+}
+
+.a12 {
+  margin: 4rem 0px;
+}
+.a12 > span {
+  display: inline-block;
+  border: 1px solid #09c3e7;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #09c3e7;
 }

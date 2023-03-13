@@ -154,3 +154,115 @@ body {
 .w85 {
   width: 85%;
 }
+
+.a12 {
+  padding: 5rem 1rem;
+  color: #777;
+  text-align: center;
+}
+
+.a12 > div:first-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.a13 {
+  padding: 5rem 1rem;
+  background-color: #000;
+  color: #999;
+  position: relative;
+}
+
+.a13 > div:first-of-type {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.a13 > span:first-of-type {
+  display: inline-block;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-color: #fff;
+  top: -7.5vw;
+  left: 50%;
+  border-radius: 50%;
+}
+
+.a14 {
+  display: flex;
+}
+
+.a14 > div:first-of-type {
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  margin-left: -2.5vw;
+  position: relative;
+}
+
+.a14 > div:last-of-type {
+  flex: 1;
+  background-color: #333;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 5vw;
+  position: relative;
+}
+
+.a14 > div:last-of-type > div:first-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #10a6cb;
+  word-break: keep-all;
+}
+
+.a14 p {
+  line-height: 1.5rem;
+}
+
+.a14 > div:first-of-type > div:first-of-type {
+  width: 5px;
+  background-color: #333;
+  height: 100%;
+}
+
+.a14 > div:first-of-type > span:first-of-type {
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  top: 0px;
+  left: 2vw;
+  border-radius: 50%;
+  border: 1vw solid #fff;
+  box-sizing: border-box;
+}
+
+.c01 {
+  background-color: #21a9e1;
+}
+
+.c02 {
+  background-color: #ee4749;
+}
+
+.c03 {
+  background-color: #00a651;
+}
+
+.c04 {
+  background-color: #fad839;
+}
+
+.a14 > div:last-of-type > span:first-of-type {
+  display: inline-block;
+  position: absolute;
+  width: 2vw;
+  height: 3vw;
+  background-color: #333;
+  top: 3vw;
+  left: -2vw;
+  clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+}

@@ -15,6 +15,7 @@ body {
   position: sticky;
   top: 0px;
   left: 0px;
+  z-index: 10000;
 }
 
 .a02 {
@@ -265,4 +266,93 @@ body {
   top: 3vw;
   left: -2vw;
   clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+}
+
+.a15 {
+  width: 10vw;
+  height: 10vw;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a16 {
+  border: 2px solid #09c3e7;
+  color: #09c3e7;
+  padding: 1rem;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+
+.a17 {
+  padding: 5rem;
+  text-align: center;
+}
+
+.a17 .swiper-slide {
+  margin-bottom: 3rem;
+}
+
+.a17 .swiper-slide > div:last-of-type {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.a18 {
+  background-color: #000;
+  padding: 5rem 0.5rem;
+  color: #777;
+  text-align: center;
+}
+
+.a18 > div:first-of-type {
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.a18 > p:first-of-type {
+  padding: 1rem 2rem;
+  word-break: keep-all;
+}
+
+.a18 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.5rem 0px;
+}
+
+.a19 {
+  background-color: #002037;
+  padding: 5rem 0.5rem;
+  color: #fff;
+}
+
+.a19 > div:first-of-type {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.a20 {
+  margin: 0.5rem 0px;
+  border: 1px solid #74a7cc;
+  padding: 0.5rem;
+}
+
+.a20 > :first-child {
+  outline: none;
+  border-width: 0px;
+  width: 100%;
+  background-color: #002037;
+}
+
+.a20 > :first-child::placeholder {
+  color: #aaa;
+}
+
+.a20:focus-within {
+  box-shadow: 0px 0px 5px #74a7cc;
 }

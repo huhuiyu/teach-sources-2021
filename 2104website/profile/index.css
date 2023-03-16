@@ -19,6 +19,7 @@ body {
   position: sticky;
   left: 0px;
   top: 0px;
+  z-index: 10000;
 }
 .a1 img {
   width: 2rem;
@@ -266,5 +267,120 @@ body {
   padding: 1.2rem;
   font-size: 1.2rem;
   font-weight: bold;
+  color: #09c3e7;
+}
+
+.a13 {
+  padding: 5rem;
+  text-align: center;
+  color: #777;
+}
+
+.a13 .swiper-slide > div:last-of-type {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.a13 .swiper-slide > p {
+  word-break: keep-all;
+}
+
+.a14 {
+  background-color: #000;
+  padding: 5rem 0.5rem;
+  color: #999;
+  text-align: center;
+}
+
+.a14 > div:first-of-type {
+  font-size: 1.5rem;
+}
+
+.a14 > p:first-of-type {
+  word-break: keep-all;
+  margin-bottom: 5rem;
+}
+
+.a14 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0px;
+}
+
+.a15 {
+  background-color: #002037;
+  padding: 5rem 0.5rem;
+}
+
+.a15 > div:first-of-type {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 1rem 0px;
+  text-transform: uppercase;
+}
+
+.a16 {
+  border: 1px solid #1b8fe1;
+  padding: 0.5rem;
+  margin: 0.5rem 0px;
+  transition: all 0.5s;
+}
+
+.a16 > :first-child {
+  background-color: #002037;
+  outline: none;
+  border-width: 0px;
+  width: 100%;
+  resize: none;
+  color: #aaa;
+}
+
+.a16:focus-within {
+  box-shadow: 0px 0px 5px #1b8fe1;
+}
+
+.a16 > :first-child::placeholder {
+  color: #dcdcdc;
+}
+
+.a17 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.a17 > div {
+  color: #fff;
+  background-color: #21a9e1;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.a15 p {
+  color: #aaa;
+  line-height: 1.5rem;
+}
+
+.a18 {
+  padding: 1.5rem 0px;
+  color: #aaa;
+}
+
+.a18 > div {
+  margin: 0.5rem 0px;
+}
+
+.a19 > div {
+  margin: 0.5rem 0px;
+}
+
+.a19 > div > span:first-of-type {
+  color: #fff;
+  margin-right: 3rem;
+  display: inline-block;
+}
+
+.a19 > div > span:last-of-type {
   color: #09c3e7;
 }

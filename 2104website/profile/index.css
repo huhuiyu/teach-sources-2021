@@ -384,3 +384,29 @@ body {
 .a19 > div > span:last-of-type {
   color: #09c3e7;
 }
+
+.a20 {
+  background-color: #002037;
+  padding: 5rem 0.5rem;
+}
+
+.a20 > div {
+  display: flex;
+  justify-content: center;
+}
+
+.a20 svg {
+  width: 1.5rem;
+  height: auto;
+  margin: 0rem 0.8rem;
+}
+
+.a20 > div:last-of-type {
+  margin: 2rem;
+  text-align: center;
+  color: #0e588d;
+}
+
+.a20 span {
+  color: #1b8fe1;
+}

@@ -1,0 +1,89 @@
+body {
+  margin: 0px;
+  background-color: #dcdcdc;
+}
+
+.container {
+  background-color: #fff;
+  width: 70vw;
+  min-width: 1024px;
+  margin: 2rem auto;
+  box-shadow: 0px 0px 2rem #999;
+}
+
+.a01 {
+  display: flex;
+  align-items: center;
+  background-color: #434e5e;
+}
+
+.a01 img {
+  display: block;
+  width: auto;
+  height: 18rem;
+}
+
+.a02 {
+  flex: 1;
+  color: #dcdcdc;
+  padding: 1rem 2rem;
+}
+
+.a02 svg {
+  width: 1rem;
+  height: auto;
+}
+
+.a02 > div:nth-of-type(1) {
+  font-size: 2rem;
+  color: #fff;
+  margin: 1rem 0px;
+}
+
+.a02 > div:nth-of-type(2) {
+  font-size: 1.5rem;
+  color: #ddd;
+  margin: 1.2rem 0px;
+}
+
+.a02 > div:nth-of-type(3),
+.a02 > div:nth-of-type(4) {
+  font-size: 1.2rem;
+  margin: 0.5rem 0px;
+}
+
+.a03 {
+  margin-right: 2rem;
+}
+
+.a03 a {
+  color: #dcdcdc;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.a03 svg {
+  width: 1.2rem;
+  height: auto;
+}
+
+.a03 > div {
+  margin: 1rem;
+}
+
+.a04 {
+  padding: 2rem;
+}
+
+.a04 > div:first-of-type {
+  border-bottom: 2px solid #999;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.a04 > p {
+  line-height: 1.5rem;
+  word-break: keep-all;
+  color: #555;
+}

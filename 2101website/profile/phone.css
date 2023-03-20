@@ -356,3 +356,20 @@ body {
 .a20:focus-within {
   box-shadow: 0px 0px 5px #74a7cc;
 }
+
+.a21 {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0px;
+}
+
+.a21 svg {
+  width: 24px;
+  height: 24px;
+  margin: 0px 1rem;
+}
+
+.a22 {
+  text-align: center;
+  color: #09c3e7;
+}

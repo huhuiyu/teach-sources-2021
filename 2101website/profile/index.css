@@ -1,0 +1,90 @@
+/* 
+  http://demo.mobanwang.com/mb/lo202209/202209055/html/index.html
+  http://demo.mobanwang.com/mb/lo202205/202205064/html/index.html
+*/
+
+body {
+  margin: 0px;
+  background-color: #eee;
+}
+
+/* 整体内容容器 */
+.container {
+  background-color: #fff;
+  width: 75vw;
+  margin: 3rem auto;
+  box-shadow: 0px 0px 1rem #fff;
+}
+
+.a01 {
+  background-color: #434e5e;
+  color: #777;
+  display: flex;
+  align-items: center;
+}
+
+.a01 img {
+  display: block;
+  width: auto;
+  height: 15rem;
+}
+
+.a02 {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.a02 > div:nth-of-type(1) {
+  color: #ddd;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1rem 0px;
+}
+
+.a02 > div:nth-of-type(2) {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin: 1rem 0px;
+}
+
+.a02 > div:nth-of-type(3),
+.a02 > div:nth-of-type(4) {
+  margin: 0.5rem 0px;
+}
+
+.a03 {
+  padding-right: 1rem;
+}
+
+.a03 > div {
+  margin: 1rem;
+  font-size: 0.8rem;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.a03 svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.a04 {
+  padding: 2rem;
+}
+
+.a05 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.a06 {
+  background-color: #434e5e;
+  height: 2px;
+  margin: 1rem 0px;
+}
+
+p {
+  color: #71839d;
+}

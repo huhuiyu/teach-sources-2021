@@ -88,3 +88,84 @@ body {
 p {
   color: #71839d;
 }
+
+.a07 {
+  display: flex;
+  padding: 2rem;
+}
+
+.a07 > div:first-of-type {
+  flex: 3.5;
+  margin-right: 1rem;
+}
+
+.a07 > div:last-of-type {
+  flex: 1;
+}
+
+.a08 {
+  padding: 1rem 0px;
+  border-bottom: 1px solid #434e5e;
+  font-size: 1.2rem;
+}
+
+.a09 {
+  font-size: 0.9rem;
+  padding: 1rem 0px;
+}
+
+.a10 {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.a10 > div:last-of-type {
+  height: 0.7rem;
+  background-color: #ccc;
+  border-radius: 0.3rem;
+}
+
+.a10 > div:last-of-type > div {
+  background-color: #434e5e;
+  height: 100%;
+  border-radius: 0.3rem;
+}
+
+.a11 {
+  margin: 1rem 0px;
+}
+
+.a11 > div:nth-of-type(2) {
+  font-size: 0.8rem;
+  color: #434e5e;
+  margin: 0.4rem 0px;
+}
+
+.a11 > :nth-of-type(3) {
+  font-size: 0.7rem;
+  color: #999;
+}
+
+.a12 {
+  display: flex;
+  margin: 1rem 0px;
+}
+
+.a12 > div:first-of-type {
+  margin: 3px 0.5rem 0px 0px;
+}
+
+.a12 p {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.a13 {
+  font-size: 0.8rem;
+  margin: 0.5rem 0px;
+  color: #444;
+}
+
+.a14 {
+  display: flex;
+}

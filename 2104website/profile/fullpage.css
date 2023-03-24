@@ -1,0 +1,102 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+/* 整体移动容器 */
+body > div {
+  position: absolute;
+  transform: translate(0%, 0%);
+  height: 100vh;
+  width: 100vw;
+  transition: transform 2s;
+}
+
+/* 移动位置 */
+.p1 {
+  transform: translate(0%, 0%);
+}
+.p2 {
+  transform: translate(-100%, 0%);
+}
+.p3 {
+  transform: translate(0%, -100%);
+}
+.p4 {
+  transform: translate(-100%, -100%);
+}
+
+/* 整体容器 */
+.container {
+  position: relative;
+}
+
+.a01 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url('../images/img28.jpg');
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f0f;
+  font-size: 5rem;
+}
+
+.a02 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url('../images/img29.jpg');
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #450b92;
+  font-size: 5rem;
+
+  transform: translate(100%, 0%);
+}
+
+.a03 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url('../images/img30.jpg');
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ef4330;
+  font-size: 5rem;
+
+  transform: translate(0%, 100%);
+}
+
+.a04 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url('../images/img28.jpg');
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4c1eaf;
+  font-size: 5rem;
+
+  transform: translate(100%, 100%);
+}

@@ -175,11 +175,34 @@ body {
 }
 
 .a12 > div:first-of-type {
-  width: 2rem;
+  width: 1rem;
+  margin-right: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.a12 > div:first-of-type > div:first-of-type {
+  width: 2px;
+  background-color: #889ab4;
+}
+
+.a12 > div:first-of-type span {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 0.3rem solid #434e5e;
+  border-radius: 50%;
 }
 
 .a12 > div:last-of-type {
   flex: 1;
+  margin-bottom: 2rem;
 }
 
 .a13 {
@@ -210,4 +233,29 @@ body {
 
 ul {
   color: #576477;
+}
+
+.a15 {
+  margin: 0.5rem 0px;
+}
+
+.a15 span {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.2rem;
+  background-color: #434e5e;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.a16 {
+  text-align: center;
+  color: #434e5e;
+  margin: 3rem;
+  font-size: 0.8rem;
+}
+
+.a16 a {
+  color: #434e5e;
 }

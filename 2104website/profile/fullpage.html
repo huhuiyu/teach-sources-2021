@@ -12,8 +12,8 @@
 
 <body>
 
-  <div class="p3">
-  
+  <div id="div01" class="p1">
+
     <!-- 整体要在一个全屏的容器中 -->
     <div class="container">
 
@@ -33,6 +33,25 @@
 
   </div>
 
+  <!-- 指示器区域 -->
+  <div class="pointer">
+    <div>
+      <span onclick="changePage('p1')"></span>
+      <span onclick="changePage('p2')"></span>
+      <span onclick="changePage('p3')"></span>
+      <span onclick="changePage('p4')"></span>
+    </div>
+  </div>
+
+
+  <script>
+
+    function changePage(page) {
+      let div01 = document.getElementById('div01')
+      div01.setAttribute('class', page)
+    }
+
+  </script>
 
 </body>
 

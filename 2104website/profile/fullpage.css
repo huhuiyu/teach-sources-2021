@@ -9,7 +9,7 @@ body > div {
   transform: translate(0%, 0%);
   height: 100vh;
   width: 100vw;
-  transition: transform 2s;
+  transition: transform 1s;
 }
 
 /* 移动位置 */
@@ -99,4 +99,30 @@ body > div {
   font-size: 5rem;
 
   transform: translate(100%, 100%);
+}
+
+.pointer {
+  position: fixed;
+  width: 100vw;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  bottom: 1rem;
+  left: 0px;
+  z-index: 1000;
+  height: 2rem;
+}
+
+.pointer > div {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pointer span {
+  display: inline-block;
+  margin: 0.5rem;
+  border: 2px solid #fff;
+  width: 1rem;
+  height: 1rem;
+  box-sizing: border-box;
+  border-radius: 50%;
 }

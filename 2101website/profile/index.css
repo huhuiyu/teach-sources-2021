@@ -168,4 +168,84 @@ p {
 
 .a14 {
   display: flex;
+  justify-content: space-between;
+  /* margin: 0.5rem 0px; */
+}
+
+.a14 > div:last-of-type {
+  font-size: 0.8rem;
+}
+
+.a15 {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.a16 {
+  color: #777;
+}
+
+.a17 {
+  margin: 1rem 0px;
+}
+
+.a17 > span {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: #434e5e;
+  color: #dcdcdc;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  margin-right: 0.5rem;
+}
+
+.a18 {
+  width: 1rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.a18 > div:first-of-type {
+  width: 2px;
+  height: 100%;
+  background-color: #777;
+}
+
+.a19 {
+  display: flex;
+}
+
+.a19 > div:last-of-type {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.a18 > span {
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  border: 3px solid #777;
+  border-radius: 50%;
+}
+
+.a20 {
+  margin: 3rem 0px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #71839d;
+}
+
+.a20 svg {
+  width: 0.8rem;
+  height: auto;
+  display: inline-block;
+}
+
+.a20 a {
+  color: #71839d;
 }

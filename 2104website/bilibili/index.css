@@ -21,6 +21,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0.5rem;
+  background-color: #111;
 }
 
 .a02 img {
@@ -59,4 +60,131 @@ body {
   display: inline-block;
   width: auto;
   height: 0.8rem;
+}
+
+.a04 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.2rem 0px;
+  background-color: #111;
+}
+
+.a04 svg {
+  display: inline-block;
+  height: 1.5rem;
+  width: auto;
+}
+
+.a04 .active {
+  color: #d34141;
+  border-bottom: 2px solid #d34141;
+}
+
+.a04 > div {
+  padding: 0.2rem 0px;
+}
+
+.a05 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.7rem;
+  text-align: center;
+  background-color: #111;
+  padding: 0.5rem 0px;
+}
+
+.a05 svg {
+  display: inline-block;
+  height: 1.5rem;
+  width: auto;
+}
+
+.a05 > div:first-of-type {
+  color: #d34141;
+}
+
+.a05 > div:nth-of-type(3) {
+  background-color: #d34141;
+  color: #fff;
+  width: 3rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+}
+
+.a06 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.a07 {
+  position: relative;
+  margin: 0.5rem;
+  background-color: #111;
+  font-size: 1.5rem;
+  color: #dcdcdc;
+  border-radius: 0.5rem;
+}
+
+.a07 img {
+  border-radius: 0.5rem;
+}
+
+.a07 > div {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgba(245, 240, 240, 0.5);
+  width: 91%;
+  padding: 0.2rem 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.a08 {
+  display: flex;
+}
+
+.a08 > div {
+  width: 45%;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #111;
+}
+
+.a08 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.a08 svg {
+  display: inline-block;
+  height: 1.2rem;
+  width: auto;
+}
+
+.a08 > div > div:first-of-type {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  margin: 0.5rem;
+}
+
+
+.a08 > div > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.2rem 0.5rem;
+}
+
+.a08 > div > div:last-of-type svg {
+  display: inline-block;
+  transform: translateY(0.2rem);
 }

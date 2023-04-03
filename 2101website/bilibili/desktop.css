@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+}
+
+.a1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0px;
+  border-bottom: 1px solid #dcdcdc;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+}
+
+.a1 > svg:first-of-type {
+  display: block;
+  height: 2rem;
+  width: auto;
+}
+
+.a2 > span {
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.a3 {
+  font-size: 0.8rem;
+}
+
+.a3 svg {
+  display: inline-block;
+  height: 1rem;
+  width: auto;
+  margin-left: 0.5rem;
+  transform: translateY(0.15rem);
+}

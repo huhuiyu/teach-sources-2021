@@ -108,3 +108,71 @@ body {
   color: #dcdcdc;
   font-size: 1.8rem;
 }
+
+.a4 {
+  margin: 0.5rem;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.a4 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.a4 > div {
+  position: absolute;
+  transform: translate(0.8rem, -120%);
+  color: #fff;
+}
+
+.a5 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.a5 > div {
+  width: 49%;
+  background-color: #222;
+}
+
+.a5 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.a7 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.a7 svg {
+  display: inline-block;
+  height: 1rem;
+  width: auto;
+}
+
+.a7 > div:first-of-type > span:first-of-type {
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 0.5rem;
+}

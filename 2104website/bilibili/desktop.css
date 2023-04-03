@@ -1,0 +1,122 @@
+body {
+  margin: 0px;
+}
+
+.a1 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 0.5rem 0rem;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.a1 > svg:first-of-type {
+  height: 1.8rem;
+  width: auto;
+  display: block;
+  margin: 0px 1rem;
+}
+
+.a1 > div:first-of-type {
+  font-size: 0.9rem;
+}
+
+.a1 > div:first-of-type > span {
+  display: inline-block;
+  margin: 0px 0.5rem;
+}
+
+.a1 > div:nth-of-type(2) {
+  font-size: 0.9rem;
+  display: flex;
+  margin: 0px 0.5rem;
+}
+
+.a1 > div:nth-of-type(2) > svg {
+  display: inline-block;
+  height: 1rem;
+  width: auto;
+  transform: translateY(0.15rem);
+}
+
+.a1 > div:nth-of-type(3) {
+  border: 1px solid #dcdcdc;
+  background-color: #ededed;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.2rem;
+  margin: 0px 1rem;
+}
+
+.a1 > div:nth-of-type(3) svg {
+  display: inline-block;
+  height: 1rem;
+  width: auto;
+  margin: 0.1rem 0.2rem 0px 0.2rem;
+}
+
+.a1 input {
+  border-width: 0px;
+  background-color: #ededed;
+  outline: none;
+  width: 20vw;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a1 > div:nth-of-type(4) {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #dcdcdc;
+  padding: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 1rem;
+}
+
+.a1 > div:nth-of-type(4) img {
+  border-radius: 50%;
+}
+
+.a1 > div:nth-of-type(5) {
+  display: flex;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.a1 > div:nth-of-type(5) svg {
+  height: 1.2rem;
+  display: inline-block;
+  width: auto;
+}
+
+.a1 > div:nth-of-type(5) > div {
+  margin: 0px 0.5rem;
+}
+
+.a1 > div:nth-of-type(6) {
+  background-color: #f06878;
+  color: #fff;
+  display: flex;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.a1 > div:nth-of-type(6) svg {
+  display: inline-block;
+  width: auto;
+  height: 1.5rem;
+}

@@ -13,6 +13,7 @@ body {
   left: 0px;
   background-color: #fff;
   z-index: 2;
+  min-width: 1366px;
 }
 
 .a1 > svg:first-of-type {
@@ -119,4 +120,121 @@ img {
   display: inline-block;
   width: auto;
   height: 1.5rem;
+}
+
+.a2 {
+  width: 1300px;
+  margin: 0px auto;
+}
+
+.a3 {
+  display: flex;
+  margin: 1rem 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.a4 {
+  display: flex;
+}
+
+.a4 svg {
+  width: 40px;
+  display: inline-block;
+  height: auto;
+}
+
+.a4 > div {
+  margin-right: 16px;
+}
+
+.a5 span {
+  display: inline-block;
+  width: 65px;
+  padding: 0.3rem 0px;
+  background-color: #dcdcdc;
+  color: #555;
+  border-radius: 0.3rem;
+  margin: 0.2rem 0px;
+  font-size: 0.8rem;
+}
+
+.a6 {
+  width: 1px;
+  background-color: #dcdcdc;
+  height: 70px;
+  margin: 0px 0.5rem;
+  transform: translateY(2px);
+}
+
+.a7 svg {
+  display: inline-block;
+  width: 1rem;
+  height: auto;
+  transform: translateY(2px);
+}
+
+.a7 span {
+  display: inline-block;
+  margin: 0px 1rem 0px 0.2rem;
+  font-size: 0.8rem;
+}
+
+.a7 > div {
+  padding: 0.5rem 0px;
+}
+
+.a8 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.a8 > div:last-of-type {
+  flex: 1;
+}
+
+.a9 {
+  width: 480px;
+  height: 320px;
+  background-image: url('./b01.jpg');
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+}
+
+.a8 > div:first-of-type {
+  position: relative;
+}
+/* 选择器a + 选择器b 表示选择器a的兄弟节点中的选择器b */
+.a9 + div {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  width: 100%;
+  color: #dcdcdc;
+  box-sizing: border-box;
+}
+
+.a10 {
+  display: flex;
+  margin: 0px 1rem;
+  justify-content: space-between;
+}
+
+.a11 {
+  width: 240px;
+  height: 135px;
+  background-image: url('./b03.jpg');
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.2rem;
+}
+
+.other {
+  background-image: url('./b02.jpg');
 }

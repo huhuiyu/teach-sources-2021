@@ -227,7 +227,7 @@ img {
 
 .a11 {
   width: 240px;
-  height: 135px;
+  height: 126px;
   background-image: url('./b03.jpg');
   background-size: cover;
   object-fit: cover;
@@ -237,4 +237,114 @@ img {
 
 .other {
   background-image: url('./b02.jpg');
+}
+
+.a12 {
+  width: 240px;
+  margin: 8px 0px;
+}
+
+.a12 > div:first-of-type {
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.3em;
+  font-size: 0.8rem;
+}
+
+.a12 > div:last-of-type {
+  font-size: 0.7rem;
+  color: #777;
+}
+
+.a12 > div:last-of-type > span:first-of-type {
+  border: 1px solid #777;
+  padding: 1px 3px;
+  text-transform: uppercase;
+  font-size: 0.5rem !important;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.a13 {
+  width: 240px;
+  height: 126px;
+  background-image: url('./b03.jpg');
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.2rem;
+}
+
+.a14 {
+  width: 240px;
+  margin: 8px 0px;
+}
+
+.a14 > div:first-of-type {
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.3em;
+  font-size: 0.8rem;
+}
+
+.a14 > div:last-of-type {
+  font-size: 0.7rem;
+  color: #777;
+}
+
+.a14 > div:last-of-type > span:first-of-type {
+  border: 1px solid #777;
+  padding: 1px 3px;
+  text-transform: uppercase;
+  font-size: 0.5rem !important;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.a15 {
+  margin: 1rem 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.a15 .other {
+  background-image: url(./b01.jpg);
+}
+
+.a16 {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+}
+
+.a16 > div:first-of-type {
+  background-color: #000;
+  height: 0.4rem;
+  width: 0.6rem;
+  margin: 0px auto;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  margin-bottom: 0.5rem;
+}
+
+.a16:hover {
+  background-color: #dcdcdc;
+  cursor: pointer;
+}
+
+html,
+body {
+  /* 锚点跳跃时页面平衡滚动 */
+  scroll-behavior: smooth;
 }

@@ -1,8 +1,13 @@
 body {
   margin: 0px;
 }
+html {
+  /* 平衡滚动 */
+  scroll-behavior: smooth;
+}
 
 .a1 {
+  /* width: 100%; */
   min-width: 1366px;
   display: flex;
   justify-content: center;
@@ -13,6 +18,7 @@ body {
   top: 0px;
   left: 0px;
   background-color: #fff;
+  z-index: 100;
 }
 
 .a1 > svg:first-of-type {
@@ -247,4 +253,33 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0.5rem 0px;
+}
+
+.a19 {
+  position: fixed;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.5rem;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+}
+
+.a19:hover {
+  background-color: #dcdcdc;
+  cursor: pointer;
+}
+
+.a19 a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.5rem;
+}
+
+.a19 > div {
+  width: 0.7rem;
+  height: 0.5rem;
+  background-color: #333;
+  margin: 0px auto;
+
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }

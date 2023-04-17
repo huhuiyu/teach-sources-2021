@@ -85,4 +85,7 @@ body {
   padding: 1vw;
   border-radius: 1vw;
   margin-bottom: 1vh;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
 }

@@ -1,0 +1,76 @@
+/* 对根属性进行定义，可以修改页面属性的默认值和定义变量 */
+:root {
+  /* 定义变量，一般都是--开头，多个单词用-分隔，冒号后面是变量值 */
+  /* 配色 */
+  --main-bg-color: #00a7af;
+  --main-text-color: #ffffff;
+  --main-border-color: #aaaaaa;
+
+  /* 按钮大小 */
+  --btn-width: 45vw;
+}
+
+body {
+  margin: 0px;
+}
+
+.top-div {
+  /* 使用变量就是var(变量名) */
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+.main-btn {
+  width: var(--btn-width);
+  margin: 1rem auto;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 0.5rem 0px;
+  border-radius: 3rem;
+}
+
+.second-btn {
+  width: var(--btn-width);
+  margin: 1rem auto;
+  box-sizing: border-box;
+  border: 2px solid var(--main-bg-color);
+  color: var(--main-bg-color);
+
+  text-align: center;
+  padding: 0.5rem 0px;
+  border-radius: 3rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 25vw;
+  margin: 10vw auto 0.5rem auto;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* +表示相邻的元素 */
+.logo + div {
+  text-align: center;
+}
+
+.form {
+  padding: 5vw 15vw;
+}
+
+.control {
+  border-bottom: 1px solid var(--main-border-color);
+  display: flex;
+  align-items: center;
+}
+
+.control .iconfont {
+  color: var(--main-bg-color);
+  font-size: 1.5rem;
+}

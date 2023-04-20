@@ -1,0 +1,17 @@
+body {
+  background-color: #eeeeee;
+  color: #333;
+  margin: 0px;
+}
+
+.bg-div {
+  height: 20vh;
+  width: 100vw;
+  background: linear-gradient(to right, #f8015c, #ea454c);
+
+  border-bottom-left-radius: 10vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}

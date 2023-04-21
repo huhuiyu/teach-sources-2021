@@ -1,3 +1,7 @@
+:root {
+  --main-width: 90vw;
+}
+
 body {
   margin: 0px;
   overflow: hidden;
@@ -85,4 +89,118 @@ body {
 .a2 {
   display: flex;
   justify-content: space-between;
+}
+
+.a3 {
+  width: var(--main-width);
+  display: flex;
+  margin: 0px auto;
+  padding: 1rem 0.5rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.a3 > div {
+  width: 21%;
+}
+
+.a3 svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: translateY(25%);
+}
+
+.a4 {
+  width: var(--main-width);
+  margin: 1rem auto;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+.a4 > div:first-of-type {
+  background-color: #f23c52;
+  padding: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.a4 > div:first-of-type > span:first-of-type {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.a4 > div:first-of-type > span:last-of-type {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: #f9b4b9;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.a5 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.a5 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.a5 > div {
+  width: 22%;
+}
+
+.a6 {
+  display: flex;
+  width: var(--main-width);
+  margin: 0.5rem auto;
+  justify-content: space-between;
+}
+
+.a6 > div {
+  width: calc(var(--main-width) / 4 - 0.2rem);
+  height: calc(var(--main-width) / 4 - 0.2rem);
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.a6 > div:nth-of-type(1) {
+  background-color: #bfefd9;
+}
+.a6 > div:nth-of-type(2) {
+  background-color: #fed196;
+}
+.a6 > div:nth-of-type(3) {
+  background-color: #fe9197;
+}
+.a6 > div:nth-of-type(4) {
+  background-color: #93c6ff;
+}
+
+.sub-title {
+  font-size: 0.4rem;
+  color: #777;
+}
+
+.a6 > div:nth-of-type(1)::after {
+  width: 50%;
+  height: 50%;
+  background-color: #ff9000;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
 }

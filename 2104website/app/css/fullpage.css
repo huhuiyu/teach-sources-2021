@@ -1,0 +1,53 @@
+body {
+  background-image: url('../images/wallhaven-577gm7.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* 背景图片固定，不会跟着屏幕滚动 */
+  background-attachment: fixed;
+  /* 平衡滚动 */
+  scroll-behavior: smooth;
+  margin: 0px;
+}
+
+/* 整体容器 */
+body > div {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+/* 全屏容器 */
+.full-box {
+  height: 100vh;
+}
+
+.f1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vh;
+  letter-spacing: 3vw;
+}
+
+/* 导航按钮 */
+.nav-btn {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btn > div > div {
+  height: 0.2rem;
+  background-color: #fff;
+  margin: 0.3rem 0px;
+  width: 1.5rem;
+}
+
+.nav-btn:hover {
+  background-color: #112cde;
+}

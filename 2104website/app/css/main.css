@@ -195,12 +195,62 @@ div {
   color: #777;
 }
 
-.a6 > div:nth-of-type(1)::after {
-  width: 50%;
-  height: 50%;
-  background-color: #ff9000;
+.a6 > div:nth-of-type(1)::before {
+  width: 70%;
+  height: 70%;
+  background-color: #85dab3;
   position: absolute;
   bottom: 0px;
   right: 0px;
-  z-index: 1;
+  content: ' ';
+  border-radius: 50%;
+  transform: translate(20%, 30%);
+}
+
+.a7 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.a7 > div {
+  width: 49%;
+}
+
+.a8 {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  margin: 1rem 0px;
+}
+
+.a8 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a9 {
+  display: flex;
+  align-items: end;
+}
+
+.a9 svg {
+  display: block;
+  width: 8vw;
+  height: auto;
+}
+
+.a9 > div:first-of-type {
+  flex: 1;
+}
+
+.a9 > div:first-of-type > div:nth-of-type(2) {
+  color: #999;
+  font-size: 0.8rem;
+  margin: 0.2rem 0px;
+}
+
+.a9 > div:first-child > div:last-of-type {
+  color: #f23c52;
 }

@@ -102,3 +102,141 @@ div {
   color: #666;
   font-size: 0.7rem;
 }
+
+.a4 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.a4 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a4 > div {
+  width: 21vw;
+  color: #999;
+}
+
+.a4 > div > div span:first-of-type {
+  display: inline-flex;
+  border: 1px solid #999;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.a4 > div > div {
+  padding: 0.2rem 0.5rem;
+}
+
+.a5 {
+  display: flex;
+  width: 94vw;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+.a5 > div {
+  width: 21vw;
+  height: 21vw;
+}
+
+.a5 > div:nth-of-type(1) {
+  background-color: #3dfafe;
+}
+
+.a5 > div:nth-of-type(2) {
+  background-color: #ebf771;
+}
+
+.a5 > div:nth-of-type(3) {
+  background-color: #ff5b7d;
+}
+
+.a5 > div:nth-of-type(4) {
+  background-color: #8ae193;
+}
+
+.a5 > div > div:first-of-type {
+  padding: 0.2rem;
+}
+
+.a5 > div > div:last-of-type {
+  font-size: 0.5vw;
+}
+
+.a6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.a7 {
+  background-color: #f7005d;
+  width: 4rem;
+  height: 0.3rem;
+  margin: 0.2rem auto 1rem auto;
+  border-radius: 0.3rem;
+}
+
+.a8 {
+  display: flex;
+  width: 94vw;
+  margin: 1rem auto;
+  justify-content: space-between;
+}
+
+.a8 > div {
+  width: 49%;
+}
+
+.a9 {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.a9 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a9 > div:first-of-type {
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.a9 > div:last-of-type {
+  font-size: 1.5rem;
+  text-align: right;
+  color: #dddb3b;
+}
+
+.a10 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+  position: sticky;
+  bottom: 0px;
+  font-size: 0.8rem;
+}
+
+.a10 .iconfont {
+  font-size: 1.5rem;
+}
+
+.a10 .active {
+  color: #ff0000;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全屏-竖屏模式</title>
+  <link rel="stylesheet" href="./h1.css">
+</head>
+
+<body>
+
+  <!-- 全屏容器 -->
+  <div class="container move1">
+
+    <div>1111</div>
+    <div>2222</div>
+    <div>3333</div>
+    <div>4444</div>
+    <div>5555</div>
+    <div>6666</div>
+
+  </div>
+
+  <!-- 导航 -->
+  <nav>
+    <a href="#" onclick="moveTo(1)">第一页</a>
+    <a href="#" onclick="moveTo(2)">第二页</a>
+    <a href="#" onclick="moveTo(3)">第三页</a>
+    <a href="#" onclick="moveTo(4)">第四页</a>
+    <a href="#" onclick="moveTo(5)">第五页</a>
+    <a href="#" onclick="moveTo(6)">第六页</a>
+  </nav>
+
+  <script>
+    // 找到容器对象
+    let container = document.querySelector('.container')
+
+    function moveTo(n) {
+      // 替换容器的class
+      // class="container move1"
+      container.setAttribute('class', 'container move' + n)
+    }
+
+  </script>
+
+
+
+</body>
+
+</html>

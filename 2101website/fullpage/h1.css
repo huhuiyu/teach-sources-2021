@@ -1,0 +1,80 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+  color: #fff;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.container > div {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 1s;
+}
+
+.container > div:nth-child(4n + 1) {
+  background-image: url(../app/images/wallhaven-012339.jpg);
+}
+
+.container > div:nth-child(4n + 2) {
+  background-image: url(../app/images/wallhaven-3zjkly.jpg);
+}
+
+.container > div:nth-child(4n + 3) {
+  background-image: url(../app/images/wallhaven-wqqk9p.jpg);
+}
+
+.container > div:nth-child(4n + 4) {
+  background-image: url(../app/images/wallhaven-wqr22q.jpg);
+}
+
+/* 初始位置 */
+.move1 > div {
+  transform: translateY(0%);
+}
+
+/* 全体上移100% */
+.move2 > div {
+  transform: translateY(-100%);
+}
+
+/* 全体上移200% */
+.move3 > div {
+  transform: translateY(-200%);
+}
+
+.move4 > div {
+  transform: translateY(-300%);
+}
+
+.move5 > div {
+  transform: translateY(-400%);
+}
+
+.move6 > div {
+  transform: translateY(-500%);
+}
+
+/* 导航的部分 */
+nav {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  margin: 0.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ff0000;
+}

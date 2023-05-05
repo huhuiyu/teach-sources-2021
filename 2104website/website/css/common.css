@@ -1,0 +1,13 @@
+body {
+  margin: 0px;
+}
+
+div,
+p,
+section {
+  box-sizing: border-box;
+}
+
+.flex-box {
+  display: flex;
+}

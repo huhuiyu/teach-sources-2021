@@ -4,9 +4,9 @@ body {
   background-repeat: no-repeat;
   /* 背景图片固定，不会跟着屏幕滚动 */
   background-attachment: fixed;
-  /* 平衡滚动 */
-  scroll-behavior: smooth;
   margin: 0px;
+
+  overflow: hidden;
 }
 
 /* 整体容器 */
@@ -24,7 +24,7 @@ body > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10vh;
+  font-size: 5vw;
   letter-spacing: 3vw;
 }
 
@@ -39,15 +39,75 @@ body > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
-.nav-btn > div > div {
+.nav-btn > label {
+  cursor: pointer;
+}
+
+.nav-btn > label > div {
   height: 0.2rem;
   background-color: #fff;
   margin: 0.3rem 0px;
   width: 1.5rem;
+  transition: all 0.5s;
 }
 
 .nav-btn:hover {
   background-color: #112cde;
+}
+
+/* 点击的特效部分 */
+.nav-btn input {
+  width: 0px;
+  height: 0px;
+  display: block;
+  box-sizing: border-box;
+  outline: none;
+  border-width: 0px;
+}
+
+.nav-btn:focus-within > label > div:nth-of-type(2) {
+  opacity: 0;
+}
+
+.nav-btn:focus-within > label > div:nth-of-type(1) {
+  transform: rotate(45deg);
+  transform-origin: 0.05rem center;
+}
+
+.nav-btn:focus-within > label > div:nth-of-type(3) {
+  transform: rotate(-45deg);
+  transform-origin: 0.05rem center;
+}
+
+.menus {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  right: 0px;
+  top: 50vh;
+  padding: 0.5rem;
+  transform: translate(100%, -50%);
+  transition: all 0.5s;
+}
+
+/* 
+  选择器a + 选择器b
+  表示选择器a的下一个选择器b兄弟节点
+*/
+.nav-btn:focus-within + div {
+  transform: translate(0%, -50%);
+}
+
+.menus a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 1rem 0.5rem;
+}
+
+html {
+  /* 平滑滚动页面 */
+  scroll-behavior: smooth;
 }

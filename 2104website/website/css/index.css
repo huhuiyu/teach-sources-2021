@@ -7,3 +7,99 @@
 body {
   overflow: hidden;
 }
+
+.a1 {
+  width: 45vw;
+  position: absolute;
+}
+
+.a1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation: 2s a1movein;
+  filter: drop-shadow(2vw 0px 0px #c30d0d);
+}
+
+.a1::before {
+  content: '';
+  background-color: #000000;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  animation: 2s a1movein2;
+  animation-delay: 0.1s;
+  z-index: -1;
+}
+
+@keyframes a1movein {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    filter: drop-shadow(-2vw 0px 0px #c30d0d);
+  }
+  62.5% {
+    transform: translateX(0%);
+    filter: drop-shadow(0vw 0px 0px #c30d0d);
+  }
+  100% {
+    transform: translateX(0%);
+    filter: drop-shadow(2vw 0px 0px #c30d0d);
+  }
+}
+
+@keyframes a1movein2 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.a2 {
+  position: absolute;
+  right: 0px;
+  padding: 2vw 5vw;
+}
+
+.a2 > div:nth-of-type(1) {
+  background: linear-gradient(to bottom, #000000 40%, #bc0512);
+  padding: 1vw;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1vw #c30d0d;
+  width: 4vw;
+  height: 4vw;
+}
+
+.a2 > div:nth-of-type(1) img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.a3 {
+  margin: 2vh 0px;
+  overflow: hidden;
+}
+
+.a3 a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 2vh;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.a3 > div {
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.a3 .active {
+  transform: translateY(0%);
+}

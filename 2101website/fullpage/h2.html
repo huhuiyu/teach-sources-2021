@@ -22,11 +22,42 @@
 
   <!-- 导航 -->
   <nav>
-    <span></span>
+    <span class="active"></span>
     <span></span>
     <span></span>
     <span></span>
   </nav>
+
+
+  <script>
+
+    let spans = document.querySelectorAll('nav > span')
+
+    for (let i = 0; i < spans.length; i++) {
+      let espan = spans[i]
+      espan.addEventListener('click', () => {
+        moveDiv('move' + (i + 1))
+        espan.classList.add('active')
+      })
+    }
+
+    let divs = document.querySelectorAll('.container > div')
+
+    function moveDiv(index) {
+      for (let i = 0; i < divs.length; i++) {
+        let ediv = divs[i]
+        ediv.setAttribute('class', index)
+      }
+
+      for (let i = 0; i < spans.length; i++) {
+        let espan = spans[i];
+        espan.classList.remove('active')
+      }
+
+    }
+
+
+  </script>
 
 </body>
 

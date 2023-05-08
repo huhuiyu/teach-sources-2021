@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+.full-page {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg1 {
+  background-image: url('../app/images/wallhaven-wqqk9p.jpg');
+}
+.bg2 {
+  background-image: url('../app/images/wallhaven-wqr22q.jpg');
+}
+.bg3 {
+  background-image: url('../app/images/wallhaven-dp2q8j.jpg');
+}
+
+nav {
+  position: fixed;
+  right: 2vw;
+  top: 50vh;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+nav > a {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}

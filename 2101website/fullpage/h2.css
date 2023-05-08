@@ -68,4 +68,11 @@ nav span {
   width: 1rem;
   height: 1rem;
   background-color: #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+nav span.active {
+  border: 0.3rem solid #999;
 }

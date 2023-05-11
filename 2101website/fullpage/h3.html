@@ -13,10 +13,28 @@
 <body>
 
   <nav>
-    <a href="#a1">第一页</a>
-    <a href="#a2">第二页</a>
-    <a href="#a3">第三页</a>
-    <a href="#a4">第四页</a>
+
+    <a href="#a1">
+      <label class="active">
+        <input type="text">
+      </label>
+    </a>
+
+    <a href="#a2">
+      <label>
+        <input type="text">
+      </label>
+    </a>
+    <a href="#a3">
+      <label>
+        <input type="text">
+      </label>
+    </a>
+    <a href="#a4">
+      <label>
+        <input type="text">
+      </label>
+    </a>
   </nav>
 
   <a name="a1"></a>
@@ -39,6 +57,24 @@
     HELLO！
   </div>
 
+
+
+
+  <script>
+
+    let alinks = document.querySelectorAll('nav label')
+    let index = 0
+
+    for (let i = 0; i < alinks.length; i++) {
+      let link = alinks[i];
+      link.addEventListener('click', () => {
+        alinks[index].classList.remove('active')
+        index = i
+        link.classList.add('active')
+      })
+    }
+
+  </script>
 
 </body>
 

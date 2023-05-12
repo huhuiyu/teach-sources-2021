@@ -103,3 +103,45 @@ body {
 .a3 .active {
   transform: translateY(0%);
 }
+
+.a2 > div:first-of-type input {
+  width: 0px;
+  height: 0px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border-width: 0px;
+  /* background-color: transparent; */
+}
+
+.a2 > div:first-of-type:focus-within + div > div {
+  transform: translateY(0%);
+}
+
+.a4 {
+  position: absolute;
+  right: 0px;
+  top: 40vh;
+  display: flex;
+}
+
+.a4 > div:first-of-type > div:first-of-type {
+  font-size: 7vw;
+  color: #ff0000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.a4 > div:first-of-type > div:last-of-type {
+  font-size: 4.5vw;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.a4 > div:last-of-type {
+  font-size: 12vw;
+  margin-left: 2vw;
+  text-shadow: -0.8vw 1vw 0px #ff0000;
+}

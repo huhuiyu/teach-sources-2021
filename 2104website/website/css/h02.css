@@ -1,0 +1,94 @@
+body {
+  margin: 0px;
+  background-color: #bfefd9;
+  overflow: hidden;
+}
+
+.a1 {
+  display: block;
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: translateY(5%);
+  z-index: -1;
+}
+
+.a2 {
+  position: relative;
+  height: 70vh;
+}
+
+.a2 img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.tree-box {
+  position: fixed;
+  bottom: 5vh;
+  right: 20vw;
+}
+
+.a2 a {
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3vw;
+}
+
+.a2 a:hover {
+  color: #29a36b;
+}
+
+.a2 a:first-of-type {
+  top: 5.5%;
+  left: 20%;
+  transform: rotate(30deg);
+}
+
+.a2 a:nth-of-type(2) {
+  top: 8%;
+  left: 72%;
+  transform: rotate(-30deg);
+}
+
+.a2 a:nth-of-type(3) {
+  top: 35%;
+  left: 25%;
+  transform: rotate(-45deg);
+}
+
+.a2 a:nth-of-type(4) {
+  top: 35%;
+  left: 72%;
+  transform: rotate(30deg);
+}
+
+.a3 {
+  width: 7vw;
+  position: fixed;
+  top: 5vh;
+  right: 10vw;
+  animation: sun-move-in 1s ease-in-out;
+}
+
+.a3 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes sun-move-in {
+  0% {
+    top: 15vh;
+    right: -7vw;
+  }
+  100% {
+    top: 5vh;
+    right: 10vw;
+  }
+}

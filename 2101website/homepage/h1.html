@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>个人网站首页设计一</title>
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
 
   <link rel="stylesheet" href="./css/h1.css">
 </head>
@@ -13,11 +14,94 @@
 <body>
 
   <!-- 第一屏 -->
-  <div id="page1" class="full-page night">
+  <div id="page1" class="full-page day">
+    <!-- 上方菜单 -->
+    <div class="a2">
 
-    字
+      <!-- 第一块 -->
+      <div>
+        <img src="./images/hu-logo.jpg" alt="">
+        <span>个人网站</span>
+      </div>
+
+      <!-- 中间弹出菜单 -->
+      <div class="a3">
+
+        <div>
+          <div>平面设计</div>
+          <div></div>
+        </div>
+
+        <div>
+          <div>UI设计</div>
+          <div></div>
+        </div>
+
+        <div>
+          <div>其它</div>
+          <div></div>
+        </div>
+
+        <div>
+          <div>更多</div>
+          <div></div>
+        </div>
+
+      </div>
+
+
+      <!-- 右边区域 -->
+      <div class="a4">
+
+        <div>
+          <i class="iconfont">&#xe6ee;</i>
+        </div>
+
+        <div class="a5">
+          <div></div>
+        </div>
+
+        <div>
+          <i class="iconfont">&#xe62d;</i>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <!-- 图像 -->
+    <div class="a1">
+      <img src="./images/bg01.png" alt="">
+    </div>
 
   </div>
+
+
+
+  <script>
+    let page1 = document.getElementById('page1')
+    let a5 = document.querySelector('.a5')
+    let day = true
+
+
+    a5.addEventListener('click', () => {
+
+      if (day) {
+        page1.classList.remove('day')
+        page1.classList.add('night')
+      } else {
+        page1.classList.remove('night')
+        page1.classList.add('day')
+      }
+      day = !day
+    })
+
+  </script>
 
 </body>
 

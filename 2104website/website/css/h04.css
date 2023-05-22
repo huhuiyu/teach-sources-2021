@@ -1,0 +1,58 @@
+.a1 {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0px;
+  font-size: 1.5rem;
+}
+
+.a1 .iconfont {
+  font-size: 1.8rem;
+}
+
+.a1 > div:first-of-type {
+  margin: 0px 3rem;
+}
+
+.a1 > div:last-of-type {
+  margin-left: 3rem;
+}
+
+.a1 span {
+  display: inline-block;
+  margin-right: 2rem;
+  color: #999;
+  font-weight: bold;
+}
+
+.a1 span:first-of-type {
+  color: #000;
+}
+
+.a1 span:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.a2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcdcdc;
+  padding: 4vh;
+}
+
+.a2 > div:nth-of-type(2),
+.a2 > div:nth-of-type(3) {
+  height: 40vh;
+}
+
+.a2 > div:nth-of-type(2) img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.a2 > div:nth-of-type(3) {
+  background-color: #fff;
+  padding: 1rem;
+}

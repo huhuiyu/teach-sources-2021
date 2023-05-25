@@ -245,3 +245,35 @@ div {
   clip-path: polygon(0% 100%, 70% 0%, 100% 70%);
   transform: translateX(30%);
 }
+
+.a3 > div {
+  position: relative;
+  cursor: pointer;
+}
+
+.a3 > div > div:nth-of-type(3) {
+  position: absolute;
+  background-color: #10c9eb;
+  transform: translateY(5.5rem);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  z-index: 300;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.a3 > div:hover > div:nth-of-type(3) {
+  opacity: 1;
+}
+
+.a3 > div > div:nth-of-type(3) a {
+  display: block;
+  color: #fff;
+  margin: 0.3rem 0px;
+  text-decoration: none;
+}
+
+.a3 > div > div:nth-of-type(3) a:hover {
+  color: #02738d;
+}

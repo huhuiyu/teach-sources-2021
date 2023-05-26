@@ -56,3 +56,104 @@
   background-color: #fff;
   padding: 1rem;
 }
+
+.a3 > div:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.a3 > div:nth-of-type(2) {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.a3 > div:nth-of-type(3),
+.a3 > div:nth-of-type(4),
+.a3 > div:nth-of-type(5),
+.a3 > div:nth-of-type(6) {
+  color: #999;
+  margin: 0.8rem 0px;
+}
+
+.a3 > div:nth-of-type(7) {
+  border: 1px solid #999;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1rem;
+  display: inline-block;
+  color: #999;
+  margin: 1rem 0px;
+}
+
+.a2 > div:nth-of-type(1),
+.a2 > div:nth-of-type(4) {
+  font-size: 8rem;
+  color: #999;
+}
+
+.a4 {
+  display: flex;
+  width: 52vw;
+  margin: 5rem auto;
+  justify-content: space-between;
+}
+
+.a5 {
+  position: relative;
+}
+
+.a5 > div:first-of-type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  letter-spacing: 0.5rem;
+  color: #aaa;
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
+
+.a5 > div:first-of-type > div:nth-of-type(2n + 1) {
+  transform: translateX(10%);
+}
+
+.a5 > div:last-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.a5 > div:last-of-type > div {
+  margin: 0.5rem 0px;
+}
+
+.a6 {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+}
+
+.a6 > div {
+  margin: 1rem;
+}
+
+.a6 .iconfont {
+  font-size: 3rem;
+}
+
+.a7 {
+  background-color: #999;
+  padding: 2px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.a7 > div {
+  background-color: #fff;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  padding: 0.2rem 0.5rem;
+}
+
+.a7 + div {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}

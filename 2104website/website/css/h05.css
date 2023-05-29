@@ -35,3 +35,104 @@ body > div {
   display: block;
   filter: drop-shadow(2rem 0px 0px #ff0000);
 }
+
+.a3 {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  color: #ff0000;
+  background-color: #000;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 1rem #ff0000;
+  cursor: pointer;
+}
+
+.a4 {
+  position: fixed;
+  top: 6rem;
+  right: 5rem;
+  display: flex;
+  align-items: center;
+  width: 40vw;
+}
+
+.a4 > div:first-of-type {
+  width: 20vw;
+  margin-right: 5vw;
+}
+
+.a4 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0.5rem 0.5rem 0px #ff0000);
+}
+
+.a5 {
+  position: fixed;
+  top: 50vh;
+  left: 60vw;
+}
+
+.a5 > div {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.a6 {
+  position: fixed;
+  left: 55vw;
+  bottom: 10vh;
+}
+
+.a7 {
+  display: flex;
+  margin: 0.5rem;
+}
+
+.a7 > div:nth-of-type(2) {
+  height: 1.5rem;
+  width: 20vw;
+  border-radius: 1.5rem;
+  background-color: #dcdcdc;
+}
+
+.a7 > div:nth-of-type(2) > div {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  height: 100%;
+  background: linear-gradient(to right, #f80533, #f28636);
+}
+
+.w85 {
+  width: 85%;
+}
+
+.w90 {
+  width: 90%;
+}
+
+.a7 > div:first-of-type {
+  width: 4rem;
+}
+
+.a6 > div {
+  padding: 1rem 0px;
+  border-top: 2px solid #f80533;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.a6 > div > div:first-of-type {
+  position: absolute;
+  left: 50%;
+  transform: translateY(-130%);
+  padding: 0px 1rem;
+  background-color: #fff;
+  z-index: 3;
+}

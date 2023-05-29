@@ -61,3 +61,53 @@ body {
   font-family: 'font1';
   src: url('./font1.ttf');
 }
+
+@font-face {
+  font-family: 'font2';
+  src: url('./font2.ttf');
+}
+
+.a5 {
+  position: fixed;
+  top: 15vh;
+  right: 15vw;
+  font-size: 3.3vw;
+  font-family: 'font2';
+  color: #640073;
+  font-style: italic;
+}
+
+.a6 {
+  font-size: 2vw;
+  position: fixed;
+  left: 48vw;
+  width: 40vw;
+  top: 30vh;
+  line-height: 3.5vw;
+}
+
+.a7 {
+  position: fixed;
+  left: 45vw;
+  top: 80vh;
+  display: flex;
+  /* text-align: center; */
+  font-size: 2vw;
+}
+
+.a7 > div:first-of-type {
+  background-color: #7d0692;
+  color: #fff;
+  padding: 1vw 5vw 1vw 4vw;
+  text-shadow: 0px 0px 1.5rem #fff;
+  clip-path: polygon(3vw 0%, 100% 0%, calc(100% - 3vw) 100%, 0% 100%);
+  transform: translateX(3vw);
+  font-family: 'font1';
+}
+
+.a7 > div:last-of-type {
+  color: #333333;
+  background-color: #8a7884;
+  padding: 1vw 8vw 1vw 6vw;
+  clip-path: polygon(3vw 0%, 100% 0%, calc(100% - 3vw) 100%, 0% 100%);
+}

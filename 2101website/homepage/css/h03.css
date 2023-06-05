@@ -112,3 +112,38 @@ body {
   top: 0px;
   z-index: 10;
 }
+
+.a6 {
+  margin: 1rem 0.5rem;
+  background-color: #a189cf;
+  padding: 1rem;
+}
+
+.a6 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a6 > div:first-of-type {
+  font-size: 2rem;
+  padding: 0px 0px 1rem 3rem;
+}
+
+.a6 > div:last-of-type {
+  display: flex;
+  background-color: #fff;
+  padding: 5rem 2rem;
+}
+
+.a6 > div:last-of-type > div:first-of-type {
+  flex: 7;
+}
+
+.a6 > div:last-of-type > div:last-of-type {
+  flex: 3;
+} 
+
+.a7 {
+  display: flex;
+}

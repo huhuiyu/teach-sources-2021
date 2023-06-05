@@ -1,3 +1,114 @@
 body {
   margin: 0px;
 }
+
+.a1 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a1 {
+  position: relative;
+}
+
+.a1 > div {
+  position: absolute;
+}
+
+.a1 > div:nth-of-type(1) {
+  top: 1vw;
+  left: 0px;
+  color: #000;
+  width: 100%;
+  font-size: 2vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.a1 > div:nth-of-type(2) {
+  bottom: 1vw;
+  left: 0px;
+  color: #000;
+  width: 100%;
+  font-size: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.a1 > div:nth-of-type(3) {
+  background-color: #644b82;
+  color: #fff;
+  top: 45%;
+  left: 5vw;
+  font-size: 4vw;
+  padding: 1vw;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+
+.a2 {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 3rem;
+}
+
+.a3 {
+  background-color: #a189cf;
+  margin: 0.5rem;
+}
+
+.a3 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.a3 > div:first-of-type {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.a4 {
+  display: flex;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.a4 > div {
+  margin: 2rem 5rem;
+}
+
+.a5 {
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+}
+
+.a5 > div:nth-of-type(3) {
+  text-align: center;
+  position: relative;
+  height: 3vw;
+}
+
+.a5 > div:nth-of-type(3)::after {
+  content: '';
+  width: 4.5vw;
+  height: 0.5rem;
+  background-color: #a189cf;
+  position: absolute;
+  top: 1.8rem;
+  left: calc(50% - 2.5vw);
+  z-index: 0;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+}
+
+.a5 > div:nth-of-type(3) > div {
+  position: absolute;
+  left: calc(50% - 2.5vw);
+  top: 0px;
+  z-index: 10;
+}

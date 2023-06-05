@@ -71,3 +71,56 @@ body {
 .fs20 {
   font-size: 2vw;
 }
+
+.a4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.a4 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.a4 > div {
+  margin: 2rem;
+  width: 35%;
+}
+
+.a5 {
+  color: #fff;
+  font-size: 1.5vw;
+}
+
+.a5 > div:first-of-type {
+  margin-bottom: 2rem;
+  padding: 0px 0.5rem;
+  border-left: 0.5rem solid #fff;
+}
+
+.a5 > div:last-of-type {
+  margin: 2rem 0px;
+}
+
+.a6 {
+  text-align: center;
+  font-size: 1.4vw;
+  color: #fff;
+}
+
+.a6 > div {
+  margin: 1rem;
+}
+
+.a6 > div:nth-of-type(3) {
+  width: 80vw;
+  height: 28vw;
+  margin: 0px auto;
+}
+
+.a6 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

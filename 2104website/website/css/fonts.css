@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'font1';
+  src: url('./font1.ttf');
+}
+
+@font-face {
+  font-family: 'font2';
+  src: url('./font2.ttf');
+}
+
+.font1 {
+  font-family: 'font1';
+}
+
+.font2 {
+  font-family: 'font2';
+}

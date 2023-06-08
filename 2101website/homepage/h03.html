@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>林金如的个人网站</title>
+  <!-- 跑马灯效果的css导入 -->
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+
   <link rel="stylesheet" href="./iconfont/iconfont.css">
   <link rel="stylesheet" href="./css/h03.css">
 </head>
@@ -67,12 +70,62 @@
 
           <div>photoshop</div>
           <!-- 进度条模拟 -->
-          <div>
-            <div>1</div>
+          <div class="a8">
+            <div class="c1"></div>
           </div>
 
-          <div>85%</div>
+          <div>95%</div>
         </div>
+
+        <!-- 单个技能 -->
+        <div class="a7">
+
+          <div>Illustrator</div>
+          <!-- 进度条模拟 -->
+          <div class="a8">
+            <div class="c2"></div>
+          </div>
+
+          <div>97%</div>
+        </div>
+
+        <!-- 单个技能 -->
+        <div class="a7">
+
+          <div>HBuilder</div>
+          <!-- 进度条模拟 -->
+          <div class="a8">
+            <div class="c3"></div>
+          </div>
+
+          <div>84%</div>
+        </div>
+
+        <!-- 单个技能 -->
+        <div class="a7">
+
+          <div>Axure</div>
+          <!-- 进度条模拟 -->
+          <div class="a8">
+            <div class="c4"></div>
+          </div>
+
+          <div>96%</div>
+        </div>
+
+        <!-- 单个技能 -->
+        <div class="a7">
+
+          <div>PXCOOK</div>
+          <!-- 进度条模拟 -->
+          <div class="a8">
+            <div class="c5"></div>
+          </div>
+
+          <div>70%</div>
+        </div>
+
+
 
       </div>
 
@@ -84,6 +137,68 @@
     </div>
 
   </div>
+
+  <!-- 第四块，图片跑马灯 -->
+  <div>
+
+    <!-- 跑马灯效果区域 -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img src="./images/ljr/980.jpg" alt="">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./images/ljr/ui得物psd.jpg" alt="">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./images/ljr/ui设计作业.jpg" alt="">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./images/ljr/个人.jpg" alt="">
+        </div>
+
+      </div>
+
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+
+      <!-- 如果需要导航按钮 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- 跑马灯效果的js文件导入 -->
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <!-- 跑马灯效果的定制js -->
+  <script>
+
+    var mySwiper = new Swiper('.swiper', {
+
+      loop: true, // 循环模式选项
+
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // 如果需要前进后退按钮
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    })
+
+  </script>
 
 </body>
 

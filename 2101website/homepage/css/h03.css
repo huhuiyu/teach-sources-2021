@@ -138,12 +138,65 @@ body {
 
 .a6 > div:last-of-type > div:first-of-type {
   flex: 7;
+  margin-top: 8vw;
 }
 
 .a6 > div:last-of-type > div:last-of-type {
   flex: 3;
-} 
+}
 
 .a7 {
   display: flex;
+  font-size: 2vw;
+  align-items: center;
+  margin: 2vw 5vw 0px 2vw;
+}
+
+.a7 > div:nth-of-type(1) {
+  flex: 2;
+}
+
+.a7 > div:nth-of-type(2) {
+  flex: 7;
+}
+
+.a7 > div:nth-of-type(3) {
+  flex: 1;
+}
+
+.a8 {
+  border-radius: 1vw;
+  background-color: #dcdcdc;
+  height: 2vw;
+  margin: 0px 1vw;
+}
+
+.a8 > div {
+  height: 2vw;
+  border-radius: 1vw;
+}
+
+.c1 {
+  width: 95%;
+  background: linear-gradient(to right, #a189cf, #5627ad);
+}
+
+.c2 {
+  width: 97%;
+  background: linear-gradient(to right, #4a2393, #170041);
+}
+
+.c3 {
+  width: 84%;
+  background: linear-gradient(to right, #cfa089, #8c4b2a);
+}
+
+.c4 {
+  width: 96%;
+  background: linear-gradient(to right, #48b526, #1a6b02);
+}
+
+.c5 {
+  width: 70%;
+  background: linear-gradient(60deg, #cf89ab 20%, #761744 80%);
 }

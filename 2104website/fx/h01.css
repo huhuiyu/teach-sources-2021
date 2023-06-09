@@ -1,0 +1,30 @@
+.a1 {
+  /* 
+    盒模型是元素所占用的空间大小
+    受元素的外边距，内边距，边框，宽，高五个属性影响
+    默认是它们加起来的总和
+  */
+  margin: 2rem;
+  padding: 2rem;
+  border: 2rem solid #f00;
+  width: 20rem;
+  height: 20rem;
+}
+
+.a2 {
+  /* 
+    box-sizing: border-box;
+    表示盒子的总大小是高宽决定
+  */
+  box-sizing: border-box;
+}
+
+span.a1 {
+  /* 
+    行内元素默认不支持盒模型的相关样式，或者说是不能正确渲染盒模型样式
+    需要将display设置成inline-block
+    这样既保留了行内元素的特征，又支持盒模型相关样式
+  */
+  display: inline-block;
+  box-sizing: border-box;
+}

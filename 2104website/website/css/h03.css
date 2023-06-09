@@ -12,13 +12,18 @@ body {
   align-items: center;
 }
 
+.a1 > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+}
+
 .a1 > div:first-of-type {
   font-size: 5vw;
   color: #fff;
   text-align: center;
   font-family: '楷体';
-  /* background-image: url('../images/011.png');
-  background-size: cover; */
   padding: 2.5em;
   position: relative;
 }

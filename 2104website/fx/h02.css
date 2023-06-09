@@ -1,0 +1,24 @@
+.a1,
+.a1 > div {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ff0000;
+}
+
+.a2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 5rem;
+  height: auto;
+  display: block;
+}
+
+.a3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+

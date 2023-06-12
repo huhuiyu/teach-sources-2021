@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>杨高丽的首页第一屏效果</title>
+  <link rel="stylesheet" href="./css/ygl.css">
+</head>
+
+<body>
+
+  <!-- 第一屏 -->
+  <div id="divBg" class="a1">
+
+    <div>
+
+      <!-- logo和菜单 -->
+      <div class="a2">
+        <img src="./images/ygl/logo.png" alt="">
+
+        <div>
+          <a href="#" class="active">首页</a>
+          <a href="#">作品集</a>
+          <a href="#">关于我</a>
+          <a href="#">联系我</a>
+        </div>
+
+      </div>
+
+      <div id="divInfo">
+
+        <div>One day,we will see different</div>
+        <div>fire works in the distance of our dreams</div>
+        <div>我们会在梦中的远方看到不一样的烟火</div>
+        <span>aaclamation</span>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+  <script>
+    // 图片地址可以任意扩展，但是路径一定是页面可以访问的
+    let images = [
+      './images/ygl/11.jpg',
+      './images/ygl/12.jpg',
+      './images/ygl/13.jpg',
+      './images/ygl/18.jpg',
+      './images/ygl/19.jpg',
+    ]
+
+    let count = 0
+
+    let divBg = document.getElementById('divBg')
+
+    // 5000表示多久更换一次图片，单位是毫秒
+    setInterval(() => {
+      count = (count + 1) % images.length
+      divBg.style.backgroundImage = `url('${images[count]}')`
+
+    }, 5000)
+
+
+  </script>
+
+</body>
+
+</html>

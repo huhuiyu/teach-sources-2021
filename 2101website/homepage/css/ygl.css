@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+}
+
+.a1 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/ygl/11.jpg');
+  background-size: cover;
+  transition: background-image 1s;
+}
+
+.a1 > div {
+  background-color: rgba(33, 38, 60, 0.3);
+  height: 100%;
+}
+
+.a2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10vw 1rem 5vw;
+  color: #fff;
+}
+
+.a2 img {
+  display: block;
+  width: auto;
+  height: 2rem;
+}
+
+.a2 a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.a2 a:hover,
+.a2 a.active {
+  color: #999;
+}
+
+#divInfo {
+  text-align: center;
+  margin-top: 30vh;
+}
+
+#divInfo > div:nth-of-type(1),
+#divInfo > div:nth-of-type(2) {
+  color: #fff;
+  font-family: '微软雅黑';
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+#divInfo > div:nth-of-type(3) {
+  color: #fff;
+  font-family: '楷体';
+  font-size: 1.5rem;
+  line-height: 4rem;
+}
+
+#divInfo > span {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0.5rem 0.5rem;
+  color: #3f77c4;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#divInfo > span:hover {
+  color: #fff;
+  background-color: #3f77c4;
+}

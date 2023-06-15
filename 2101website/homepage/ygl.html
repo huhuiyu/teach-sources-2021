@@ -64,6 +64,30 @@
 
     }, 5000)
 
+    // 首屏字符随机显示
+    let info1 = document.querySelector(
+      '#divInfo > div:nth-of-type(1)')
+    let info2 = document.querySelector(
+      '#divInfo > div:nth-of-type(2)')
+    let info3 = document.querySelector(
+      '#divInfo > div:nth-of-type(3)')
+
+    let infos = [
+      { info1: 'One day,we will see different', info2: 'fire works in the distance of our dreams', info3: '我们会在梦中的远方看到不一样的烟火' },
+      { info1: '不知道隧道多长，可如果一直想着隧道尽头的光亮，', info2: '反而失却了行驶的快乐。渐渐地，我学着在短暂失联的写作时间里，享受不被察觉的自由', info3: ' 是我忽略了，记录本身，就是意义所在。' },
+      { info1: '它可能无法治愈钝痛和哀伤，但如果曾经有哪怕一句话流淌过读者的心间', info2: ' 给过任何人一丝温暖或是力量，对我而言，也算是一种遥远而幸福的共鸣了', info3: '谢谢你，谢谢能在文字中与你相遇。' },
+      // { info1: '111', info2: ' 2222', info3: '3333' },
+      // { info1: 'aaa', info2: ' bbb', info3: 'ccc' },
+      // { info1: 'qwe', info2: ' asd', info3: 'fff' },
+    ]
+
+    let index = parseInt(Math.random() * infos.length)
+    let info = infos[index]
+
+    info1.innerHTML = info.info1
+    info2.innerHTML = info.info2
+    info3.innerHTML = info.info3
+
 
   </script>
 
